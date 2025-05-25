@@ -6,12 +6,11 @@ import {
   ScrollView,
   Image,
   TouchableOpacity,
-  Linking, // Importa o Linking para abrir URLs externas
+  Linking,
 } from 'react-native';
 
-// Importe a imagem do logo (certifique-se de que o caminho está correto)
-// Por exemplo, se a imagem estiver em `assets/img/logo-aprende-ai-sem-fundo.png`
-import logoImage from '../public/imgs/estude-lab2.0.png'; // <--- AJUSTE ESSE CAMINHO
+
+import logoImage from '../public/imgs/estude-lab2.0.png';
 
 const AboutScreen = () => {
   const openLink = async (url) => {
@@ -22,8 +21,6 @@ const AboutScreen = () => {
       await Linking.openURL(url);
     } else {
       console.error(`Não foi possível abrir a URL: ${url}`);
-      // Opcional: mostrar um alerta ao usuário
-      // Alert.alert('Erro', 'Não foi possível abrir o link.');
     }
   };
 
@@ -32,7 +29,6 @@ const AboutScreen = () => {
       <View style={styles.header}>
         <View style={styles.nav}>
           <TouchableOpacity onPress={() => console.log('Navegar para a Home')}>
-            {/* O caminho da imagem precisa ser relativo ao arquivo que está sendo importado */}
             <Image
               source={logoImage}
               style={styles.logo}
@@ -92,9 +88,7 @@ const AboutScreen = () => {
           </View>
         </View>
       </View>
-      {/* Em React Native, um footer geralmente seria um componente separado ou parte da View principal */}
       <View style={styles.footer}>
-        {/* Você pode adicionar conteúdo ao seu footer aqui, se necessário */}
         <Text style={styles.footerText}>© 2024 Estude Lab. Todos os direitos reservados.</Text>
       </View>
     </ScrollView>
@@ -103,8 +97,8 @@ const AboutScreen = () => {
 
 const styles = StyleSheet.create({
   scrollViewContainer: {
-    flex: 1, // Garante que o ScrollView ocupe toda a tela
-    backgroundColor: '#151E3F', // Cor de fundo do body
+    flex: 1, 
+    backgroundColor: '#151E3F', 
   },
   header: {
     width: '100%',

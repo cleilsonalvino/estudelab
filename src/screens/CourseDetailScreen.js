@@ -9,8 +9,8 @@ import {
   TouchableOpacity,
 } from "react-native";
 import { useRoute, useFocusEffect } from "@react-navigation/native";
-// IMPORTANTE: Corrija o caminho do import se o nome do arquivo for ProgressService.js
-import { loadProgress, loadUserData } from "../services/ProguessService"; // Corrigido para ProgressService e adicionado loadUserData
+
+import { loadProgress, loadUserData } from "../services/ProguessService";
 import { loadModulesForCourse } from "../services/DataService";
 
 const CourseDetailScreen = ({ navigation }) => {
@@ -104,26 +104,25 @@ const CourseDetailScreen = ({ navigation }) => {
         <View key={modIndex} style={styles.moduleContainer}>
           <Text style={styles.moduleTitle}>{module.nome}</Text>
           {module.licoes.map((lesson, lesIndex) => {
-            // CORREÇÃO AQUI: Acesse a propriedade 'lessons' para verificar o progresso da lição
+            
             const lessonConcluded = currentCourseProgress.lessons?.[lesson.id] !== undefined;
 
-            let anteriorConcluida = true; // Assume true para a primeira lição do curso
-
-            // Lógica para verificar se a lição anterior está concluída
+            let anteriorConcluida = true; 
+           
             if (modIndex === 0 && lesIndex === 0) {
-              anteriorConcluida = true; // A primeira lição do primeiro módulo está sempre habilitada
+              anteriorConcluida = true; 
             } else if (lesIndex > 0) {
-              // Verifica a lição anterior no mesmo módulo
+              
               anteriorConcluida = currentCourseProgress.lessons?.[modules[modIndex].licoes[lesIndex - 1]?.id] !== undefined;
             } else if (modIndex > 0 && lesIndex === 0) {
-              // Verifica a última lição do módulo anterior
+              
               const lastLessonOfPreviousModule = modules[modIndex - 1]?.licoes?.[modules[modIndex - 1].licoes.length - 1];
               anteriorConcluida = currentCourseProgress.lessons?.[lastLessonOfPreviousModule?.id] !== undefined;
             }
 
             const videoEnabled = anteriorConcluida && lesson.video;
             const textEnabled = anteriorConcluida;
-            const exerciseEnabled = lessonConcluded; // Exercício habilitado SOMENTE se a lição já foi feita (tem uma pontuação)
+            const exerciseEnabled = lessonConcluded; 
 
             return (
               <View key={lesson.id} style={styles.lessonItem}>

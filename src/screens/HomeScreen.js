@@ -107,7 +107,7 @@ const HomeScreen = ({ navigation }) => {
     );
   }
 
-  // Define o nome de boas-vindas. Se o usuário existir, usa o nome dele; caso contrário, um nome padrão.
+
   const welcomeName = user && user.name ? user.name : 'Visitante';
 
   return (

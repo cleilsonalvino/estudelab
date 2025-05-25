@@ -1,15 +1,13 @@
 // src/screens/LoginScreen.js
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image, ActivityIndicator, Alert } from 'react-native';
-import { useAuth } from '../context/AuthContext'; // Importa o hook de autenticação
+import { useAuth } from '../context/AuthContext'; 
 
-// AJUSTE O CAMINHO DA SUA IMAGEM
-// Se sua imagem está em `assets/img/logo-aprende-ai-sem-fundo.png`, use:
+
 import logoImage from '../../assets/estude-lab2.0.png';
-// Se sua imagem está em `src/public/imgs/estude-lab2.0.png`, use:
-// import logoImage from '../public/imgs/estude-lab2.0.png';
 
-const LoginScreen = ({ navigation }) => { // Recebe navigation como prop
+
+const LoginScreen = ({ navigation }) => { 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
@@ -27,9 +25,8 @@ const LoginScreen = ({ navigation }) => { // Recebe navigation como prop
 
     if (success) {
       console.log("Login bem-sucedido!");
-      // A navegação para a tela principal é tratada pelo App.js (AuthContext)
+    
     }
-    // As mensagens de erro já são tratadas dentro do AuthContext
   };
 
   return (
@@ -67,7 +64,7 @@ const LoginScreen = ({ navigation }) => { // Recebe navigation como prop
         )}
       </TouchableOpacity>
 
-      <TouchableOpacity onPress={() => navigation.navigate('Register')}> {/* Link para a nova tela de cadastro */}
+      <TouchableOpacity onPress={() => navigation.navigate('Register')}>
         <Text style={styles.registerLink}>Não tem uma conta? **Registrar-se**</Text>
       </TouchableOpacity>
 

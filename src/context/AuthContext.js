@@ -2,7 +2,6 @@ import React, { createContext, useState, useEffect, useContext } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Alert } from 'react-native';
 
-// 1. Cria o contexto
 const AuthContext = createContext();
 
 const MOCK_USERS = {
@@ -47,7 +46,6 @@ export const AuthProvider = ({ children }) => {
     loadUser();
   }, []);
 
-  // Função de login
   const login = async (email, password) => {
     setLoading(true);
     try {
