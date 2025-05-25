@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "descricao": "Qual é o principal objetivo do gerenciamento de projetos?",
+      "alternativas": [
+        "Planejar, coordenar e controlar todas as atividades do projeto para garantir o sucesso dentro do prazo, custo e escopo estabelecidos",
+        "Aumentar o número de recursos disponíveis para o projeto sem considerar o prazo ou o orçamento",
+        "Concentrar-se apenas na conclusão das tarefas, sem se preocupar com a qualidade do resultado final",
+        "Gerenciar os projetos de forma independente, sem interação com a equipe de trabalho"
+      ]
+    },
+    {
+      "id": 2,
+      "descricao": "Quais são as três principais restrições do gerenciamento de projetos?",
+      "alternativas": [
+        "Tempo, custo e escopo",
+        "Qualidade, segurança e recursos",
+        "Satisfação do cliente, custo e comunicação",
+        "Tecnologia, custo e stakeholders"
+      ]
+    },
+    {
+      "id": 3,
+      "descricao": "Qual é a principal atividade no processo de gerenciamento de riscos?",
+      "alternativas": [
+        "Identificar, avaliar e planejar respostas aos riscos que possam afetar o projeto",
+        "Aumentar o orçamento do projeto para lidar com todos os possíveis riscos",
+        "Focar apenas nos riscos externos e negligenciar os internos",
+        "Deixar a equipe tomar todas as decisões relacionadas aos riscos sem acompanhamento"
+      ]
+    }
+  ]
+  

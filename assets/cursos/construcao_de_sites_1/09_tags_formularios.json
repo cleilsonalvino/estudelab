@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "descricao": "Qual a alternativa verdadeira para uso da tag FIELDSET dentro de um formulário??",
+      "alternativas": [
+        "É usada para agrupar todos os elementos dentro relacionados a um formulario;",
+        "Insere uma quebra de linha;",
+        "É usada para dar um rotulo ao agrupamento;",
+        "especifica o endereco URL;"
+      ]
+    },
+    {
+      "id": 2,
+      "descricao": "Em relação ao atributo action em uma tag form, qual das alternativas a seguir descreve corretamente sua função?",
+      "alternativas": [
+        "Especifica o endereco URL onde submeter os dados do formulario;",
+        "Define o método de envio dos dados do formulário (GET ou POST);",
+        "Indica que o formulário deve ser validado antes de ser enviado;",
+        "Especifica a janela alvo para abrir a página descrita em action;"
+      ]
+    },
+    {
+      "id": 3,
+      "descricao": "Em relação ao atributo method em uma tag form, qual das alternativas a seguir descreve corretamente sua função?",
+      "alternativas": [
+        "Especifica o método de envio dos dados, como GET ou POST;",
+        "Indica se o campo é obrigatório ou não;",
+        "Limita o número de caracteres que podem ser inseridos em um campo;",
+        "Define a URL para onde os dados do formulário devem ser enviados;"
+      ]
+    }
+  ]

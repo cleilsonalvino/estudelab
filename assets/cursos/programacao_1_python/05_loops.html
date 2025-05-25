@@ -1,0 +1,64 @@
+<h2>Loops</h2>
+
+<h3>O que são Loops?</h3>
+<p>Loops permitem que o programa execute um bloco de código repetidamente enquanto uma condição é verdadeira.</p>
+<p>No Python, os loops mais comuns são <code>for</code> e <code>while</code>.</p>
+
+<h3>Loop <code>for</code></h3>
+<p>O loop <code>for</code> é usado para iterar sobre uma sequência (como uma lista, tupla, string ou range).</p>
+<pre><code>for i in range(5):
+    print(i)</code></pre>
+<p>Este exemplo imprime os números de 0 a 4. A função <code>range(5)</code> gera uma sequência de números de 0 até 4.</p>
+
+<h4>Looping em uma Lista</h4>
+<p>Você pode usar o <code>for</code> para iterar sobre os itens de uma lista.</p>
+<pre><code>frutas = ["maçã", "banana", "laranja"]
+
+for fruta in frutas:
+    print(fruta)</code></pre>
+
+<h3>Loop <code>while</code></h3>
+<p>O loop <code>while</code> repete um bloco de código enquanto uma condição é verdadeira.</p>
+<pre><code>contador = 0
+
+while contador < 5:
+    print(contador)
+    contador += 1</code></pre>
+<p>Neste exemplo, o loop <code>while</code> continua enquanto <code>contador</code> for menor que 5, imprimindo o valor de <code>contador</code> e incrementando-o em 1 a cada iteração.</p>
+
+<h3>Palavras-chave <code>break</code> e <code>continue</code></h3>
+<p><code>break</code> e <code>continue</code> são palavras-chave que controlam o fluxo dos loops.</p>
+
+<h4>Usando <code>break</code></h4>
+<p>A palavra-chave <code>break</code> interrompe o loop antes que ele complete todas as iterações.</p>
+<pre><code>for i in range(10):
+    if i == 5:
+        break
+    print(i)</code></pre>
+<p>Este exemplo para o loop quando <code>i</code> é igual a 5.</p>
+
+<h4>Usando <code>continue</code></h4>
+<p>A palavra-chave <code>continue</code> pula a iteração atual e vai para a próxima.</p>
+<pre><code>for i in range(5):
+    if i == 3:
+        continue
+    print(i)</code></pre>
+<p>Neste exemplo, o número 3 é ignorado, e o loop continua com os próximos números.</p>
+
+<h3>Exemplo Completo</h3>
+<p>Veja um exemplo que utiliza loops <code>for</code> e <code>while</code> com <code>break</code> e <code>continue</code>:</p>
+<pre><code>numeros = [1, 2, 3, 4, 5]
+
+for numero in numeros:
+    if numero == 3:
+        continue
+    print(numero)
+
+contador = 0
+while contador < 5:
+    if contador == 3:
+        break
+    print(contador)
+    contador += 1</code></pre>
+
+<p>Este exemplo mostra como os loops podem ser usados para iterar e controlar o fluxo de execução com <code>break</code> e <code>continue</code>.</p>

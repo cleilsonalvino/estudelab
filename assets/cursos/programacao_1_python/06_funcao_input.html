@@ -1,0 +1,55 @@
+<h2>Função Input e Manipulação de Dados</h2>
+
+<h3>O que é a Função <code>input()</code>?</h3>
+<p>A função <code>input()</code> é usada para capturar dados inseridos pelo usuário no console.</p>
+<p>Ela permite que o programa interaja com o usuário, coletando informações para processamento.</p>
+
+<h3>Como Usar <code>input()</code></h3>
+<p>Para utilizar <code>input()</code>, basta chamar a função e armazenar o resultado em uma variável.</p>
+<p>Por padrão, o valor retornado por <code>input()</code> é sempre uma string (texto), então é necessário convertê-lo para outros tipos, se necessário.</p>
+<pre><code>nome = input("Qual é o seu nome? ")
+print("Olá, " + nome)</code></pre>
+
+<h3>Convertendo o Valor de <code>input()</code></h3>
+<p>Se precisar de um número em vez de texto, você pode converter o valor de <code>input()</code> usando <code>int()</code> para inteiros ou <code>float()</code> para números decimais.</p>
+<pre><code>idade = input("Qual é a sua idade? ")
+idade = int(idade)
+print("Sua idade é:", idade)</code></pre>
+<p>Aqui, o valor inserido é convertido em um número inteiro usando <code>int()</code>.</p>
+
+<h3>Exemplo: Somando Números com <code>input()</code></h3>
+<p>Veja um exemplo onde pedimos ao usuário para inserir dois números e calculamos a soma:</p>
+<pre><code>num1 = input("Digite o primeiro número: ")
+num2 = input("Digite o segundo número: ")
+
+# Converte os valores para inteiros
+num1 = int(num1)
+num2 = int(num2)
+
+soma = num1 + num2
+print("A soma é:", soma)</code></pre>
+
+<h3>Validando a Entrada do Usuário</h3>
+<p>É importante validar as entradas do usuário para garantir que os dados sejam do tipo esperado.</p>
+<p>Podemos usar o método <code>isdigit()</code> para verificar se a entrada é um número antes de convertê-la.</p>
+<pre><code>num = input("Digite um número: ")
+
+if num.isdigit():
+    num = int(num)
+    print("O número é:", num)
+else:
+    print("Por favor, digite um número válido.")</code></pre>
+<p>Neste exemplo, o programa verifica se a entrada é um número antes de realizar a conversão para evitar erros.</p>
+
+<h3>Exemplo Completo</h3>
+<p>Veja um exemplo completo usando <code>input()</code> para interagir com o usuário:</p>
+<pre><code>nome = input("Qual é o seu nome? ")
+idade = input("Qual é a sua idade? ")
+
+if idade.isdigit():
+    idade = int(idade)
+    print(f"Olá, {nome}! Você tem {idade} anos.")
+else:
+    print("Idade inválida! Por favor, insira um número.")</code></pre>
+
+<p>Este exemplo mostra como coletar informações do usuário e realizar verificações simples para garantir a integridade dos dados.</p>

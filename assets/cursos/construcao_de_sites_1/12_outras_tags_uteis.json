@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "descricao": "Para que serve a tag DIV?",
+      "alternativas": [
+        "Para definir seção em um documento;",
+        "Insere um link para outra página;",
+        "Criar um bloco de conteudo;",
+        "Formatar texto;"
+      ]
+    },
+    {
+      "id": 2,
+      "descricao": "Qual a função da tag SPAN?",
+      "alternativas": [
+        "Agrupar elementos inline (em linha) em um documento;",
+        "Criar uma lista de itens;",
+        "Exibir uma tabela;",
+        "Definir um paragrafo;"
+      ]
+    },
+    {
+      "id": 3,
+      "descricao": "Qual das tags a seguir é utilizada para definir rotulos para os varios elementos HTML",
+      "alternativas": [
+        "Label",
+        "Div",
+        "Span",
+        "Form"
+      ]
+    }
+  ]

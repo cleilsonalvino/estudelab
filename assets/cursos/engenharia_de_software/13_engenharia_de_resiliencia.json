@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "descricao": "Qual o principal foco da Engenharia de Resiliência?",
+      "alternativas": [
+        "Projetar sistemas que possam manter a funcionalidade e se recuperar de interrupções.",
+        "Evitar completamente a ocorrência de falhas em sistemas complexos.",
+        "Concentrar-se apenas na otimização do desempenho de sistemas em condições normais.",
+        "Garantir que todos os componentes de um sistema funcionem perfeitamente o tempo todo."
+      ]
+    },
+    {
+      "id": 2,
+      "descricao": "Qual das seguintes técnicas é comumente utilizada na Engenharia de Resiliência para evitar que a falha em um serviço se propague para outros?",
+      "alternativas": [
+        "Circuit Breakers.",
+        "Balanceamento de carga.",
+        "Otimização de banco de dados.",
+        "Testes de unidade."
+      ]
+    },
+    {
+      "id": 3,
+      "descricao": "Qual a capacidade de um sistema de se ajustar e mudar em resposta a condições variáveis e inesperadas é conhecida como?",
+      "alternativas": [
+        "Adaptação.",
+        "Absorção.",
+        "Recuperação.",
+        "Antecipação."
+      ]
+    }
+  ]

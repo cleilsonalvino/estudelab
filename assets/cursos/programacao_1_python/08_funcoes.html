@@ -1,0 +1,81 @@
+<h2>Funções</h2>
+
+<h3>O que são Funções?</h3>
+<p>Funções são blocos de código que executam uma tarefa específica e podem ser reutilizados em diferentes partes de um programa.</p>
+<p>Elas ajudam a organizar o código, tornando-o mais legível e fácil de manter.</p>
+
+<h3>Definindo uma Função</h3>
+<p>Para definir uma função em Python, usamos a palavra-chave <code>def</code>, seguida pelo nome da função e parênteses <code>()</code>.</p>
+<p>O bloco de código da função deve estar indentado.</p>
+<pre><code>def saudacao():
+    print("Olá, seja bem-vindo!")</code></pre>
+<p>Neste exemplo, criamos uma função chamada <code>saudacao</code> que exibe uma mensagem de boas-vindas.</p>
+
+<h3>Chamando uma Função</h3>
+<p>Para executar uma função, basta chamar o seu nome seguido de parênteses.</p>
+<pre><code>saudacao()  # Saída: Olá, seja bem-vindo!</code></pre>
+
+<h3>Parâmetros e Argumentos</h3>
+<p>Funções podem receber dados de entrada chamados parâmetros. Esses dados são passados para a função quando ela é chamada.</p>
+<pre><code>def saudacao(nome):
+    print(f"Olá, {nome}!")</code></pre>
+<p>Aqui, a função <code>saudacao</code> possui um parâmetro <code>nome</code>, que permite personalizar a saudação.</p>
+<pre><code>saudacao("Carlos")  # Saída: Olá, Carlos!</code></pre>
+
+<h3>Valor de Retorno</h3>
+<p>Funções podem retornar um valor usando a palavra-chave <code>return</code>. Esse valor pode ser usado em outras partes do programa.</p>
+<pre><code>def soma(a, b):
+    return a + b</code></pre>
+<p>Neste exemplo, a função <code>soma</code> retorna a soma dos dois parâmetros.</p>
+<pre><code>resultado = soma(3, 5)
+print(resultado)  # Saída: 8</code></pre>
+
+<h3>Funções com Múltiplos Parâmetros</h3>
+<p>Funções podem ter múltiplos parâmetros, permitindo o uso de vários valores como entrada.</p>
+<pre><code>def apresentar_pessoa(nome, idade):
+    print(f"{nome} tem {idade} anos.")</code></pre>
+<p>Chamando a função com dois argumentos:</p>
+<pre><code>apresentar_pessoa("Ana", 25)  # Saída: Ana tem 25 anos.</code></pre>
+
+<h3>Parâmetros Padrão</h3>
+<p>Você pode definir um valor padrão para um parâmetro. Esse valor será usado se nenhum argumento for passado para a função.</p>
+<pre><code>def saudacao(nome="visitante"):
+    print(f"Olá, {nome}!")</code></pre>
+<p>Se você chamar a função sem passar um argumento, o valor padrão será utilizado.</p>
+<pre><code>saudacao()           # Saída: Olá, visitante!
+saudacao("Maria")    # Saída: Olá, Maria!</code></pre>
+
+<h3>Escopo de Variáveis</h3>
+<p>O escopo de uma variável define onde ela pode ser acessada no código.</p>
+<p>No Python, variáveis definidas dentro de uma função têm um escopo local, ou seja, só podem ser usadas dentro da função onde foram definidas.</p>
+
+<h4>Exemplo de Escopo Local</h4>
+<pre><code>def minha_funcao():
+    mensagem = "Olá, mundo!"  # Variável local
+    print(mensagem)
+
+minha_funcao()  # Saída: Olá, mundo!
+print(mensagem)  # Erro: mensagem não está definida fora da função</code></pre>
+<p>Neste exemplo, a variável <code>mensagem</code> só existe dentro da função <code>minha_funcao</code>.</p>
+
+<h4>Exemplo de Escopo Global</h4>
+<p>Variáveis definidas fora de qualquer função têm escopo global e podem ser acessadas em qualquer parte do código.</p>
+<pre><code>mensagem = "Olá, universo!"  # Variável global
+
+def minha_funcao():
+    print(mensagem)
+
+minha_funcao()  # Saída: Olá, universo!
+print(mensagem)  # Saída: Olá, universo!</code></pre>
+<p>Aqui, <code>mensagem</code> é uma variável global e pode ser acessada dentro e fora da função.</p>
+
+<h3>Exemplo Completo</h3>
+<p>Veja um exemplo que utiliza funções, parâmetros, retorno e escopo de variáveis:</p>
+<pre><code>def calcular_media(nota1, nota2, nota3):
+    soma = nota1 + nota2 + nota3
+    media = soma / 3
+    return media
+
+media_aluno = calcular_media(8, 7, 9)
+print(f"A média do aluno é: {media_aluno}")</code></pre>
+<p>Neste exemplo, a função <code>calcular_media</code> calcula e retorna a média, e as variáveis dentro dela possuem escopo local.</p>

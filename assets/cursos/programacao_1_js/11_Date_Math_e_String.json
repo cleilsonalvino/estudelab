@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "descricao": "Qual método é usado para obter o ano atual em um objeto Date?",
+    "alternativas": [
+      "getFullYear()",
+      "getYear()",
+      "getCurrentYear()",
+      "getDate()"
+    ]
+  },
+  {
+    "id": 2,
+    "descricao": "Qual das opções retorna um número aleatório entre 0 e 1 em JavaScript?",
+    "alternativas": [
+      "Math.random();",
+      "Math.floor();",
+      "Math.round();",
+      "Math.ceil();"
+    ]
+  },
+  {
+    "id": 3,
+    "descricao": "Dado o código let texto = 'JavaScript';, qual das opções retorna o texto em letras maiúsculas?",
+    "alternativas": [
+      "texto.toUpperCase();",
+      "texto.toLowerCase();",
+      "texto.capitalize();",
+      "texto.upper();"
+    ]
+  }
+]

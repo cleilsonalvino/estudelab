@@ -1,0 +1,83 @@
+<link rel="stylesheet" href="css\cursos\programacao1_js.css">
+
+<h3>Comando switch</h3>
+<p> Às vezes, queremos executar blocos de código de acordo com um valor escolhido ou calculado. Exemplo em um sistema:</p>
+
+<ol>
+    <p>Olá, usuário! O que você deseja?</p>
+    <li>Cadastrar novo produto</li>
+    <li>Listar produtos cadastrados</li>
+    <li>Cadastrar novo cliente</li>
+    <li>Listar clientes</li>
+    <li>Sair</li>
+    <p>Digite sua opção:</p>
+</ol>
+
+<p>No exemplo anterior, o código a ser executado será diferente, a depender da opção (valor numérico) escolhida pelo usuário;</p>
+<p>Nesta situação, dizemos que a condição vai depender de cada caso, isto é, de cada valor;</p>
+
+<p>Podemos implementar isso usando vários “if”, mas um jeito mais interessante é utilizando o comando condicional <strong>switch.</strong></p>
+
+<p>Permite que, a partir do valor de uma expressão (pode ser uma variável), seja executado o bloco de código associado àquele caso (valor);</p>
+<h4>Sua sintaxe é:</h4>
+
+<ol>
+    <p>switch (expressão)</p> &lcub;
+    <li>case valor1: 
+        <br>comandos; 
+        <br> break;
+    </li>
+    <li>case valor2:
+        <br>comandos;
+        <br>break;
+    </li>
+    <li>case valorN:
+        <br>comandos;
+        <br>break;</li>
+    <li>default:
+        <br>comandos;
+    </li>
+    &rcub;
+</ol>
+
+<p>
+Onde:<br>
+    ❏ <strong>switch – </strong>palavra reservada que
+    informa a expressão a ser calculada
+    e, em seguida, os casos (rótulos)
+    para o sistema testar; <br>
+    ❏ <strong> expressão – </strong>aqui vai a expressão a
+    ser avaliada (isto é, calculada); <br>
+    ❏ <strong> case – </strong>informa o valor que, caso
+    coincida com o resultado da
+    expressão, os comandos presentes
+    daquele ponto até o final do switch
+    serão executados;
+</p>
+<p>
+Onde: <br>
+❏ <strong> break – </strong> realiza uma “quebra” na
+execução do switch, “pulando” para
+logo após o mesmo. Geralmente aparece
+após a lista de comandos de um case; <br>
+❏ <strong> default – </strong> especifica uma série de
+comandos a serem executados, caso o
+resultado da expressão não “case” com
+nenhum dos valores passados. É
+opcional.
+</p>
+<h4>Exemplo de comando switch:</h4>
+<img src="cursos\programacao_1_js\img\Comandos_Condicionais_Ex_Switch.png" alt="Codigo_Usando_Comando_Switch" width="80%"  height="750px">
+
+<p>A variável <strong> dia</strong> recebe o <strong> valor 3.</strong> O comando switch avalia o valor de dia e compara com os case definidos (1 a 7). Quando encontra o case correspondente ao valor (no caso, 3), atribui "Terça-feira" à variável <strong>nomeDia.</strong><br>
+ O break é usado para interromper a execução após o case correto ser encontrado. O <strong>default</strong> lida com valores que não correspondem a nenhum dos case (números fora de 1 a 7).<br>
+O resultado é exibido no console como <strong>"O dia da semana é: Terça-feira".</strong></p>
+
+<h3>Operador condicional</h3>
+<p>Há situações em que, caso uma condição seja verdadeira, queremos retornar um valor, caso contrário, outro;</p>
+<p>Podemos alcançar esse objetivo por meio da instrução if...else, mas também podemos fazê-lo por meio do operador condicional <strong>“?” </strong>, também conhecido como operador ternário.</p>
+
+<p> Sintaxe do operador condicional:</p>
+<img src="cursos\programacao_1_js\img\Sintaxe_Operador_Condicional.png" alt="Sintaxe_Operador_Condicional" width="80%">
+<p>Exemplo de uso do operador condicional:</p>
+<img src="cursos\programacao_1_js\img\Exemplo_Uso_Condicional.png" alt="Exemplo_Uso_Operador_Condicional" width="80%">

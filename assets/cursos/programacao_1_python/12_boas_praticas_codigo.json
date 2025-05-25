@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "descricao": "Qual é o guia de estilo do Python?",
+      "alternativas": [
+        "PEP 8.",
+        "PEP 20.",
+        "PEP 257.",
+        "PEP 102."
+      ]
+    },
+    {
+      "id": 2,
+      "descricao": "Quantos espaços são recomendados para identação em Python?",
+      "alternativas": [
+        "4 espaços.",
+        "2 espaços.",
+        "8 espaços.",
+        "3 espaços."
+      ]
+    },
+    {
+      "id": 3,
+      "descricao": "Qual função adiciona comentários de documentação em uma função?",
+      "alternativas": [
+        "Docstring.",
+        "Comentar.",
+        "Append.",
+        "Info."
+      ]
+    }
+  ]
+  

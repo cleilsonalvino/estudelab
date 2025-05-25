@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "descricao": "Qual é a finalidade do comando IF em JavaScript?",
+    "alternativas": [
+      "Avaliar uma condição e executar um bloco de código se a condição for verdadeira.",
+      "Declarar uma função.",
+      "Repetir um bloco de código várias vezes.",
+      "Definir uma variável constante."
+    ]
+  },
+  {
+    "id": 2,
+    "descricao": "O que acontece se a condição dentro de um IF for falsa e não houver um bloco else?",
+    "alternativas": [
+      " O código dentro do if será ignorado e a execução continuará.",
+      "O código dentro do if será executado de qualquer forma.",
+      "O JavaScript exibirá um erro.",
+      "O JavaScript pedirá ao usuário para corrigir a condição."
+    ]
+  },
+  {
+    "id": 3,
+    "descricao": "Qual é a estrutura correta do comando if...else em JavaScript?",
+    "alternativas": [
+      "if (condição) {  // código } else { // código }",
+      "if (condição) else (condição) {  // código }",
+      "if condição { // código } outro { // código }",
+      "if (condição); else (condição); "
+    ]
+  }
+]

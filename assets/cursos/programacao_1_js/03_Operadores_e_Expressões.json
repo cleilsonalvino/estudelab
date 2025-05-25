@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "descricao": "O que é um operador em JavaScript?",
+    "alternativas": [
+      "Um símbolo que realiza uma operação sobre um ou mais valores.",
+      "Um bloco de código que cria loops.",
+      " Uma variável que armazena valores.",
+      "Uma função reservada do sistema."
+    ]
+  },
+  {
+    "id": 2,
+    "descricao": "Qual é o termo usado para descrever os valores sobre os quais um operador atua?",
+    "alternativas": [
+      " Operandos",
+      "Funções",
+      "Declarações",
+      "Condicionais"
+    ]
+  },
+  {
+    "id": 3,
+    "descricao": "Qual das opções a seguir é uma expressão em JavaScript?",
+    "alternativas": [
+      "5 + 2",
+      "if (x > y)",
+      "console.log()",
+      "function soma() {}"
+    ]
+  }
+]

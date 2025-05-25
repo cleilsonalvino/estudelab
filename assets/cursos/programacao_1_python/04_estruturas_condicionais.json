@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "descricao": "Qual estrutura de controle é usada para verificar condições?",
+      "alternativas": [
+        "if.",
+        "loop.",
+        "switch.",
+        "function."
+      ]
+    },
+    {
+      "id": 2,
+      "descricao": "Como indicamos uma condição alternativa em Python?",
+      "alternativas": [
+        "elif.",
+        "else if.",
+        "elseif.",
+        "alt."
+      ]
+    },
+    {
+      "id": 3,
+      "descricao": "Qual palavra-chave finaliza uma estrutura condicional?",
+      "alternativas": [
+        "else.",
+        "endif.",
+        "stop.",
+        "end."
+      ]
+    }
+  ]
+  

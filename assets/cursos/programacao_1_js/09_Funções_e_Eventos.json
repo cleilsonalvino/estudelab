@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "descricao": "Como você insere um comentário de uma única linha em JavaScript?",
+    "alternativas": [
+      "// comentário",
+      "<!-- comentário -->",
+      "/* comentário */",
+      "# comentário"
+    ]
+  },
+  {
+    "id": 2,
+    "descricao": "Qual é a sintaxe correta para criar uma template string em JavaScript?",
+    "alternativas": [
+      "`Texto ${variavel}`",
+      "`(Texto + variavel)`",
+      "'Texto ${variavel}'",
+      "'Texto #{variavel}'"
+    ]
+  },
+  {
+    "id": 3,
+    "descricao": "Qual função em JavaScript é usada para converter uma string em um número inteiro?",
+    "alternativas": [
+      "parseInt()",
+      "toString()",
+      "Number()",
+      "parseFloat()"
+    ]
+  }
+]

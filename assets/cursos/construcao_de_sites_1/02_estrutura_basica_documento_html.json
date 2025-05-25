@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "descricao": "Qual das alternativas a seguir descreve corretamente a função da declaração !DOCTYPE?",
+    "alternativas": [
+      "Define o tipo de documento;",
+      "Cria um link para uma folha de estilo externa;",
+      "Adiciona um script JavaScript à página;",
+      "Define o título da página HTML;"
+    ]
+  },
+  {
+    "id": 2,
+    "descricao": "Qual das alternativas a seguir descreve corretamente a função da tag title?",
+    "alternativas": [
+      "Define um titulo para a pagina;",
+      "Insere uma imagem na página;",
+      "Cria um link para outra página;",
+      "Exibe o título principal da página dentro do corpo do texto;"
+    ]
+  },
+  {
+    "id": 3,
+    "descricao": "Qual das alternativas a seguir descreve corretamente a tag body?",
+    "alternativas": [
+      "Descreve todo o conteudo a ser renderizado pelo navegador;",
+      "Adiciona comentários ao código;",
+      "Insere um link para uma folha de estilo;",
+      "Define a estrutura do documento;"
+    ]
+  }
+]

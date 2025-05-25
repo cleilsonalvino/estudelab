@@ -1,0 +1,58 @@
+<link rel="stylesheet" href="css\cursos\programacao1_js.css">
+
+<h3>Comandos condicionais</h3>
+<p> Para que serve os comandos condicionais? Por que utilizar?</p>
+<p>Em algumas situações, queremos que aconteçam coisas diferentes, para situações (condições) diferentes.</p>
+
+<p>Primeiro exemplo, um programa que imprime uma mensagem se um número é divisível por 2:</p>
+<p>Leia um número N;</p>
+<p><strong>SE</strong> o número N é divisível por 2, <strong>ENTÃO</strong> escreva “{N} é divisível por 2”.</p>
+
+<p>Segundo exemplo,  Segundo exemplo, um programa que informa se um número é divisível por 2, por 3 ou por 5:</p>
+<p>Leia um número N;</p>
+<p><strong>SE</strong> o número N é divisível por 2, <strong>ENTÃO</strong> escreva “{N} é divisível por 2”; <strong>SE</strong> o número N é divisível por 3, <strong>ENTÃO</strong> escreva “{N} é  divisível por 3”; <strong>SE</strong> o número N é divisível por 5, <strong>ENTÃO</strong> escreva “{N} é divisível por 5”.</p>
+
+<p>Terceiro exemplo, um programa que informa a situação de um aluno (aprovado ou reprovado, de acordo com a média):</p>
+<p>Leia as três notas de um aluno;</p>
+<p>Calcule a sua média;</p>
+<p><strong>SE</strong> a média do aluno for superior à média mínima (6.0), <strong>ENTÃO</strong> ele está aprovado; <strong>SENÃO</strong>, ele está reprovado.</p>
+
+<p>Quarto exemplo, um programa que informa se um número é par ou não:</p>
+<p>Leia um número N;</p>
+<p><strong>SE</strong> o número é divisível por 2, <strong>Então</strong> é par; <strong>SENÃO</strong>, ele é ímpar.</p>
+
+<p>Para tais situações, existem os comandos condicionais, que são comandos (instruções) que permitem escolher executar ou não um bloco de código de acordo com uma condição;</p>
+
+<p>Cada linguagem implementa seus próprios comandos condicionais. JavaScript apresenta três mais comuns: O comando if... else;  O comando switch; O comando “?”</p>
+
+<h4>Comando if…</h4>
+<p>Comando presente em praticamente todas as linguagens de programação, ele permite testar se uma condição é verdadeira e, se sim, executa-se um comando ou bloco associado a ele;</p>
+
+<p>Dica - Para utilizar esse comando corretamente você deve saber: Quando usar (ou não) um if; Escrever corretamente a condição; Quais comandos vão dentro de um if (e quais vão fora).</p>
+
+<img src="cursos\programacao_1_js\img\Sintaxe_condicional_If.png" alt="Sintaxe_Condicional_if" width="80%">
+<p>Exemplo de uso da estrutura If:</p>
+<img src="cursos\programacao_1_js\img\Exemplo_IF.png" alt="Exemplo_Uso_If" width="80%">
+<p>A variável <strong>numero</strong> recebe o <strong>valor 10</strong>. A estrutura if verifica se a condição <strong>numero > 5</strong> (ou seja, se o número é maior que 5) é verdadeira.</p>
+<p> Se a condição for verdadeira, a mensagem <strong>"O número é maior que 5."</strong> será exibida no console.</p>
+
+<h4>Comando if… else</h4>
+<p>Em algumas situações, podemos querer executar outro bloco de código, caso a condição falhe. Nessas situações, devemos utilizar a palavra reservada <strong>else </strong>(“senão”) para expressar o que deve ser feito caso a condição do <strong>if </strong>seja falsa.
+</p>
+<img src="cursos\programacao_1_js\img\Sintaxe_condicional_If_Else.png" alt="Sintaxe_condicional_If_Else" width="80%">
+<p>Exemplo de uso do comando If...else:</p>
+<img src="cursos\programacao_1_js\img\Exemplo_condicional_IF_Else.png" alt="exemplo_If_Else" width="80%">
+<p>Exemplo de uso com <strong>operadores Lógicos:</strong></p>
+<img src="cursos\programacao_1_js\img\Exemplo_Condicional_If_Else_Operadores_Logicos.png" alt="Exemplo_If_Else_Operadores_Logicos" width="80%">
+
+<h3>Comando if… else - Observações</h3>
+<p>Podemos ter um if sem else, mas não podemos ter um else sem if! <br>Observação importantíssima!
+</p>
+
+<img src="cursos\programacao_1_js\img\Exemplo_Condicional_Observacoes_1.png" alt="Exemplo_Condicionais_Observacoes_1" width="80%">
+
+<p>Podemos ter ifs aninhados (um if dentro do outro).</p>
+<img src="cursos\programacao_1_js\img\Exemplo_Condicional_Observacoes_2.png" alt="Exemplo_Condicionais_Observacoes_2" width="80%">
+
+<p>Podemos ter ifs encadeados (um dentro do senão do outro).</p>
+<img src="cursos\programacao_1_js\img\Exemplo_Condicional_Observacoes_3.png" alt="Exemplo_Condicionais_Observacoes_3" width="80%">

@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "descricao": "Qual palavra-chave importa um módulo?",
+      "alternativas": [
+        "import.",
+        "include.",
+        "use.",
+        "load."
+      ]
+    },
+    {
+      "id": 2,
+      "descricao": "Qual módulo é usado para gerar números aleatórios?",
+      "alternativas": [
+        "random.",
+        "math.",
+        "sys.",
+        "time."
+      ]
+    },
+    {
+      "id": 3,
+      "descricao": "Qual gerenciador instala bibliotecas externas?",
+      "alternativas": [
+        "pip.",
+        "install.",
+        "setup.",
+        "pyload."
+      ]
+    }
+  ]
+  

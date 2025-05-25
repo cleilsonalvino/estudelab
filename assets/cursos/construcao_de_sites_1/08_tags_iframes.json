@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "descricao": "Qual das alternativas a seguir descreve corretamente a função da tag iframe?",
+      "alternativas": [
+        "Um iframe é utilizado quando precisamos exibir oconteúdo de outra página web dentro de uma página web;",
+        "Adiciona um vídeo na página;",
+        "Cria um link para outra página;",
+        "Especifica um nome;"
+      ]
+    },
+    {
+      "id": 2,
+      "descricao": "Qual atributo da tag iframe é usado para especificar a URL da página a ser carregada?",
+      "alternativas": [
+        "SRC",
+        "HREF",
+        "LINK",
+        "URL"
+      ]
+    },
+    {
+      "id": 3,
+      "descricao": "Qual das seguintes alternativas descreve um uso apropriado do atributo HEIGHT na tag iframe?",
+      "alternativas": [
+        "Especifica a altura do iframe em pixels",
+        "Determina o tipo de conteúdo a ser exibido",
+        "Especifica o título do iframe",
+        "Define a largura do iframe"
+      ]
+    }
+  ]

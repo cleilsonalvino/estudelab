@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "descricao": "Qual operador realiza a adição em Python?",
+      "alternativas": [
+        "+.",
+        "-.",
+        "*.",
+        "/."
+      ]
+    },
+    {
+      "id": 2,
+      "descricao": "Como chamamos uma função para divisão?",
+      "alternativas": [
+        "dividir(a, b).",
+        "soma(a, b).",
+        "add(a, b).",
+        "diff(a, b)."
+      ]
+    },
+    {
+      "id": 3,
+      "descricao": "Qual função captura a entrada do usuário na calculadora?",
+      "alternativas": [
+        "input().",
+        "print().",
+        "eval().",
+        "entry()."
+      ]
+    }
+  ]
+  

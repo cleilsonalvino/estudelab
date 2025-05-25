@@ -1,0 +1,77 @@
+[
+    {
+        "nome": "Módulo 1 - Sistemas Operacionais",
+        "licoes" : [
+            {
+                "id": "sistemas_operacionais_windows_linux",
+                "nome": "Sistemas Operacionais Windows e Linux",
+                "video": null
+            },
+            {
+                "id": "windows_explorer",
+                "nome": "Windows Explorer",
+                "video": null
+            },
+            {
+                "id": "windows_painel_de_controle",
+                "nome": "Windows - Painel de Controle",
+                "video": null
+            },
+            {
+                "id": "windows_acessorios",
+                "nome": "Windows - Acessórios",
+                "video": null
+            },
+            {
+                "id": "linux",
+                "nome": "Linux",
+                "video": null
+            }
+        ]
+    },
+    {
+        "nome": "Módulo 2 - Hardware",
+        "licoes" : [
+            {
+                "id": "hardware",
+                "nome": "Hardware",
+                "video": null
+            }
+        ]
+    },
+    {
+        "nome": "Módulo 3 - Pacotes de Office",
+        "licoes" : [
+            {
+                "id": "libreoffice_writer",
+                "nome": "LibreOffice Writer",
+                "video": null
+            },
+            {
+                "id": "microsoft_word",
+                "nome": "Microsoft Word",
+                "video": null
+            },
+            {
+                "id": "impress_e_powerpoint",
+                "nome": "Impress e PowerPoint",
+                "video": null
+            },
+            {
+                "id": "calc_e_excel",
+                "nome": "Calc e Excel",
+                "video": null
+            }
+        ]
+    },
+    {
+        "nome": "Módulo 4 - Internet",
+        "licoes" : [
+            {
+                "id": "intranet_internet_e_redes",
+                "nome": "Intranet, Internet e Redes",
+                "video": null
+            }
+        ]
+    }
+]

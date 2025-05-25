@@ -1,0 +1,22 @@
+[
+    {
+        "nome": "Módulo 1 - Produção Textual Dissertativa",
+        "licoes" : [
+            {
+                "id": "introducao_a_producao_textual",
+                "nome": "Introdução à Produção Textual",
+                "video": null
+            },
+            {
+                "id": "introducao_a_redacao_dissertativa",
+                "nome": "Introdução à Redação Dissertativa",
+                "video": null
+            },
+            {
+                "id": "dicas_para_escrita",
+                "nome": "Dicas para a Escrita da Redação",
+                "video": null
+            }
+        ]
+    }
+]

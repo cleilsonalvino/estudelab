@@ -1,0 +1,137 @@
+[
+    {
+        "nome": "Módulo 1 - Introdução",
+        "licoes" : [
+            {
+                "id": "problemas_da_lingua_culta",
+                "nome": "Problemas da Língua Culta",
+                "video": null
+            },
+            {
+                "id": "tipologia_textual",
+                "nome": "Tipologia Textual",
+                "video": null
+            },
+            {
+                "id": "acentuacao_grafica",
+                "nome": "Fonética, Acento Tônico e Acentuação Gráfica",
+                "video": null
+            },
+            {
+                "id": "crase",
+                "nome": "Crase",
+                "video": null
+            },
+            {
+                "id": "ortografia",
+                "nome": "Ortografia",
+                "video": null
+            }
+        ]
+    },
+    {
+        "nome": "Módulo 2 - Análise Morfológica (Classes das Palavras)",
+        "licoes" : [
+            {
+                "id": "substantivo",
+                "nome": "Substantivo",
+                "video": null
+            },
+            {
+                "id": "artigo",
+                "nome": "Artigo",
+                "video": null
+            },
+            {
+                "id": "adjetivo",
+                "nome": "Adjetivo",
+                "video": null
+            },
+            {
+                "id": "pronome",
+                "nome": "Pronome",
+                "video": null
+            },
+            {
+                "id": "verbo",
+                "nome": "Verbo",
+                "video": null
+            },
+            {
+                "id": "numeral",
+                "nome": "Numeral",
+                "video": null
+            },
+            {
+                "id": "adverbio",
+                "nome": "Advérbio",
+                "video": null
+            },
+            {
+                "id": "preposicao",
+                "nome": "Preposição",
+                "video": null
+            },
+            {
+                "id": "conjuncao",
+                "nome": "Conjunção",
+                "video": null
+            },
+            {
+                "id": "interjeicao",
+                "nome": "Interjeição",
+                "video": null
+            }
+        ]
+    },
+    {
+        "nome": "Módulo 3 - Análise Sintática",
+        "licoes" : [
+            {
+                "id": "sujeito",
+                "nome": "Sujeito",
+                "video": null
+            },
+            {
+                "id": "predicado",
+                "nome": "Predicado",
+                "video": null
+            },
+            {
+                "id": "predicativo",
+                "nome": "Predicativo",
+                "video": null
+            },
+            {
+                "id": "objetos_direto_e_indireto",
+                "nome": "Objetos Direto e Indireto",
+                "video": null
+            },
+            {
+                "id": "complemento_nominal",
+                "nome": "Complemento Nominal",
+                "video": null
+            },
+            {
+                "id": "agente_da_passiva",
+                "nome": "Agente da Passiva",
+                "video": null
+            },
+            {
+                "id": "adjunto_adnominal",
+                "nome": "Adjunto Adnominal",
+                "video": null
+            },
+            {
+                "id": "aposto",
+                "nome": "Aposto",
+                "video": null
+            },
+            {
+                "id": "vocativo",
+                "nome": "Vocativo",
+                "video": null
+            }
+        ]
+    }
+]

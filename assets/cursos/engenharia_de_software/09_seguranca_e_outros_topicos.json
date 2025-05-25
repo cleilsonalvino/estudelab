@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "descricao": "O que caracteriza a segurança de software?",
+    "alternativas": [
+      "A proteção do software contra falhas e ataques que possam comprometer sua integridade, confidencialidade e disponibilidade",
+      "A melhoria do desempenho do software sem levar em consideração as questões de segurança",
+      "A criação de sistemas sem a necessidade de análise de riscos",
+      "A implementação de recursos visuais no software para melhorar a experiência do usuário"
+    ]
+  },
+  {
+    "id": 2,
+    "descricao": "Qual é a principal vantagem do reuso de software?",
+    "alternativas": [
+      "A redução do tempo e custo de desenvolvimento ao utilizar componentes e módulos previamente existentes",
+      "A criação de código novo para cada novo projeto sem considerar código anterior",
+      "A eliminação de testes, já que os componentes reutilizados já foram validados anteriormente",
+      "A manutenção de código apenas para a funcionalidade atual, sem considerar o impacto em outros componentes"
+    ]
+  },
+  {
+    "id": 3,
+    "descricao": "O que caracteriza a Engenharia de Software Orientada a Serviços?",
+    "alternativas": [
+      "A construção de sistemas por meio de serviços independentes, que podem ser utilizados e combinados para atender diferentes necessidades",
+      "A criação de sistemas monolíticos que não utilizam serviços para suas operações",
+      "A utilização de uma única plataforma para desenvolver todo o software sem a integração de serviços externos",
+      "A implementação de software sem considerar a modularização ou reutilização de partes do código"
+    ]
+  }
+]

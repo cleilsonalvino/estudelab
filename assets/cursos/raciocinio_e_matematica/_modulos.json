@@ -1,0 +1,67 @@
+[
+    {
+        "nome": "Módulo 1 - Lógica Proposicional",
+        "licoes" : [
+            {
+                "id": "fundamentos_de_logica",
+                "nome": "Fundamentos de Lógica",
+                "video": null
+            },
+            {
+                "id": "equivalencia_logica",
+                "nome": "Equivalência Lógica",
+                "video": null
+            },
+            {
+                "id": "negacao_de_proposicoes",
+                "nome": "Negação de Proposições",
+                "video": null
+            },
+            {
+                "id": "implicacao_logica",
+                "nome": "Implicação Lógica",
+                "video": null
+            }
+        ]
+    },
+    {
+        "nome": "Módulo 2 - Conjuntos",
+        "licoes" : [
+            {
+                "id": "conjuntos",
+                "nome": "Conjuntos",
+                "video": null
+            }
+        ]
+    },
+    {
+        "nome": "Módulo 3 - Sequências",
+        "licoes" : [
+            {
+                "id": "sequencias_logicas",
+                "nome": "Sequências Lógicas",
+                "video": null
+            }
+        ]
+    },
+    {
+        "nome": "Módulo 4 - Matemática",
+        "licoes" : [
+            {
+                "id": "fracoes_numeros_decimais_e_porcentagens",
+                "nome": "Frações, Números Decimais e Porcentagens",
+                "video": null
+            },
+            {
+                "id": "raciocinio_logico",
+                "nome": "Raciocínio Lógico",
+                "video": null
+            },
+            {
+                "id": "probabilidade",
+                "nome": "Probabilidade",
+                "video": null
+            }
+        ]
+    }
+]

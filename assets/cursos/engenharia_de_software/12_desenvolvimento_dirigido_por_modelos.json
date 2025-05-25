@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "descricao": "Qual a principal característica do Desenvolvimento Dirigido por Modelos (DDM)?",
+      "alternativas": [
+        "Utilizar modelos abstratos como principal artefato de desenvolvimento.",
+        "Focar na escrita manual de grandes volumes de código.",
+        "Priorizar a implementação direta sem a fase de modelagem.",
+        "Evitar o uso de ferramentas de automação no processo de desenvolvimento."
+      ]
+    },
+    {
+      "id": 2,
+      "descricao": "No Desenvolvimento Dirigido por Modelos, qual o papel fundamental dos modelos?",
+      "alternativas": [
+        "Servir como base para a geração automática de código.",
+        "Serem utilizados apenas para documentação do sistema.",
+        "Substituírem completamente a necessidade de código.",
+        "Serem criados após a implementação do sistema."
+      ]
+    },
+    {
+      "id": 3,
+      "descricao": "Qual o resultado típico do processo de transformação de modelos no DDM?",
+      "alternativas": [
+        "Geração automática de código executável.",
+        "Criação de diagramas estáticos sem funcionalidade.",
+        "Produção de documentos textuais sobre o sistema.",
+        "Eliminação da necessidade de testes de software."
+      ]
+    }
+  ]

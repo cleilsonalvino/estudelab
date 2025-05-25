@@ -1,0 +1,123 @@
+<h2>Projeto Prático: Calculadora</h2>
+
+<h3>Objetivo do Projeto</h3>
+<p>O objetivo deste projeto é criar uma calculadora básica em Python que permita realizar operações matemáticas como adição, subtração, multiplicação e divisão.</p>
+<p>Este projeto ajuda a aplicar conceitos de funções, condicionais e manipulação de erros, integrando-os em um programa funcional.</p>
+
+<h3>Estrutura da Calculadora</h3>
+<p>A calculadora será organizada da seguinte forma:</p>
+<ul>
+    <li>Funções para cada operação: adição, subtração, multiplicação e divisão.</li>
+    <li>Uma função principal para exibir o menu e capturar as escolhas do usuário.</li>
+    <li>Tratamento de erros para garantir que entradas inválidas não causem a interrupção do programa.</li>
+</ul>
+
+<h3>Passo 1: Definindo as Funções de Operação</h3>
+<p>Primeiro, criaremos funções para cada operação matemática. Cada função receberá dois parâmetros e retornará o resultado da operação.</p>
+<pre><code>def adicionar(a, b):
+    return a + b
+
+def subtrair(a, b):
+    return a - b
+
+def multiplicar(a, b):
+    return a * b
+
+def dividir(a, b):
+    try:
+        return a / b
+    except ZeroDivisionError:
+        print("Erro: Não é possível dividir por zero.")
+        return None</code></pre>
+
+<h3>Passo 2: Função Principal do Menu</h3>
+<p>Agora, criaremos uma função que exibe o menu de opções para o usuário e coleta suas escolhas. Essa função chamará a operação correspondente com base na escolha.</p>
+<pre><code>def calculadora():
+    print("Selecione a operação:")
+    print("1. Adição")
+    print("2. Subtração")
+    print("3. Multiplicação")
+    print("4. Divisão")
+    
+    opcao = input("Digite a opção (1/2/3/4): ")
+
+    if opcao in ['1', '2', '3', '4']:
+        try:
+            num1 = float(input("Digite o primeiro número: "))
+            num2 = float(input("Digite o segundo número: "))
+
+            if opcao == '1':
+                print("Resultado:", adicionar(num1, num2))
+            elif opcao == '2':
+                print("Resultado:", subtrair(num1, num2))
+            elif opcao == '3':
+                print("Resultado:", multiplicar(num1, num2))
+            elif opcao == '4':
+                print("Resultado:", dividir(num1, num2))
+        except ValueError:
+            print("Erro: Entrada inválida. Por favor, insira números.")
+    else:
+        print("Opção inválida.")</code></pre>
+
+<h3>Passo 3: Executando a Calculadora</h3>
+<p>Para que a calculadora funcione repetidamente, podemos usar um loop que pergunte ao usuário se deseja fazer outro cálculo.</p>
+<pre><code>while True:
+    calculadora()
+    continuar = input("Deseja fazer outro cálculo? (s/n): ")
+    if continuar.lower() != 's':
+        print("Encerrando a calculadora.")
+        break</code></pre>
+
+<h3>Exemplo Completo</h3>
+<p>Veja o código completo da calculadora:</p>
+<pre><code>def adicionar(a, b):
+    return a + b
+
+def subtrair(a, b):
+    return a - b
+
+def multiplicar(a, b):
+    return a * b
+
+def dividir(a, b):
+    try:
+        return a / b
+    except ZeroDivisionError:
+        print("Erro: Não é possível dividir por zero.")
+        return None
+
+def calculadora():
+    print("Selecione a operação:")
+    print("1. Adição")
+    print("2. Subtração")
+    print("3. Multiplicação")
+    print("4. Divisão")
+    
+    opcao = input("Digite a opção (1/2/3/4): ")
+
+    if opcao in ['1', '2', '3', '4']:
+        try:
+            num1 = float(input("Digite o primeiro número: "))
+            num2 = float(input("Digite o segundo número: "))
+
+            if opcao == '1':
+                print("Resultado:", adicionar(num1, num2))
+            elif opcao == '2':
+                print("Resultado:", subtrair(num1, num2))
+            elif opcao == '3':
+                print("Resultado:", multiplicar(num1, num2))
+            elif opcao == '4':
+                print("Resultado:", dividir(num1, num2))
+        except ValueError:
+            print("Erro: Entrada inválida. Por favor, insira números.")
+    else:
+        print("Opção inválida.")
+
+while True:
+    calculadora()
+    continuar = input("Deseja fazer outro cálculo? (s/n): ")
+    if continuar.lower() != 's':
+        print("Encerrando a calculadora.")
+        break</code></pre>
+
+<p>Com esse código, criamos uma calculadora funcional que realiza operações básicas e trata erros de forma apropriada.</p>

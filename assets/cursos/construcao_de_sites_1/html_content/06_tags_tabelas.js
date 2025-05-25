@@ -1,0 +1,23 @@
+const htmlContent = `
+<h2>06. Tags de Tabelas</h2>
+
+<h3>O que são Tags de Tabelas?</h3>
+<p>As tags de tabelas em HTML são usadas para organizar e exibir dados em um formato tabular. Elas permitem que os desenvolvedores apresentem informações de forma clara e estruturada, facilitando a leitura e a comparação de dados.</p>
+
+<h3>Tags Comuns de Tabelas</h3>
+<p>Algumas das tags de tabelas mais utilizadas incluem:</p>
+
+<ul>
+    <li><strong>&lt;table&gt;</strong> - Define uma tabela.</li>
+    <li><strong>&lt;tr&gt;</strong> - Representa uma linha dentro da tabela.</li>
+    <li><strong>&lt;th&gt;</strong> - Define uma célula de cabeçalho, que geralmente é exibida em negrito e centralizada.</li>
+    <li><strong>&lt;td&gt;</strong> - Define uma célula de dados, que contém informações a serem exibidas na tabela.</li>
+    <li><strong>&lt;caption&gt;</strong> - Fornece um título ou descrição para a tabela, aparecendo acima dela.</li>
+    <li><strong>&lt;thead&gt;</strong> - Agrupa o cabeçalho da tabela, permitindo melhor organização e estilização.</li>
+    <li><strong>&lt;tbody&gt;</strong> - Agrupa o corpo da tabela, onde os dados são exibidos.</li>
+    <li><strong>&lt;tfoot&gt;</strong> - Agrupa o rodapé da tabela, que pode incluir totais ou resumos.</li>
+</ul>
+
+
+`
+export default htmlContent;

@@ -1,0 +1,35 @@
+[
+    {
+      "id": 1,
+      "modulo": "Módulo 5: Desenvolvimento e Testes",
+      "descricao": "Qual prática de desenvolvimento ajuda a garantir a legibilidade e a manutenibilidade do código?",
+      "alternativas": [
+        "Utilização de padrões de codificação.",
+        "Refatoração constante.",
+        "Programação em par.",
+        "Entrega contínua."
+      ]
+    },
+    {
+      "id": 2,
+      "modulo": "Módulo 5: Desenvolvimento e Testes",
+      "descricao": "Testar componentes individuais do software é conhecido como:",
+      "alternativas": [
+        "Teste de unidade.",
+        "Teste de integração.",
+        "Teste de sistema.",
+        "Teste de aceitação."
+      ]
+    },
+    {
+      "id": 3,
+      "modulo": "Módulo 5: Desenvolvimento e Testes",
+      "descricao": "Qual tipo de teste de software não requer conhecimento da estrutura interna do software?",
+      "alternativas": [
+        "Teste de caixa preta.",
+        "Teste de caixa branca.",
+        "Teste de unidade.",
+        "Teste de integração."
+      ]
+    }
+]

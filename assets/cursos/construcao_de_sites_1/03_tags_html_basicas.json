@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "descricao": "Qual das alternativas a seguir descreve corretamente a função da tag P:",
+    "alternativas": [
+      "Define um parágrafo de texto;",
+      "Cria um link para outra página;",
+      "Insere uma imagem;",
+      "Define um cabeçalho;"
+    ]
+  },
+  {
+    "id": 2,
+    "descricao": "Qual a função da tag head?",
+    "alternativas": [
+      "Define informações sobre a página, como título da mesma, descrição, palavras-chave etc;",
+      "Define o título da página que aparecerá na barra do navegador;",
+      "Cria paragrafos em um documento;",
+      "Indentificar o tipo de documento;"
+    ]
+  },
+  {
+    "id": 3,
+    "descricao": "Qual tag é utilizada para quebra de linha?",
+    "alternativas": [
+      "Br",
+      "Ul",
+      "Tr",
+      "Td"
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "descricao": "Qual é a principal diferença entre o loop for e o loop while?",
+    "alternativas": [
+      "O loop for tem um número de repetições predefinido, enquanto o while depende de uma condição para parar.",
+      "O loop for é usado para repetir indefinidamente, enquanto o while só é usado para uma repetição.",
+      "O loop while não pode conter condições.",
+      "O loop for é mais lento que o while."
+    ]
+  },
+  {
+    "id": 2,
+    "descricao": "Em um loop for, qual parte do código define a condição de continuação do loop?",
+    "alternativas": [
+      "Condição",
+      "Inicialização",
+      "Incremento",
+      "Bloco de código"
+    ]
+  },
+  {
+    "id": 3,
+    "descricao": "Quando é mais adequado usar o loop while em vez do loop for?",
+    "alternativas": [
+      "Quando o número de iterações é desconhecido e depende de uma condição.",
+      "Quando deseja contar de trás para frente.",
+      " Quando não há nenhuma condição de parada.",
+      " Quando você sabe o número exato de iterações antes de começar o loop."
+    ]
+  }
+]

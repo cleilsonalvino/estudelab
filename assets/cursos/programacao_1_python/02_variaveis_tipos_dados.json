@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "descricao": "Como declaramos uma variável em Python?",
+      "alternativas": [
+        "Escolhendo um nome e atribuindo um valor com o operador =.",
+        "Usando a palavra-chave var.",
+        "Colocando a palavra let antes do nome.",
+        "Declarando com uma tipagem explícita."
+      ]
+    },
+    {
+      "id": 2,
+      "descricao": "Qual dos tipos a seguir é usado para números decimais em Python?",
+      "alternativas": [
+        "float.",
+        "int.",
+        "str.",
+        "bool."
+      ]
+    },
+    {
+      "id": 3,
+      "descricao": "Qual tipo de dado representa valores booleanos?",
+      "alternativas": [
+        "bool.",
+        "int.",
+        "float.",
+        "str."
+      ]
+    }
+  ]
+  

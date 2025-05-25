@@ -1,0 +1,35 @@
+[
+    {
+      "id": 1,
+      "modulo": "Módulo 1: Introdução",
+      "descricao": "Qual das seguintes opções melhor define o escopo da Engenharia de Software?",
+      "alternativas": [
+        "Todos os aspectos da produção de software, desde a especificação até a manutenção.",
+        "Apenas a escrita de código de computador.",
+        "O processo de teste de software.",
+        "O design da interface de usuário de um aplicativo."
+      ]
+    },
+    {
+      "id": 2,
+      "modulo": "Módulo 1: Introdução",
+      "descricao": "Qual das seguintes NÃO é uma responsabilidade ética típica de um engenheiro de software?",
+      "alternativas": [
+        "Trabalhar em áreas fora de sua competência para atender a prazos.",
+        "Manter a confidencialidade das informações do cliente.",
+        "Ser honesto sobre as limitações de um projeto.",
+        "Assumir a responsabilidade por erros em seu trabalho."
+      ]
+    },
+    {
+      "id": 3,
+      "modulo": "Módulo 1: Introdução",
+      "descricao": "Qual desafio específico surgiu com a crescente importância da Web para a Engenharia de Software?",
+      "alternativas": [
+        "A necessidade de ciclos de desenvolvimento mais rápidos e a preocupação com a segurança.",
+        "A diminuição da necessidade de testes de software rigorosos.",
+        "A redução da importância da segurança de dados.",
+        "A padronização de todas as interfaces de usuário."
+      ]
+    }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "descricao": "Qual das seguintes opções cria um array vazio em JavaScript?",
+    "alternativas": [
+      "let meuArray = [];",
+      "let meuArray = new Object();",
+      "let meuArray = ();",
+      "let meuArray = &#123;&#125;"
+    ]
+  },
+  {
+    "id": 2,
+    "descricao": "Dado o objeto let pessoa = &#123;nome: Ana, idade: 25, cidade: São Paulo &#125;, como acessaríamos o valor São Paulo?",
+    "alternativas": [
+      "pessoa.cidade;",
+      "pessoa[2];",
+      "pessoa(cidade);",
+      "pessoa.idade;"
+    ]
+  },
+  {
+    "id": 3,
+    "descricao": "Dado o array let frutas = [maçã, banana, laranja], qual comando remove o último elemento do array?",
+    "alternativas": [
+      "frutas.pop();",
+      "frutas.shift();",
+      "frutas.remove();",
+      "frutas.splice(-1, 1);"
+    ]
+  }
+]

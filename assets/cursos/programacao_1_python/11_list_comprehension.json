@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "descricao": "O que list comprehension facilita?",
+      "alternativas": [
+        "Criação de listas em uma linha.",
+        "Importação de listas.",
+        "Organização de listas em classes.",
+        "Divisão de listas."
+      ]
+    },
+    {
+      "id": 2,
+      "descricao": "Qual código cria uma lista de números pares entre 0 e 10?",
+      "alternativas": [
+        "[x for x in range(11) if x % 2 == 0].",
+        "[x*2 for x in range(11)].",
+        "[x in range(11)].",
+        "[2*x for x in range(6)]."
+      ]
+    },
+    {
+      "id": 3,
+      "descricao": "Qual operador em list comprehension aplica uma condição?",
+      "alternativas": [
+        "if.",
+        "while.",
+        "for.",
+        "filter."
+      ]
+    }
+  ]
+  

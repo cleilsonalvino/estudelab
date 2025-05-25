@@ -1,0 +1,84 @@
+[
+    {
+        "nome": "Módulo 1 - Introdução à Programação",
+        "licoes" : [
+            {
+                "id": "01_introducao_javascript",
+                "nome": "Introdução a JavaScript",
+                "video": "https://youtube.com"
+            },
+            {
+                "id": "02_identificadores_javascript",
+                "nome": "Identificadores, Tipos de Dados e Variáveis",
+                "video": "https://youtube.com"
+            },
+            {
+                "id": "03_Operadores_e_Expressões",
+                "nome": "Operadores e Expressões",
+                "video": "https://youtube.com"
+            },
+            {
+                "id": "04_Comandos_Condicionais_1",
+                "nome": "Comandos Condicionais 1",
+                "video": "https://youtube.com",
+                "texto": "Versão em texto aqui",
+                "exercicio": "Exercício aqui"
+            },
+            {
+                "id": "05_Comandos_Condicionais_2",
+                "nome": "Comandos Condicionais 2",
+                "video": "https://youtube.com",
+                "texto": "Versão em texto aqui",
+                "exercicio": "Exercício aqui"
+            },
+            {
+                "id": "06_Comandos_de_Repetição_1",
+                "nome": "Comandos de Repetição 1",
+                "video": "https://youtube.com",
+                "texto": "Versão em texto aqui",
+                "exercicio": "Exercício aqui"
+            },
+            {
+                "id": "07_Comandos_de_Repetição_2",
+                "nome": "Comandos de Repetição 2",
+                "video": "https://youtube.com",
+                "texto": "Versão em texto aqui",
+                "exercicio": "Exercício aqui"
+            },
+            {
+                "id": "08_Comentarios",
+                "nome": "Comentários, Funções para Conversão e Template Strings",
+                "video": "https://youtube.com",
+                "texto": "Versão em texto aqui",
+                "exercicio": "Exercício aqui"
+            }
+        ]
+    },
+    {
+        "nome": "Módulo 2 - Funções, Objetos e Array",
+        "licoes" : [
+            {
+                "id": "09_Funções_e_Eventos",
+                "nome": "Funções e Eventos",
+                "video": "https://youtube.com",
+                "texto": "Versão em texto aqui",
+                "exercicio": "Exercício aqui"
+            },
+            {
+                "id": "10_Objetos_Arrays",
+                "nome": "Objetos e Arrays",
+                "video": "https://youtube.com",
+                "texto": "Versão em texto aqui",
+                "exercicio": "Exercício aqui"
+            },
+            {
+                "id": "11_Date_Math_e_String",
+                "nome": "Date, Math e String",
+                "video": "https://youtube.com",
+                "texto": "Versão em texto aqui",
+                "exercicio": "Exercício aqui"
+            }
+        ]
+    }
+    
+]

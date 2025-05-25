@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "descricao": "Qual loop permite repetir uma ação enquanto uma condição é verdadeira?",
+      "alternativas": [
+        "while.",
+        "for.",
+        "repeat.",
+        "loop."
+      ]
+    },
+    {
+      "id": 2,
+      "descricao": "O que o loop for percorre?",
+      "alternativas": [
+        "Uma sequência de elementos.",
+        "Somente números inteiros.",
+        "Apenas valores booleanos.",
+        "Elementos aleatórios."
+      ]
+    },
+    {
+      "id": 3,
+      "descricao": "Qual palavra-chave interrompe um loop?",
+      "alternativas": [
+        "break.",
+        "stop.",
+        "halt.",
+        "end."
+      ]
+    }
+  ]
+  

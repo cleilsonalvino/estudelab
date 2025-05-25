@@ -1,0 +1,79 @@
+<h2>Manipulação de Strings</h2>
+
+<h3>O que são Strings?</h3>
+<p>Strings são sequências de caracteres, como palavras ou frases. Em Python, as strings são representadas por texto entre aspas simples (<code>'</code>) ou aspas duplas (<code>"</code>).</p>
+<pre><code>texto = "Olá, mundo!"
+print(texto)</code></pre>
+
+<h3>Concatenando Strings</h3>
+<p>Podemos juntar (concatenar) duas ou mais strings usando o operador <code>+</code>.</p>
+<pre><code>nome = "Carlos"
+saudacao = "Olá, " + nome + "!"
+print(saudacao)</code></pre>
+<p>Neste exemplo, concatenamos as strings para criar uma saudação personalizada.</p>
+
+<h3>Interpolação de Strings</h3>
+<p>Uma maneira prática de inserir variáveis dentro de uma string é usando f-strings (formatação com <code>f</code>), disponíveis a partir do Python 3.6.</p>
+<pre><code>nome = "Maria"
+idade = 30
+mensagem = f"{nome} tem {idade} anos."
+print(mensagem)</code></pre>
+<p>Aqui, usamos <code>f"{variavel}"</code> para interpolar as variáveis <code>nome</code> e <code>idade</code> na string.</p>
+
+<h3>Funções e Métodos Comuns para Strings</h3>
+<p>Python oferece vários métodos úteis para manipulação de strings:</p>
+<ul>
+    <li><code>len()</code>: retorna o comprimento (número de caracteres) de uma string.</li>
+    <li><code>lower()</code>: converte a string para letras minúsculas.</li>
+    <li><code>upper()</code>: converte a string para letras maiúsculas.</li>
+    <li><code>strip()</code>: remove espaços em branco no início e no final da string.</li>
+    <li><code>replace()</code>: substitui partes da string por outra.</li>
+    <li><code>split()</code>: divide a string em uma lista com base em um separador.</li>
+</ul>
+
+<h4>Exemplos</h4>
+<pre><code>texto = "   Olá, Mundo!   "
+print(len(texto))          # Saída: 15
+print(texto.lower())       # Saída: "   olá, mundo!   "
+print(texto.upper())       # Saída: "   OLÁ, MUNDO!   "
+print(texto.strip())       # Saída: "Olá, Mundo!"
+print(texto.replace("Mundo", "Python"))  # Saída: "   Olá, Python!   "
+print(texto.split(","))    # Saída: ['   Olá', ' Mundo!   ']</code></pre>
+
+<h3>Acessando Caracteres em uma String</h3>
+<p>Strings são indexadas, o que significa que podemos acessar caracteres individuais usando colchetes <code>[]</code> e um índice.</p>
+<pre><code>texto = "Python"
+print(texto[0])  # Saída: P
+print(texto[-1]) # Saída: n (índice negativo começa do final)</code></pre>
+<p>O índice 0 representa o primeiro caractere, e índices negativos começam do final da string.</p>
+
+<h3>Fatiamento de Strings</h3>
+<p>O fatiamento permite acessar uma sequência de caracteres dentro de uma string usando a notação <code>[inicio:fim]</code>.</p>
+<pre><code>texto = "Programação"
+print(texto[0:5])   # Saída: Progr
+print(texto[6:])    # Saída: mação
+print(texto[:5])    # Saída: Progr</code></pre>
+<p>Quando omitimos <code>inicio</code> ou <code>fim</code>, Python assume o início ou o final da string, respectivamente.</p>
+
+<h3>Exemplo Completo</h3>
+<p>Veja um exemplo que usa várias operações de manipulação de strings:</p>
+<pre><code>frase = " Aprender Python é divertido! "
+
+# Remover espaços extras
+frase = frase.strip()
+
+# Converter para letras maiúsculas
+print(frase.upper())
+
+# Substituir uma palavra
+nova_frase = frase.replace("divertido", "incrível")
+print(nova_frase)
+
+# Fatiar a string
+print(frase[0:8])  # Saída: Aprender
+
+# Dividir a frase em palavras
+palavras = frase.split(" ")
+print(palavras)  # Saída: ['Aprender', 'Python', 'é', 'divertido!']</code></pre>
+
+<p>Este exemplo demonstra como manipular uma string usando métodos comuns e fatiamento.</p>

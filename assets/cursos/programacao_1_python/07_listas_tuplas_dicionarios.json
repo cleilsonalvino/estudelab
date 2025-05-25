@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "descricao": "Qual estrutura é mutável e permite alterações após a criação?",
+      "alternativas": [
+        "Lista.",
+        "Tupla.",
+        "Dicionário.",
+        "String."
+      ]
+    },
+    {
+      "id": 2,
+      "descricao": "Qual estrutura de dados é imutável?",
+      "alternativas": [
+        "Tupla.",
+        "Lista.",
+        "Dicionário.",
+        "Conjunto."
+      ]
+    },
+    {
+      "id": 3,
+      "descricao": "Qual estrutura armazena pares chave-valor?",
+      "alternativas": [
+        "Dicionário.",
+        "Lista.",
+        "Tupla.",
+        "String."
+      ]
+    }
+  ]
+  

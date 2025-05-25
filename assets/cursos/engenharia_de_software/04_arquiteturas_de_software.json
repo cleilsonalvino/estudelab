@@ -1,0 +1,35 @@
+[
+    {
+      "id": 1,
+      "modulo": "Módulo 4: Projeto de Sistemas",
+      "descricao": "Qual estilo arquitetural organiza um sistema em camadas hierárquicas?",
+      "alternativas": [
+        "Arquitetura em Camadas.",
+        "Arquitetura Cliente-Servidor.",
+        "Arquitetura de Microsserviços.",
+        "Arquitetura Orientada a Eventos."
+      ]
+    },
+    {
+      "id": 2,
+      "modulo": "Módulo 4: Projeto de Sistemas",
+      "descricao": "Qual princípio da programação orientada a objetos permite que uma classe herde características de outra classe?",
+      "alternativas": [
+        "Herança.",
+        "Encapsulamento.",
+        "Polimorfismo.",
+        "Abstração."
+      ]
+    },
+    {
+      "id": 3,
+      "modulo": "Módulo 4: Projeto de Sistemas",
+      "descricao": "Um bom projeto de interface de usuário deve, principalmente, ser:",
+      "alternativas": [
+        "Eficaz e eficiente para os usuários.",
+        "Tecnicamente complexo.",
+        "Visualmente impressionante.",
+        "Implementado com as tecnologias mais recentes."
+      ]
+    }
+]

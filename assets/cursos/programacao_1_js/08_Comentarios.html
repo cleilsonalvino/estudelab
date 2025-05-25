@@ -1,0 +1,67 @@
+<link rel="stylesheet" href="css\cursos\programacao1_js.css">
+
+<h3>Comentários</h3>
+<p> Comentários são trechos de nosso código que serão ignorados pelo compilador utilizados geralmente para:</p>
+
+<ul>
+    <li>❏ “Ocultar” temporariamente parte do código (estará lá, mas não será executado); </li>
+    <li> ❏ Incluir explicações sobre o mesmo;</li>
+    <li>❏ Incluir anotações/lembretes para realizar alguma ação futura.</li>
+</ul>
+
+<h4>Em JavaScript, há dois tipos de comentários:</h4>
+<p>//Comentário em linha</p>
+<p>/*Comentário em bloco <br> para uma ou mais linhas!*/</p>
+ 
+<p> Muitas linguagens permitem usar “task tags” (tags em comentários para apontar coisas específicas a serem feitas ali): <br> ❏ //TODO Este comentário indica algo a ser feito; <br> ❏ //FIXME Este outro aponta algum problema no código</p>
+
+<p>No VSCode, podemos usar a extensão Todo Tree (de Gruntfuggly) para destacá-las e exibi-las em uma área separada (TODOs).</p>
+
+<h3>Funções para conversão</h3>
+<p>Em JS, caso seja realizada operação entre string e outro tipo, a conversão dos dados dependerá do operador: <br>
+❏ Operador suportado por string: converte não string em string; <br>
+❏ Operador não suportado por string: converte string em não
+string.</p>
+
+<p>Exemplos <br>
+"casa" + 1 //Resultado será "casa1". <br>
+true + "bola" //Resultado será "truebola". <br>
+"5" * 4 //Resultado será 20.</p>
+
+<table>
+    <tr>
+        <th>Função</th>
+        <th>Descrição</th>
+        <th>Exemplo</th>
+    </tr>
+    <tr>
+        <td>parseInt(x)</td>
+        <td>Converte string em inteiro</td>
+        <td>parseInt("12.3")</td>
+    </tr>
+    <tr>
+        <td>parseFloat(x)</td>
+        <td>Converte string em float(número com casa decimal)</td>
+        <td>parseFloat("12.3")</td>
+    </tr>
+    <tr>
+        <td>x.toString()</td>
+        <td>Converte número em string</td>
+        <td>n.toString() <br> (13.105).toString()</td>
+    </tr>
+    <tr>
+        <td>x.toFixed(n)</td>
+        <td>Converte número em string com n casas decimais</td>
+        <td>n.toFixed(2) <br> (13.105).toFixed(2) </td>
+    </tr>
+</table>
+
+<h3>Template Strings</h3>
+<p>São strings que que usam o acento grave como delimitadores (`) e apresentam uma notação específica dentro delas ( $&#123;&#125;) para indicar variáveis, expressões ou funções cujos resultados farão parte da string obtida; </p>
+<p>Também conhecidas como “strings formatadas”.</p>
+
+<p>Por exemplo, se quisermos a mensagem “Olá,”  juntamente com o nome de um usuário, poderíamos concatenar aquela expressão com a variável, assim:</p>
+<p>"Olá, " + nome</p>
+
+<p>Mas, usando uma template string, podemos especificar da seguinte forma:</p>
+<p>`Olá, $&#123;nome&#125;`</p>

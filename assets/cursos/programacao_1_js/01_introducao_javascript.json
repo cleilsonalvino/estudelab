@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "descricao": "O que é JavaScript?",
+    "alternativas": [
+      "Linguagem de programação interpretada com tipagem dinâmica.",
+      "Linguagem de programação interpretada com tipagem estática.",
+      "Linguagem de máquina compilada com tipagem dinâmica.",
+      "Linguagem de programação interpretada sem tipagem alguma."
+    ]
+  },
+  {
+    "id": 2,
+    "descricao": "Qual o lugar que podemos escrever nosso código em javascript?",
+    "alternativas": [
+      "Podemos fazer um código javascript em qualquer editor de texto como Bloco de Notas, Notepad++, Brackets, VSCode.",
+      "Podemos fazer um código javascript em apenas navegadores como Mozilla firefox, Google Chrome, Opera GX. ",
+      "Podemos fazer apenas em IDE's - ambientes de desenvolvimento integrados ."
+    ]
+  },
+  {
+    "id": 3,
+    "descricao": "Como era antes do javascript?",
+    "alternativas": [
+      "as páginas eram geralmente estáticas e ofereciam poucas formas de interação, limitando-se a hyperlinks e formulários.",
+      "as páginas eram geralmente dinâmicas e ofereciam divervas formas de interação.",
+      "as páginas eram geralmente estáticas, porém tinham um pouco de dinamismo devido ao uso de formulários e hyperlinks.",
+      "as páginas eram geralmente estáticas, mas algumas páginas se diferenciavam das outras por possuir links e formulários nunca visto antes."
+    ]
+  }
+]

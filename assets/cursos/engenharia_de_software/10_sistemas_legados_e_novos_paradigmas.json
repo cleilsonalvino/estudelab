@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "descricao": "O que caracteriza um sistema legado?",
+      "alternativas": [
+        "Um sistema antigo, que continua em uso, mas que pode ter dificuldades para se integrar com novas tecnologias",
+        "Um sistema desenvolvido com as tecnologias mais modernas disponíveis no mercado",
+        "Um sistema projetado exclusivamente para rodar em plataformas móveis",
+        "Um sistema que já passou por todos os testes e nunca precisará ser atualizado"
+      ]
+    },
+    {
+      "id": 2,
+      "descricao": "O que são os novos paradigmas na engenharia de software?",
+      "alternativas": [
+        "São novas abordagens e técnicas que visam melhorar a flexibilidade, escalabilidade e integração de sistemas",
+        "São práticas antigas e ineficazes que continuam sendo aplicadas nos processos de desenvolvimento de software",
+        "São métodos que apenas focam em melhorar o desempenho do software sem considerar a arquitetura",
+        "São paradigmas que buscam manter o software o mais simples possível, sem usar recursos modernos"
+      ]
+    },
+    {
+      "id": 3,
+      "descricao": "O que caracteriza a Engenharia de Software Baseada em Aspectos?",
+      "alternativas": [
+        "A separação de preocupações em diferentes aspectos que podem ser modularizados, como segurança, logging e transações, em vez de codificar esses aspectos diretamente no núcleo da aplicação",
+        "A centralização de toda a lógica do sistema em uma única função ou classe",
+        "A utilização de uma arquitetura monolítica que não permite modificação do código de forma modular",
+        "A aplicação de soluções rápidas e sem planejamento adequado para atender a requisitos de performance"
+      ]
+    }
+  ]
+  

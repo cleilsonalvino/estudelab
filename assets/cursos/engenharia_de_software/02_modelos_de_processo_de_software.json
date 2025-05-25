@@ -1,0 +1,35 @@
+[
+    {
+      "id": 1,
+      "modulo": "Módulo 2: Processos de Software",
+      "descricao": "Qual característica principal distingue o modelo em cascata de outros modelos de processo de software?",
+      "alternativas": [
+        "Sua abordagem linear e sequencial de fases.",
+        "Sua ênfase na iteração e feedback do cliente.",
+        "Sua orientação para o gerenciamento de riscos.",
+        "Sua flexibilidade para lidar com mudanças nos requisitos."
+      ]
+    },
+    {
+      "id": 2,
+      "modulo": "Módulo 2: Processos de Software",
+      "descricao": "Qual dos seguintes é um princípio fundamental do desenvolvimento ágil de software?",
+      "alternativas": [
+        "A resposta a mudanças ao invés de seguir um plano.",
+        "Documentação abrangente em todas as fases do projeto.",
+        "Um plano detalhado que deve ser seguido rigorosamente.",
+        "Uma fase de requisitos completa e finalizada antes do início do desenvolvimento."
+      ]
+    },
+    {
+      "id": 3,
+      "modulo": "Módulo 2: Processos de Software",
+      "descricao": "Qual metodologia ágil utiliza ciclos de desenvolvimento chamados Sprints?",
+      "alternativas": [
+        "Scrum",
+        "Kanban",
+        "Extreme Programming (XP)",
+        "Modelo Espiral"
+      ]
+    }
+]

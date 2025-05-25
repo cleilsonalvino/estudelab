@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "descricao": "Qual a principal característica da abordagem da Engenharia de Sistemas?",
+      "alternativas": [
+        "Adotar uma visão holística do sistema, considerando todas as suas partes e interações.",
+        "Focar exclusivamente no desenvolvimento de software.",
+        "Adotar uma perspectiva isolada dos componentes do sistema.",
+        "Concentrar-se apenas na fase de testes do sistema."
+      ]
+    },
+    {
+      "id": 2,
+      "descricao": "Qual das seguintes opções representa um aspecto fundamental do ciclo de vida do sistema na Engenharia de Sistemas?",
+      "alternativas": [
+        "Abranger desde a concepção até a desativação do sistema.",
+        "Focar unicamente na codificação do software.",
+        "Ignorar a fase de manutenção após a implementação.",
+        "Priorizar apenas os requisitos funcionais do sistema."
+      ]
+    },
+    {
+      "id": 3,
+      "descricao": "Como a Engenharia de Software se relaciona com a Engenharia de Sistemas?",
+      "alternativas": [
+        "A Engenharia de Software é um dos componentes principais abordados pela Engenharia de Sistemas.",
+        "A Engenharia de Software é uma disciplina completamente independente da Engenharia de Sistemas.",
+        "A Engenharia de Sistemas é um subconjunto da Engenharia de Software.",
+        "Não existe relação direta entre a Engenharia de Software e a Engenharia de Sistemas."
+      ]
+    }
+  ]

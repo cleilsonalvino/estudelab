@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "descricao": "Quais os principais atributos da tag de audio?",
+    "alternativas": [
+      "Autoplay, Controls, loop e src;",
+      "src, width, height e loop;",
+      "Autoplay, src, height e width;",
+      "width, height, controls e loop;"
+    ]
+  },
+  {
+    "id": 2,
+    "descricao": "Qual a função do atributo autoplay?",
+    "alternativas": [
+      "Especifica que o áudio deve ser reproduzido assim que estiver pronto;",
+      "Especifica que os controles do áudio deveriam ser exibidos;",
+      "Especifica que o áudio deve ser executado;",
+      "Especifica a URL do arquivo de áudio;"
+    ]
+  },
+  {
+    "id": 3,
+    "descricao": "Qual a função da tag img?",
+    "alternativas": [
+      "Exibe uma imagem a partir de uma fonte especificada;",
+      "Cria um link para um arquivo de imagem;",
+      "Define um cabeçalho para a página;",
+      "Inserir dados do usuário;"
+    ]
+  }
+]

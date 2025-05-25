@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "descricao": "O que são identificadores em JavaScript?",
+    "alternativas": [
+      "Nomes de variáveis, funções ou objetos.",
+      "Comentários no código.",
+      "Blocos de código.",
+      "Palavras-chave reservadas."
+    ]
+  },
+  {
+    "id": 2,
+    "descricao": "Qual das seguintes opções é um identificador válido em JavaScript?",
+    "alternativas": [
+      "casa1",
+      "casa 1",
+      "3nota",
+      "2nota"
+    ]
+  },
+  {
+    "id": 3,
+    "descricao": "Qual das seguintes opções descreve corretamente o uso de variáveis em JavaScript?",
+    "alternativas": [
+      "No geral, variáveis são usadas para armazenar dados temporários e seu valor pode ser alterado.",
+      "Variáveis devem ser declaradas usando apenas a palavra-chave const.",
+      "O valor de uma variável nunca pode ser alterado após ser atribuído.",
+      "Em JavaScript, não existe isso de variáveis."
+    ]
+  }
+]

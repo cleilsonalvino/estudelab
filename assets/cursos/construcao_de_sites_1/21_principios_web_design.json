@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "descricao": "Qual das alternativas a seguir não esta relacionado aos principios da Web Design?",
+      "alternativas": [
+        "Complexidade;",
+        "Usabilidade;",
+        "Ergonomia;",
+        "Acessibilidade;"
+      ]
+    },
+    {
+      "id": 2,
+      "descricao": "Qual é o principal objetivo da ergonomia em web design?",
+      "alternativas": [
+        "Melhorar a experiência do usuário e facilitar a navegação;",
+        "Reduzir o tempo de carregamento do site;",
+        "Aumentar o número de elementos visuais;",
+        "Criar sites mais coloridos;"
+      ]
+    },
+    {
+      "id": 3,
+      "descricao": ": O que se entende por acessibilidade em web design?",
+      "alternativas": [
+        "A prática de criar sites que podem ser utilizados por todas as pessoas;",
+        "O uso de gráficos complexos e animações para tornar o site mais atraente;",
+        "A criação de conteúdo exclusivamente visual que não requer textos;",
+        "A implementação de sistemas de navegação que exigem alto conhecimento;"
+      ]
+    }
+  ]

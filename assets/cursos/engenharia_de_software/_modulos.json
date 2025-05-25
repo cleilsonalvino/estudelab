@@ -1,0 +1,152 @@
+[
+    {
+      "nome": "Módulo 1 - Introdução",
+      "licoes": [
+        {
+          "id": "01_o_que_e_engenharia_de_software",
+          "nome": "O que é Engenharia de Software",
+          "video": "https://www.youtube.com/watch?v=39yo4FkPMIs"
+        }
+      ]
+    },
+    {
+      "nome": "Módulo 2 - Processos de Software",
+      "licoes": [
+        {
+          "id": "02_modelos_de_processo_de_software",
+          "nome": "Modelos de Processo de Software",
+          "video": "https://www.youtube.com/watch?v=jVIuK6fN4GM"
+        }
+      ]
+    },
+    {
+      "nome": "Módulo 3 - Engenharia de Requisitos",
+      "licoes": [
+        {
+          "id": "03_engenharia_de_requisitos",
+          "nome": "Engenharia de Requisitos",
+          "video": "https://www.youtube.com/watch?v=i5WR9xFKg70"
+        }
+      ]
+    },
+    {
+      "nome": "Módulo 4 - Arquiteturas de Software",
+      "licoes": [
+        {
+          "id": "04_arquiteturas_de_software",
+          "nome": "Arquiteturas de Software",
+          "video": "https://www.youtube.com/watch?v=kYx1QC1XZSo"
+        }
+      ]
+    },
+    {
+      "nome": "Módulo 5 - Desenvolvimento e Testes",
+      "licoes": [
+        {
+          "id": "05_implementacao_e_teste",
+          "nome": "Implementação e Teste",
+          "video": "https://www.youtube.com/watch?v=HcDJdKfm5nA"
+        }
+      ]
+    },
+    {
+      "nome": "Módulo 6 - Tópicos de Gerenciamento",
+      "licoes": [
+        {
+          "id": "06_gerenciamento_de_projetos_e_riscos",
+          "nome": "Gerenciamento de Projetos",
+          "video": "https://www.youtube.com/watch?v=9mCQORwPY-A"
+        }
+      ]
+    },
+    {
+      "nome": "Módulo 7 - Qualidade e Evolução",
+      "licoes": [
+        {
+          "id": "07_qualidade_e_evolucao",
+          "nome": "Gerenciamento de Qualidade e Evolução",
+          "video": "https://www.youtube.com/watch?v=iqKlyLZoapU"
+        }
+      ]
+    },
+    {
+      "nome": "Módulo 8 - Aspectos Avançados e Confiabilidade",
+      "licoes": [
+        {
+          "id": "08_aspectos_avancados_e_confiabilidade",
+          "nome": "Engenharia de Software Baseada em Componentes",
+          "video": "https://www.youtube.com/watch?v=t9wBlH4NDGE"
+        }
+      ]
+    },
+    {
+      "nome": "Módulo 9 - Segurança",
+      "licoes": [
+        {
+          "id": "09_seguranca_e_outros_topicos",
+          "nome": "Segurança de Software e DevSecOps",
+          "video": "https://www.youtube.com/watch?v=CCp30BD9uRo"
+        }
+      ]
+    },
+    {
+      "nome": "Módulo 10 - Sistemas Legados",
+      "licoes": [
+        {
+          "id": "10_sistemas_legados_e_novos_paradigmas",
+          "nome": "Sistemas Legados",
+          "video": "https://www.youtube.com/watch?v=3osAasD7rQ4"
+        }
+      ]
+    },
+    {
+      "nome": "Módulo 11 - Engenharia de Sistemas",
+      "licoes": [
+        {
+          "id": "11_engenharia_de_sistemas",
+          "nome": "Engenharia de Sistemas",
+          "video": "https://www.youtube.com/watch?v=Kh39ImCLjFY"
+        }
+      ]
+    },
+    {
+      "nome": "Módulo 12 - Tópicos Adicionais",
+      "licoes": [
+        {
+          "id": "12_desenvolvimento_dirigido_por_modelos",
+          "nome": "Desenvolvimento Dirigido por Modelos",
+          "video": "https://www.youtube.com/watch?v=OLt5pDDoOH0"
+        }
+      ]
+    },
+    {
+      "nome": "Módulo 13 - Engenharia de Resiliência",
+      "licoes": [
+        {
+          "id": "13_engenharia_de_resiliencia",
+          "nome": "Engenharia de Resiliência",
+          "video": "https://www.youtube.com/watch?v=AutMfwJqqBk"
+        }
+      ]
+    },
+    {
+      "nome": "Módulo 14 - Processos e Métodos",
+      "licoes": [
+        {
+          "id": "14_melhoria_de_processo",
+          "nome": "Melhoria de Processo e BPMN",
+          "video": "https://www.youtube.com/watch?v=AWpg7hp8J3g"
+        }
+      ]
+    },
+    {
+      "nome": "Módulo 15 - Tendências Futuras",
+      "licoes": [
+        {
+          "id": "15_tendencias_em_engenharia_de_software",
+          "nome": "Tendências em Engenharia de Software",
+          "video": "https://www.youtube.com/watch?v=uGo7_GQ90Ps"
+        }
+      ]
+    }
+  ]

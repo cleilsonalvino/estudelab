@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "descricao": "O que é tolerância a falhas em software?",
+    "alternativas": [
+      "A capacidade do software de continuar operando corretamente mesmo quando ocorrem falhas em seus componentes",
+      "A remoção completa de falhas antes do lançamento do software",
+      "A redução do desempenho do sistema sempre que uma falha ocorre",
+      "A substituição automática de um software por outro quando uma falha é detectada"
+    ]
+  },
+  {
+    "id": 2,
+    "descricao": "Como a redundância contribui para a confiabilidade de software?",
+    "alternativas": [
+      "Ao fornecer cópias alternativas de componentes ou processos para garantir a continuidade do sistema em caso de falha",
+      "Ao reduzir a quantidade de código no sistema para minimizar erros",
+      "Ao impedir qualquer atualização ou modificação no software após sua implementação",
+      "Ao eliminar a necessidade de monitoramento e testes contínuos do software"
+    ]
+  },
+  {
+    "id": 3,
+    "descricao": "O que caracteriza um sistema altamente disponível?",
+    "alternativas": [
+      "Um sistema que mantém seu funcionamento contínuo com tempo mínimo de inatividade, mesmo diante de falhas",
+      "Um sistema que possui um grande número de funcionalidades, independentemente de sua estabilidade",
+      "Um sistema que só pode ser acessado durante horários específicos para evitar sobrecarga",
+      "Um sistema que não precisa de backups ou recuperação de falhas"
+    ]
+  }
+]

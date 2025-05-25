@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "descricao": "Qual palavra-chave define uma função?",
+      "alternativas": [
+        "def.",
+        "func.",
+        "function.",
+        "declare."
+      ]
+    },
+    {
+      "id": 2,
+      "descricao": "Qual palavra-chave retorna um valor em uma função?",
+      "alternativas": [
+        "return.",
+        "end.",
+        "yield.",
+        "output."
+      ]
+    },
+    {
+      "id": 3,
+      "descricao": "Como chamamos uma função em Python?",
+      "alternativas": [
+        "nome_da_funcao().",
+        "call nome_da_funcao.",
+        "def nome_da_funcao.",
+        "function nome_da_funcao."
+      ]
+    }
+  ]
+  

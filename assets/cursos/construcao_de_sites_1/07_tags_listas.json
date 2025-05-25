@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "descricao": "O que faz a Tag UL?",
+    "alternativas": [
+      "Descreve uma lista não ordenada;",
+      "Descreve uma lista ordenada;",
+      "Representa cada um dos itens de uma lista;",
+      "Cria uma lista ordenada numericamente;"
+    ]
+  },
+  {
+    "id": 2,
+    "descricao": "Qual das alternativas a seguir descreve corretamente a tag OL?",
+    "alternativas": [
+      "Descreve uma lista ordenada;",
+      "Descreve uma lista não ordenada;",
+      "Especifica sua altura em pixels;",
+      "Especifica em pixels sua largura;"
+    ]
+  },
+  {
+    "id": 3,
+    "descricao": "Qual tag é usada para definir um item dentro de uma lista ordenada OL ou não ordenada UL?",
+    "alternativas": [
+      "li",
+      "item",
+      "list",
+      "ol"
+    ]
+  }
+]

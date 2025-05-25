@@ -1,0 +1,84 @@
+<h2>Debugging e Tratamento de Erros</h2>
+
+<h3>O que é Debugging?</h3>
+<p>Debugging é o processo de identificar e corrigir erros em um programa. Essa prática é fundamental para garantir que o código funcione corretamente.</p>
+<p>No Python, podemos usar várias ferramentas e técnicas para facilitar o debugging.</p>
+
+<h3>Tipos Comuns de Erros</h3>
+<ul>
+    <li><strong>Erros de Sintaxe:</strong> Ocorrem quando o código está malformado ou faltam elementos, como parênteses ou pontos e vírgulas.</li>
+    <li><strong>Erros de Execução:</strong> Erros que ocorrem enquanto o programa é executado, como divisão por zero ou acesso a uma variável inexistente.</li>
+    <li><strong>Erros Lógicos:</strong> Ocorrem quando o código roda sem erros, mas o resultado não é o esperado devido a uma lógica incorreta.</li>
+</ul>
+
+<h3>Tratamento de Erros com Try e Except</h3>
+<p>Usar blocos <code>try</code> e <code>except</code> permite capturar e tratar erros sem que o programa pare de funcionar.</p>
+<pre><code>try:
+    numero = int(input("Digite um número: "))
+    resultado = 10 / numero
+    print("Resultado:", resultado)
+except ZeroDivisionError:
+    print("Erro: Não é possível dividir por zero.")
+except ValueError:
+    print("Erro: Entrada inválida, digite um número.")</code></pre>
+<p>Neste exemplo, são tratados erros de divisão por zero e erros de entrada inválida.</p>
+
+<h3>Usando o Finally</h3>
+<p>A cláusula <code>finally</code> é executada independentemente de ocorrer um erro ou não, sendo útil para garantir que determinadas ações sempre aconteçam.</p>
+<pre><code>try:
+    arquivo = open("dados.txt", "r")
+    dados = arquivo.read()
+except FileNotFoundError:
+    print("Erro: Arquivo não encontrado.")
+finally:
+    arquivo.close()
+    print("Arquivo fechado.")</code></pre>
+<p>O bloco <code>finally</code> garante que o arquivo seja fechado, independentemente de haver um erro.</p>
+
+<h3>Ferramentas para Debugging</h3>
+<p>Python possui algumas ferramentas e funções integradas que ajudam a inspecionar o código durante o debugging:</p>
+
+<ul>
+    <li><code>print()</code>: A função <code>print()</code> é útil para exibir valores de variáveis em diferentes pontos do código, ajudando a identificar onde está o erro.</li>
+    <li><code>pdb</code>: O módulo <code>pdb</code> é o depurador padrão do Python. Ele permite executar o código passo a passo e inspecionar variáveis.</li>
+</ul>
+
+<h4>Exemplo com <code>pdb</code></h4>
+<p>Para usar o <code>pdb</code>, basta importar o módulo e chamar <code>pdb.set_trace()</code> onde deseja iniciar a depuração.</p>
+<pre><code>import pdb
+
+def soma(a, b):
+    pdb.set_trace()  # Inicia o modo de depuração aqui
+    return a + b
+
+resultado = soma(5, "10")  # Provoca um erro de tipo</code></pre>
+<p>Com <code>pdb</code>, você pode inspecionar variáveis e avançar no código linha por linha, ajudando a identificar o erro.</p>
+
+<h3>Boas Práticas para Debugging</h3>
+<ul>
+    <li><strong>Use comentários:</strong> Adicione comentários para entender melhor o fluxo do código.</li>
+    <li><strong>Teste partes do código separadamente:</strong> Teste funções e blocos individualmente para identificar a fonte do erro.</li>
+    <li><strong>Revise a lógica:</strong> Verifique se a lógica implementada está de acordo com o esperado.</li>
+    <li><strong>Exiba valores com <code>print()</code>:</strong> Use <code>print()</code> para mostrar o valor de variáveis durante a execução e verificar se estão corretos.</li>
+</ul>
+
+<h3>Exemplo Completo</h3>
+<p>Veja um exemplo completo que inclui tratamento de erros e debugging com <code>print()</code>:</p>
+<pre><code>def dividir(a, b):
+    try:
+        print("Dividendo:", a)  # Exibe o valor do dividendo
+        print("Divisor:", b)    # Exibe o valor do divisor
+        resultado = a / b
+        return resultado
+    except ZeroDivisionError:
+        print("Erro: Divisão por zero.")
+        return None
+    except TypeError:
+        print("Erro: Tipo inválido. Certifique-se de passar números.")
+        return None
+
+# Teste da função com entrada incorreta
+resultado = dividir(10, 0)
+print("Resultado:", resultado)</code></pre>
+
+<p>Este exemplo mostra como usar <code>print()</code> para verificar valores e como tratar erros comuns, como divisão por zero e tipo inválido.</p>

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "descricao": "Qual é a principal diferença entre os loops while e do...while em JavaScript?",
+    "alternativas": [
+      "O loop while verifica a condição antes de executar o código, enquanto o do...while executa o código antes de verificar a condição.",
+      "O loop while sempre executa o código pelo menos uma vez, enquanto o do...while só executa se a condição for verdadeira.",
+      "O loop do...while é usado para contagens regressivas e o while para contagens progressivas.",
+      "O loop do...while não pode ser interrompido com break."
+    ]
+  },
+  {
+    "id": 2,
+    "descricao": "O que o comando break faz dentro de um loop em JavaScript?",
+    "alternativas": [
+      " Interrompe a execução do loop e sai dele completamente.",
+      "Pula para a próxima iteração do loop",
+      "Reinicia o loop do início.",
+      "Continua a execução do código após a condição ser falsa."
+    ]
+  },
+  {
+    "id": 3,
+    "descricao": "O que o comando continue faz dentro de um loop em JavaScript?",
+    "alternativas": [
+      "Pula o resto do código na iteração atual e passa para a próxima iteração.",
+      "Reinicia o loop do início.",
+      "Encerra o loop e sai dele.",
+      "Muda a condição do loop para falsa."
+    ]
+  }
+]

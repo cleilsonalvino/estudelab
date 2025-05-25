@@ -1,0 +1,110 @@
+<link rel="stylesheet" href="css\cursos\programacao1_js.css">
+
+<h3>Comando do…while</h3>
+<p> Para resolver alguns problemas, precisamos repetir um conjunto de instruções.</p>
+
+<p>Em certas situações, queremos que o bloco de código a ser repetido seja executado antes de testar a condição de controle, obrigando assim aquele bloco a ser executado pelo menos uma vez;</p>
+
+<p>Nessas circunstâncias, podemos utilizar a instrução do...while, que trabalha de forma similar ao while, porém testando a condição de controle somente após executar o bloco.</p>
+
+<h4>Sintaxe do comando do...while</h4>
+<img src="cursos\programacao_1_js\img\Sintaxe_Comando_Do_While.png" alt="Sintaxe_Do_While" width="80%">
+
+<p>Exemplos de como funciona o comando do...while:</p>
+<table>
+   <tr>
+    <th colspan="2">Exemplo 1: Imprimir todos os números de 1 a 100</th>
+   </tr>
+    <tr>
+        <td>Código Javascript<br>
+            let i = 1; <br>
+            do &#123; <br>
+             alert(i); <br>
+             i++; <br>
+             &#125; while (i &lt;= 100);    
+        </td>
+        <td>
+            Leia-se <br>
+            i = 1; <br>
+            FAÇA &#123; <br>
+            MOSTRE i; <br>
+            INCREMENTE i em 1; <br>
+            &#125; ENQUANTO i &lt;= 100;
+        </td>
+    </tr>
+</table>
+
+<p>Nessa mesma linha de raciocínio conseguimos realizar ações conforme as situações abaixo.</p>
+<br>
+<table>
+    <tr>
+     <th colspan="2">Exemplo 2a: Imprimir todos os números pares de 1 a 100</th>
+    </tr>
+     <tr>
+         <td>Código Javascript<br>
+             let i = 1; <br>
+             do &#123; <br>
+              if (i % 2 == 0) &#123; <br>
+              alert(i); <br>
+              &#125; <br>
+              i++; <br>
+              &#125; while (i &lt;= 100);    
+         </td>
+         <td>
+             Leia-se <br>
+             i = 1; <br>
+             FAÇA &#123; <br>
+             SE (resto de i por 2 == 0) ENTÃO &#123; <br>
+             MOSTRE i; <br>
+             INCREMENTE i em 1; <br>
+             &#125; ENQUANTO i &lt;= 100;
+         </td>
+     </tr>
+ </table>
+<br>
+<table>
+    <tr>
+     <th colspan="2">Exemplo 2b: Imprimir todos os números pares de 1 a 100</th>
+    </tr>
+     <tr>
+         <td>Código Javascript<br>
+             let i = 2; <br>
+             do &#123; <br>
+              alert(i); <br>
+              <br>
+              i+=2; <br>
+              &#125; while (i &lt;= 100);    
+         </td>
+         <td>
+             Leia-se <br>
+             i = 2; <br>
+             FAÇA &#123; <br>
+             MOSTRE i; <br>
+             INCREMENTE i em 2; <br>
+             &#125; ENQUANTO i &lt;= 100;
+         </td>
+     </tr>
+ </table>
+
+<h4>Comparando while e do…while</h4>
+ <p>O loop while e o loop do...while são ambos usados em JavaScript para repetir um bloco de código enquanto uma condição for verdadeira, mas há uma diferença importante em como a condição é verificada.</p>
+<p>No loop while, a condição é verificada antes de o código ser executado. Se a condição for falsa no início, o bloco de código não será executado nenhuma vez.</p>
+<p>No loop do...while, o código é executado pelo menos uma vez, independentemente da condição, porque a verificação da condição acontece após a execução do bloco de código.</p>
+
+<h3>Comandos para interrupção de laços (repetições)</h3>
+<p>Em algumas situações, podemos querer interromper um comando de repetição antes que ele alcance a condição de parada, por exemplo quando encontra um valor esperado;</p>
+<p>Nessas situações, temos duas opções de instrução para interrupção do laço: <strong> break</strong> e <strong> continue. </strong></p>
+
+<h4>Comando break</h4>
+<p>Quando executado, interrompe a execução dos comandos dentro do laço (for, while ou do...while) ou switch e sai imediatamente do mesmo.</p>
+<img src="cursos\programacao_1_js\img\Comando_break.png" alt="Comando_Break" width="80%">
+
+<p>Saída: 1 não é divisível por 3 e  2 não é divisível por 3 ===Programa encerrado===.</p>
+
+<h4>Comando continue</h4>
+<p>Quando executado, interrompe a execução dos comandos dentro do laço (for, while ou do...while), indo para o final do mesmo, executando assim a seção de incremento/decremento (caso o comando seja um for) e testando novamente a condição para continuar repetindo.</p>
+<img src="cursos\programacao_1_js\img\Comando_Continue.png" alt="Comando_Continue" width="80%">
+
+<h4>Quando usar break ou continue?</h4>
+<p>Em comandos switch, use break; Em comandos de repetição, use break se, naquele ponto, desejar interromper completamente a execução do laço e seguir com o programa…</p>
+<p>…ou use continue, caso queira interromper somente a execução atual, “pulando” para a próxima.</p>

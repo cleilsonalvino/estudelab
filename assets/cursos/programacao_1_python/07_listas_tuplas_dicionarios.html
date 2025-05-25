@@ -1,0 +1,78 @@
+<h2>Listas, Tuplas e Dicionários</h2>
+
+<h3>O que são Listas?</h3>
+<p>Listas são estruturas de dados que armazenam múltiplos valores em uma única variável. Elas são mutáveis, o que significa que podem ser alteradas após a criação.</p>
+<p>No Python, listas são definidas usando colchetes <code>[]</code>, e os itens são separados por vírgulas.</p>
+<pre><code>frutas = ["maçã", "banana", "laranja"]
+print(frutas)</code></pre>
+<p>Aqui, <code>frutas</code> é uma lista com três elementos: "maçã", "banana" e "laranja".</p>
+
+<h3>Operações com Listas</h3>
+<p>Algumas operações comuns com listas incluem:</p>
+<ul>
+    <li><code>append()</code>: adiciona um item ao final da lista.</li>
+    <li><code>remove()</code>: remove o primeiro item correspondente ao valor especificado.</li>
+    <li><code>len()</code>: retorna o tamanho da lista.</li>
+    <li><code>index()</code>: retorna o índice do primeiro item correspondente ao valor especificado.</li>
+</ul>
+<pre><code>frutas.append("uva")
+print(frutas)  # ["maçã", "banana", "laranja", "uva"]
+
+frutas.remove("banana")
+print(frutas)  # ["maçã", "laranja", "uva"]
+
+print(len(frutas))  # 3</code></pre>
+
+<h3>O que são Tuplas?</h3>
+<p>Tuplas são semelhantes às listas, mas são imutáveis, o que significa que não podem ser alteradas após a criação.</p>
+<p>Tuplas são definidas usando parênteses <code>()</code>.</p>
+<pre><code>cores = ("vermelho", "verde", "azul")
+print(cores)</code></pre>
+<p>Aqui, <code>cores</code> é uma tupla com três elementos: "vermelho", "verde" e "azul".</p>
+
+<h4>Por que usar Tuplas?</h4>
+<p>Como tuplas são imutáveis, elas são mais rápidas que listas e são ideais para armazenar dados que não devem ser alterados.</p>
+
+<h3>O que são Dicionários?</h3>
+<p>Dicionários são estruturas de dados que armazenam pares de chave-valor. Cada chave é única e mapeia um valor.</p>
+<p>Dicionários são definidos usando chaves <code>{}</code>.</p>
+<pre><code>aluno = {
+    "nome": "Carlos",
+    "idade": 20,
+    "curso": "Engenharia"
+}
+print(aluno)</code></pre>
+<p>Aqui, <code>aluno</code> é um dicionário com três pares chave-valor: "nome" com o valor "Carlos", "idade" com o valor 20, e "curso" com o valor "Engenharia".</p>
+
+<h3>Operações com Dicionários</h3>
+<p>Algumas operações comuns com dicionários incluem:</p>
+<ul>
+    <li><code>get()</code>: obtém o valor associado a uma chave.</li>
+    <li><code>keys()</code>: retorna uma lista com todas as chaves do dicionário.</li>
+    <li><code>values()</code>: retorna uma lista com todos os valores do dicionário.</li>
+    <li><code>items()</code>: retorna uma lista de tuplas, cada uma contendo um par chave-valor.</li>
+</ul>
+<pre><code>print(aluno.get("nome"))  # Carlos
+print(aluno.keys())         # dict_keys(['nome', 'idade', 'curso'])
+print(aluno.values())       # dict_values(['Carlos', 20, 'Engenharia'])
+print(aluno.items())        # dict_items([('nome', 'Carlos'), ('idade', 20), ('curso', 'Engenharia')])</code></pre>
+
+<h3>Exemplo Completo</h3>
+<p>Veja um exemplo que usa listas, tuplas e dicionários:</p>
+<pre><code># Lista de frutas
+frutas = ["maçã", "banana", "laranja"]
+
+# Tupla de cores
+cores = ("vermelho", "verde", "azul")
+
+# Dicionário de um aluno
+aluno = {
+    "nome": "Carlos",
+    "idade": 20,
+    "curso": "Engenharia"
+}
+
+print("Frutas:", frutas)
+print("Cores:", cores)
+print("Dados do aluno:", aluno)</code></pre>
+<p>Este exemplo demonstra como utilizar cada tipo de estrutura de dados para armazenar e manipular informações em Python.</p>

@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "descricao": "O que define a propriedade Color?",
+      "alternativas": [
+        "Especifica a cor do texto;",
+        "Especifica a altura da linha;",
+        "Especifica o alinhamento horizontal do texto;",
+        "Especifica o estilo da fonte para o texto;"
+      ]
+    },
+    {
+      "id": 2,
+      "descricao": "Quais das propriedades é utilizada para definir o tamanho da fonte para o texto?",
+      "alternativas": [
+        "Font-size;",
+        "Font;",
+        "Font-family;",
+        "Style;"
+      ]
+    },
+    {
+      "id": 3,
+      "descricao": "O que faz a propriedade list-style-type?",
+      "alternativas": [
+        "Especifica o tipo de marcador de item de lista;",
+        "Especifica uma imagem como marcador de item de lista;",
+        "Especifica a “densidade” do texto;",
+        "Especifica o estilo da fonte para o texto;"
+      ]
+    }
+  ]

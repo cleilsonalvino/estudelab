@@ -1,0 +1,122 @@
+[
+    {
+        "nome": "Módulo 1 - HTML",
+        "licoes" : [
+            {
+                "id": "01_introducao_html",
+                "nome": "01. Introdução a HTML",
+                "video": "https://youtube.com/embed/H-ffVhUBhMs"
+            },
+            {
+                "id": "02_estrutura_basica_documento_html",
+                "nome": "02. Estrutura Básica de um Documento HTML",
+                "video": "https://youtube.com/embed/ZsAPCpmt8Po"
+            },
+            {
+                "id": "03_tags_html_basicas",
+                "nome": "03. Tags HTML Básicas",
+                "video": "https://youtube.com/embed/NwciB6UXoB8"
+            },
+            {
+                "id": "04_tags_multimidia",
+                "nome": "04. Tags para Multimídia",
+                "video": "https://youtube.com/embed/qYEMuVjsbyg"
+            },
+            {
+                "id": "05_tags_formatacao",
+                "nome": "05. Tags para Formatação",
+                "video": "https://youtube.com/embed/esH5cfKD_ps"
+            },
+            {
+                "id": "06_tags_tabelas",
+                "nome": "06. Tags para Tabelas",
+                "video": "https://youtube.com/embed/AOhTULEqDbI"
+            },
+            {
+                "id": "07_tags_listas",
+                "nome": "07. Tags para Listas",
+                "video": "https://youtube.com/embed/uOy11zZu_Z8"
+            },
+            {
+                "id": "08_tags_iframes",
+                "nome": "08. Tags para Iframes",
+                "video": "https://youtube.com/embed/OGwxCQF7Hxk"
+            },
+            {
+                "id": "09_tags_formularios",
+                "nome": "09. Tags para Formulários",
+                "video": "https://youtube.com/embed/DJaetpIA4Xk"
+            },
+            {
+                "id": "10_tag_input",
+                "nome": "10. Tag Input",
+                "video": "https://youtube.com/embed/ACyIowHs1BM"
+            },
+            {
+                "id": "11_tags_textarea_select",
+                "nome": "11. Tags TextArea e Select",
+                "video": "https://youtube.com/embed/Qkxaa413Sgw"
+            },
+            {
+                "id": "12_outras_tags_uteis",
+                "nome": "Outras Tags Úteis",
+                "video": "https://youtube.com/embed/g6qmIEHlsvI"
+            }
+        ]
+    },
+    {
+        "nome": "Módulo 2 - CSS 3",
+        "licoes" : [
+            {
+                "id": "13_introducao_css",
+                "nome": "13. Introdução a CSS 3",
+                "video": "https://youtube.com/embed/GYZPCm6dhro"
+            },
+            {
+                "id": "14_selectores_css",
+                "nome": "14. Seletores em CSS 3",
+                "video": "https://youtube.com/embed/XO6HxIhPycM"
+            },
+            {
+                "id": "15_propriedades_background_borda",
+                "nome": "15. Propriedades para background e borda",
+                "video": null
+            },
+            {
+                "id": "16_propriedades_margem_padding_largura_altura",
+                "nome": "16. Propriedades para margem, padding, largura e altura",
+                "video": null
+            },
+            {
+                "id": "17_propriedades_textos_fontes_listas",
+                "nome": "17. Propriedades para textos, fontes e listas",
+                "video": null
+            },
+            {
+                "id": "18_propriedades_layout_transparencia",
+                "nome": "18. Propriedades para Layout e Transparência",
+                "video": null
+            },
+            {
+                "id": "19_barras_navegacao_css",
+                "nome": "19. Barras de Navegação em CSS",
+                "video": null
+            }
+        ]
+    },
+    {
+        "nome": "Módulo 3 - Boas Práticas para Desenvolvimento Web",
+        "licoes" : [
+            {
+                "id": "20_otimizacao_motores_busca",
+                "nome": "20. Otimização para Motores de Busca",
+                "video": null
+            },
+            {
+                "id": "21_principios_web_design",
+                "nome": "21. Princípios de Web Design",
+                "video": null
+            }
+        ]
+    }
+]

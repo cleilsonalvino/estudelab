@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "descricao": "Qual é a principal função do comando switch em JavaScript?",
+    "alternativas": [
+      "Fazer múltiplas comparações baseadas em uma única expressão.",
+      "Executar código condicionalmente apenas uma vez.",
+      " Declarar variáveis de maneira eficiente.",
+      "Repetir um bloco de código."
+    ]
+  },
+  {
+    "id": 2,
+    "descricao": "Qual é o nome alternativo do operador condicional ? : em JavaScript?",
+    "alternativas": [
+      "Operador ternário",
+      "Operador lógico",
+      "Operador de decisão",
+      "Operador de comparação"
+    ]
+  },
+  {
+    "id": 3,
+    "descricao": "O que o default faz em uma estrutura switch?",
+    "alternativas": [
+      " Define o que deve ser executado se nenhum dos casos for correspondido.",
+      "Faz a comparação com valores numéricos.",
+      "Especifica o valor inicial do switch.",
+      "Finaliza o bloco switch sem executar nada."
+    ]
+  }
+]

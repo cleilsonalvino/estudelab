@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "descricao": "Qual das alternativas a seguir descreve corretamente a tag table?",
+    "alternativas": [
+      "Define uma tabela em si;",
+      "Define cada linha;",
+      "Define cada célula de uma linha;",
+      "Usada para destacar uma palavra, frase ou texto em negrito;"
+    ]
+  },
+  {
+    "id": 2,
+    "descricao": "Qual a funçao da tag TR?",
+    "alternativas": [
+      "Define cada linha, isto é, conjunto de células dispostas horizontalmente;",
+      "Usada para transformar em italico as palavras;",
+      "Usado para sublinhar palavras;",
+      "Define uma tabela;"
+    ]
+  },
+  {
+    "id": 3,
+    "descricao": "Qual das alternativas a seguir descreve corretamente a função do atributo rowspan em uma célula de tabela TD?",
+    "alternativas": [
+      "Define a quantidade de linhas;",
+      "Define o numero de colunas;",
+      "Define a altura;",
+      "Define a largura;"
+    ]
+  }
+]

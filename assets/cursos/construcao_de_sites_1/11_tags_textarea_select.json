@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "descricao": "Para que serve a tag textarea?",
+      "alternativas": [
+        "Serve para entrada de dados em formato de texto;",
+        "Exibe uma imagem em formato de texto;",
+        "Cria um campo para seleção de opções em uma lista;",
+        "Define um campo para a inserção de dados numéricos;"
+      ]
+    },
+    {
+      "id": 2,
+      "descricao": "Qual atributo é usado para definir a largura de um textarea?",
+      "alternativas": [
+        "Cols",
+        "Size",
+        "Lenght",
+        "Width"
+      ]
+    },
+    {
+      "id": 3,
+      "descricao": "Qual a função da tag select?",
+      "alternativas": [
+        "É usada para construir uma lista com várias opções;",
+        "Selecionar altura;",
+        "Adicionar cometario de texto;",
+        "Calcular itens;"
+      ]
+    }
+  ]

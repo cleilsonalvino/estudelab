@@ -1,0 +1,93 @@
+<h2>Projeto Prático: Jogo de Adivinhação</h2>
+
+<h3>Objetivo do Projeto</h3>
+<p>O objetivo deste projeto é criar um jogo de adivinhação em Python onde o jogador deve adivinhar um número escolhido aleatoriamente pelo programa.</p>
+<p>Este projeto ajuda a praticar o uso de loops, condicionais, funções e geração de números aleatórios.</p>
+
+<h3>Estrutura do Jogo</h3>
+<p>O jogo será estruturado da seguinte forma:</p>
+<ul>
+    <li>O programa escolherá um número aleatório dentro de um intervalo definido (por exemplo, de 1 a 100).</li>
+    <li>O jogador terá várias tentativas para adivinhar o número.</li>
+    <li>O programa fornecerá dicas indicando se o palpite está muito alto ou muito baixo.</li>
+</ul>
+
+<h3>Passo 1: Importando o Módulo <code>random</code></h3>
+<p>Para que o programa escolha um número aleatório, usaremos o módulo <code>random</code> do Python.</p>
+<pre><code>import random</code></pre>
+
+<h3>Passo 2: Definindo a Função do Jogo</h3>
+<p>Vamos criar uma função chamada <code>jogar_adivinhacao</code> que executará a lógica do jogo.</p>
+<pre><code>def jogar_adivinhacao():
+    numero_secreto = random.randint(1, 100)  # Escolhe um número aleatório entre 1 e 100
+    tentativas = 0
+    max_tentativas = 10
+
+    print("Bem-vindo ao jogo de adivinhação!")
+    print("Tente adivinhar o número entre 1 e 100.")
+
+    while tentativas < max_tentativas:
+        try:
+            palpite = int(input("Digite seu palpite: "))
+            tentativas += 1
+
+            if palpite < numero_secreto:
+                print("Muito baixo! Tente um número maior.")
+            elif palpite > numero_secreto:
+                print("Muito alto! Tente um número menor.")
+            else:
+                print(f"Parabéns! Você acertou o número em {tentativas} tentativas.")
+                break
+        except ValueError:
+            print("Entrada inválida! Por favor, digite um número.")
+
+    if tentativas == max_tentativas and palpite != numero_secreto:
+        print(f"Você esgotou suas tentativas. O número secreto era {numero_secreto}.")</code></pre>
+
+<h3>Passo 3: Configurando o Loop Principal do Jogo</h3>
+<p>Para permitir que o jogador jogue várias rodadas, vamos criar um loop que pergunta ao jogador se deseja continuar após cada rodada.</p>
+<pre><code>while True:
+    jogar_adivinhacao()
+    continuar = input("Deseja jogar novamente? (s/n): ")
+    if continuar.lower() != 's':
+        print("Obrigado por jogar! Até a próxima.")
+        break</code></pre>
+
+<h3>Exemplo Completo</h3>
+<p>Veja o código completo do jogo de adivinhação:</p>
+<pre><code>import random
+
+def jogar_adivinhacao():
+    numero_secreto = random.randint(1, 100)
+    tentativas = 0
+    max_tentativas = 10
+
+    print("Bem-vindo ao jogo de adivinhação!")
+    print("Tente adivinhar o número entre 1 e 100.")
+
+    while tentativas < max_tentativas:
+        try:
+            palpite = int(input("Digite seu palpite: "))
+            tentativas += 1
+
+            if palpite < numero_secreto:
+                print("Muito baixo! Tente um número maior.")
+            elif palpite > numero_secreto:
+                print("Muito alto! Tente um número menor.")
+            else:
+                print(f"Parabéns! Você acertou o número em {tentativas} tentativas.")
+                break
+        except ValueError:
+            print("Entrada inválida! Por favor, digite um número.")
+
+    if tentativas == max_tentativas and palpite != numero_secreto:
+        print(f"Você esgotou suas tentativas. O número secreto era {numero_secreto}.")
+
+while True:
+    jogar_adivinhacao()
+    continuar = input("Deseja jogar novamente? (s/n): ")
+    if continuar.lower() != 's':
+        print("Obrigado por jogar! Até a próxima.")
+        break</code></pre>
+
+<p>Com esse código, criamos um jogo de adivinhação simples e interativo que oferece feedback ao jogador e permite várias rodadas.</p>

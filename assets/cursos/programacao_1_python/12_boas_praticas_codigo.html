@@ -1,0 +1,76 @@
+<h2>Boas Práticas de Código em Python</h2>
+
+<h3>Por que seguir Boas Práticas?</h3>
+<p>Seguir boas práticas de código torna o desenvolvimento mais eficiente e o código mais legível e fácil de manter.</p>
+<p>Em Python, o guia de estilo mais adotado é o <a href="https://peps.python.org/pep-0008/" target="_blank">PEP 8</a>, que define convenções para o código Python.</p>
+
+<h3>Nomenclatura de Variáveis e Funções</h3>
+<p>Use nomes descritivos para variáveis e funções, para que o código seja claro e fácil de entender.</p>
+<ul>
+    <li>Para variáveis e funções, use letras minúsculas e underscores para separar palavras (<code>minha_variavel</code>, <code>calcular_media</code>).</li>
+    <li>Para constantes, use letras maiúsculas (<code>TAMANHO_MAXIMO</code>).</li>
+</ul>
+
+<h3>Identação</h3>
+<p>Em Python, a identação é obrigatória e ajuda a definir blocos de código. Use 4 espaços para cada nível de identação.</p>
+<pre><code>def minha_funcao():
+    if True:
+        print("Exemplo de identação")</code></pre>
+
+<h3>Linhas em Branco</h3>
+<p>Use linhas em branco para separar blocos de código e tornar o código mais organizado.</p>
+<ul>
+    <li>Deixe duas linhas em branco entre definições de funções e classes.</li>
+    <li>Dentro de funções, use uma linha em branco para separar diferentes partes da lógica.</li>
+</ul>
+
+<h3>Comentários</h3>
+<p>Comente seu código para explicar partes complexas e documentar o propósito de funções e variáveis.</p>
+<ul>
+    <li>Use comentários de uma linha com <code>#</code> para explicar o código.</li>
+    <li>Para docstrings, use aspas triplas (<code>"""</code>) no início de funções, métodos e classes para descrever seu propósito.</li>
+</ul>
+<pre><code>def calcular_area(raio):
+    """Calcula a área de um círculo dado o raio."""
+    return 3.14 * raio ** 2</code></pre>
+
+<h3>Evite Código Repetido</h3>
+<p>Se encontrar código repetido, considere transformá-lo em uma função. Isso ajuda a evitar redundância e torna o código mais modular.</p>
+<pre><code>def calcular_area(raio):
+    return 3.14 * raio ** 2
+
+def calcular_volume(raio, altura):
+    return calcular_area(raio) * altura</code></pre>
+<p>Neste exemplo, a função <code>calcular_area</code> é reutilizada dentro de <code>calcular_volume</code>.</p>
+
+<h3>Documentação</h3>
+<p>Mantenha a documentação do seu código atualizada, especialmente se outras pessoas irão trabalhar com ele.</p>
+<p>Docstrings bem escritas em classes e funções ajudam a entender o funcionamento do código.</p>
+
+<h3>Tratamento de Erros</h3>
+<p>Use blocos <code>try</code> e <code>except</code> para capturar erros e evitar que o programa falhe inesperadamente.</p>
+<pre><code>def dividir(a, b):
+    try:
+        return a / b
+    except ZeroDivisionError:
+        print("Erro: divisão por zero não é permitida.")
+        return None</code></pre>
+<p>Neste exemplo, o erro de divisão por zero é capturado e tratado de forma apropriada.</p>
+
+<h3>Exemplo Completo</h3>
+<p>Veja um exemplo de código que segue boas práticas:</p>
+<pre><code>def calcular_media(notas):
+    """Calcula a média de uma lista de notas."""
+    if not notas:
+        return 0
+    soma = sum(notas)
+    return soma / len(notas)
+
+# Lista de notas de um aluno
+notas_aluno = [7.5, 8.0, 6.5, 9.0]
+
+# Calcula a média e imprime o resultado
+media = calcular_media(notas_aluno)
+print(f"Média do aluno: {media:.2f}")</code></pre>
+
+<p>Este exemplo segue as boas práticas: usa nomes descritivos, inclui uma docstring, evita redundância e formata o resultado corretamente.</p>

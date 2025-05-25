@@ -1,0 +1,61 @@
+<h2>Estruturas Condicionais</h2>
+
+<h3>O que são Estruturas Condicionais?</h3>
+<p>Estruturas condicionais permitem que o programa tome decisões com base em certas condições.</p>
+<p>No Python, usamos a estrutura <code>if</code>, <code>elif</code> e <code>else</code> para executar blocos de código de acordo com condições específicas.</p>
+
+<h3>Sintaxe Básica</h3>
+<p>A estrutura condicional mais básica é o <code>if</code>. Caso a condição seja verdadeira, o bloco de código indentado será executado.</p>
+<pre><code>x = 10
+
+if x > 5:
+    print("x é maior que 5")</code></pre>
+
+<h3>Usando <code>else</code></h3>
+<p>O <code>else</code> define um bloco de código que será executado se a condição do <code>if</code> for falsa.</p>
+<pre><code>x = 3
+
+if x > 5:
+    print("x é maior que 5")
+else:
+    print("x é menor ou igual a 5")</code></pre>
+
+<h3>Usando <code>elif</code></h3>
+<p>O <code>elif</code> (abreviação de "else if") permite verificar múltiplas condições. Caso a primeira condição seja falsa, ele verifica a próxima.</p>
+<pre><code>x = 7
+
+if x > 10:
+    print("x é maior que 10")
+elif x > 5:
+    print("x está entre 6 e 10")
+else:
+    print("x é menor ou igual a 5")</code></pre>
+
+<h3>Condicionais Aninhadas</h3>
+<p>É possível aninhar estruturas condicionais para verificar condições mais complexas.</p>
+<pre><code>x = 15
+y = 20
+
+if x > 10:
+    if y > 15:
+        print("x é maior que 10 e y é maior que 15")</code></pre>
+
+<h3>Operadores Condicionais em Condições</h3>
+<p>Você pode usar operadores lógicos como <code>and</code> e <code>or</code> para combinar condições dentro de uma estrutura condicional.</p>
+<pre><code>x = 8
+y = 3
+
+if x > 5 and y < 5:
+    print("x é maior que 5 e y é menor que 5")</code></pre>
+
+<h3>Exemplo Completo</h3>
+<p>Veja um exemplo completo usando estruturas condicionais:</p>
+<pre><code>nota = 85
+
+if nota >= 90:
+    print("Aprovado com distinção!")
+elif nota >= 70:
+    print("Aprovado")
+else:
+    print("Reprovado")</code></pre>
+<p>Neste exemplo, diferentes mensagens são exibidas dependendo do valor da variável <code>nota</code>.</p>

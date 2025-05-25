@@ -1,0 +1,34 @@
+[
+    {
+        "id": 2,
+        "descricao": "Qual é o principal objetivo de uma barra de navegação em um site?",
+        "alternativas": [
+          "Facilitar o acesso às diferentes seções do site;",
+          "Exibir anúncios;",
+          "Mostrar informações apenas de contato;",
+          "Mostrar varias paginas de uma unica vez;"
+      ]
+    },
+    {
+        "id": 3,
+        "descricao": "O que caracteriza uma barra de navegação responsiva?",
+        "alternativas": [
+          "Ela se adapta a diferentes tamanhos de tela;",
+          "Ela não muda em dispositivos móveis;",
+          "Ela não inclui menus suspensos;",
+          "Ela é fixa em uma posição;"
+      ]
+    },
+    {
+        "id": 1,
+        "descricao": "Como retirar os marcadores de uma lista nao ordenada em uma barra de navegação?",
+        "alternativas": [
+        "list-style-type: none;",
+        "overflow: hidden;",
+        "padding: 0px;",
+        "float:left;"
+      ]
+    }
+  ]
+
+  

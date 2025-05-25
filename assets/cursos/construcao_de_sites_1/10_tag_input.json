@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "descricao": "Qual das alternativas a seguir descreve corretamente a função da tag input?",
+      "alternativas": [
+        "Permite a entrada de dados do usuario;",
+        "Insere uma imagem no formulário;",
+        "Cria um botão que redireciona para outra página;",
+        "Define o cabeçalho de uma seção em uma página web;"
+      ]
+    },
+    {
+      "id": 2,
+      "descricao": "Qual das alternativas a seguir descreve corretamente a função da tag Minlength?",
+      "alternativas": [
+        "Informa a quantidade minimo de caracteres para que a informação seja considerada válida;",
+        "Limita o número máximo de caracteres que um campo de entrada pode ter;",
+        "Insere um campo para upload de arquivos;",
+        "Cria um botão para enviar o formulário;"
+      ]
+    },
+    {
+      "id": 3,
+      "descricao": "Qual das alternativas a seguir descreve corretamente a função da tag Required?",
+      "alternativas": [
+        "Informa que o preenchimento do campo é obrigatorio;",
+        "Define o número máximo de caracteres que um campo pode ter;",
+        "Especifica um valor padrão para um campo de entrada;",
+        "Cria um botão que o usuário pode pressionar;"
+      ]
+    }
+  ]

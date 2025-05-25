@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "descricao": "Qual função é usada para capturar entrada do usuário?",
+      "alternativas": [
+        "input.",
+        "print.",
+        "get.",
+        "read."
+      ]
+    },
+    {
+      "id": 2,
+      "descricao": "Qual é o tipo de retorno padrão da função input?",
+      "alternativas": [
+        "str.",
+        "int.",
+        "float.",
+        "bool."
+      ]
+    },
+    {
+      "id": 3,
+      "descricao": "Como convertimos uma string em um número inteiro?",
+      "alternativas": [
+        "int().",
+        "float().",
+        "bool().",
+        "str()."
+      ]
+    }
+  ]
+  

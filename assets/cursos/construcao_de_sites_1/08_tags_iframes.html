@@ -1,0 +1,36 @@
+<h2>08. Tag Iframe</h2>
+
+<h3>O que é a Tag Iframe?</h3>
+<p>A tag <strong>&lt;iframe&gt;</strong> (inline frame) é utilizada para incorporar outra página web dentro de uma página HTML. Isso permite que o conteúdo de uma fonte externa seja exibido diretamente em um espaço designado da sua página, sem que o usuário precise navegar para fora dela.</p>
+
+<h3>Características da Tag Iframe</h3>
+<p>Algumas características importantes da tag <strong>&lt;iframe&gt;</strong> incluem:</p>
+
+<ul>
+    <li><strong>Facilidade de uso</strong> - Permite a integração rápida de conteúdo externo, como vídeos, mapas ou outras páginas.</li>
+    <li><strong>Isolamento de conteúdo</strong> - O conteúdo carregado em um <iframe> é isolado do restante da página, o que significa que os estilos e scripts da página principal não afetam o conteúdo do <iframe>.</li>
+    <li><strong>Flexibilidade</strong> - Suporta diferentes tamanhos e formatos, podendo ser ajustado para se encaixar em layouts responsivos.</li>
+</ul>
+
+<h3>Exemplo de Uso</h3>
+<p>A seguir, um exemplo prático de como usar a tag <strong>&lt;iframe&gt;</strong>:</p>
+<pre>
+  &lt;iframe src="https://www.example.com" width="600" height="400"&gt;&lt;/iframe&gt;
+</pre>
+<p>No exemplo acima, a URL especificada no atributo <code>src</code> é carregada dentro do <iframe>, com uma largura de 600 pixels e altura de 400 pixels.</p>
+
+<h3>Atributos Comuns</h3>
+<p>Os atributos mais utilizados na tag <strong>&lt;iframe&gt;</strong> incluem:</p>
+
+<ul>
+    <li><strong>src</strong> - Define a URL da página a ser exibida dentro do <iframe>.</li>
+    <li><strong>width</strong> - Especifica a largura do <iframe> em pixels ou como uma porcentagem.</li>
+    <li><strong>height</strong> - Define a altura do <iframe> em pixels.</li>
+    <li><strong>frameborder</strong> - Controla a exibição da borda do <iframe>. (Obsoleto em HTML5, utilize CSS para bordas.)</li>
+    <li><strong>allowfullscreen</strong> - Permite que o conteúdo exibido no <iframe> entre em modo de tela cheia.</li>
+    <li><strong>sandbox</strong> - Aplica restrições ao conteúdo carregado no <iframe>, proporcionando maior segurança.</li>
+</ul>
+
+<h3>Considerações de Segurança</h3>
+<p>Ao usar <strong>&lt;iframe&gt;</strong>, é importante considerar questões de segurança. O uso inadequado pode levar a vulnerabilidades, como ataques de clickjacking. Recomenda-se usar o atributo <strong>sandbox</strong> para limitar as ações do conteúdo carregado e proteger a página principal.</p>
+

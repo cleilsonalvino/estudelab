@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "descricao": "Qual propriedade CSS é usada para definir a cor de fundo de um elemento?",
+      "alternativas": [
+        "background-color;",
+        "background-size;",
+        "background;",
+        "background-image;"
+      ]
+    },
+    {
+      "id": 2,
+      "descricao": "O que faz a propriedade Background-size?",
+      "alternativas": [
+        "Configura o tamanho da imagem de background;",
+        "Configura como a imagem de background será repetida;",
+        "Configura a cor para as bordas;",
+        "Configura o estilo para as bordas"
+      ]
+    },
+    {
+      "id": 3,
+      "descricao": "O que faz a propriedade Border-color?",
+      "alternativas": [
+        "Configura a cor para as bordas;",
+        "Configura todas as propriedades das bordas em uma só declaração;",
+        "Configura o estilo para as bordas;",
+        "Configura como a imagem de background será repetida;"
+      ]
+    }
+  ]

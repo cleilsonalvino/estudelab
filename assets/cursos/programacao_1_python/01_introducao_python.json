@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "descricao": "O que é Python?",
+      "alternativas": [
+        "Uma linguagem de programação de alto nível e fácil leitura.",
+        "Um editor de texto usado para programação.",
+        "Um software de design gráfico.",
+        "Um sistema operacional."
+      ]
+    },
+    {
+      "id": 2,
+      "descricao": "Quem criou a linguagem Python?",
+      "alternativas": [
+        "Guido van Rossum.",
+        "Mark Zuckerberg.",
+        "Elon Musk.",
+        "Steve Jobs."
+      ]
+    },
+    {
+      "id": 3,
+      "descricao": "Qual dessas é uma característica da linguagem Python?",
+      "alternativas": [
+        "Sintaxe simples e legível.",
+        "Altamente complexo para iniciantes.",
+        "Desenvolvido para hardware específico.",
+        "Necessita de compilação em tempo real."
+      ]
+    }
+  ]
+  

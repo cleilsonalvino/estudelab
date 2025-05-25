@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "descricao": "Qual das seguintes opções representa uma tendência atual em Engenharia de Software?",
+      "alternativas": [
+        "Adoção de metodologias ágeis e práticas de DevOps.",
+        "Desenvolvimento de software exclusivamente em mainframes.",
+        "Foco principal em arquiteturas monolíticas tradicionais.",
+        "Diminuição da preocupação com a segurança cibernética."
+      ]
+    },
+    {
+      "id": 2,
+      "descricao": "Qual o principal benefício da arquitetura de microsserviços, uma tendência em Engenharia de Software?",
+      "alternativas": [
+        "Maior escalabilidade e resiliência das aplicações.",
+        "Redução da complexidade do desenvolvimento.",
+        "Facilidade de implantação em um único servidor.",
+        "Menor necessidade de comunicação entre as equipes."
+      ]
+    },
+    {
+      "id": 3,
+      "descricao": "Qual das seguintes tecnologias representa uma tendência emergente na computação em nuvem para executar código sem gerenciar a infraestrutura?",
+      "alternativas": [
+        "Computação Sem Servidor (Serverless Computing).",
+        "Máquinas Virtuais tradicionais.",
+        "Bancos de dados relacionais on-premise.",
+        "Servidores bare-metal."
+      ]
+    }
+  ]

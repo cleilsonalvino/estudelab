@@ -1,0 +1,211 @@
+<link rel="stylesheet" href="css\cursos\programacao1_js.css">
+
+<h3>Operadores, Operandos e Expressões</h3>
+<p> Um operador é um símbolo utilizado para identificar que uma determinada operação deve ser realizada sobre um ou mais parâmetros, denominados operandos;</p>
+<p>Exemplos Em “3 + 4”, o “+” é o operador, atuando sobre os operandos “3” e “4”.  Em “x + (3 * 5)”, temos o operador “+” atuando sobre os operandos “x” e “3 * 5”, e o operador “*” atuando sobre os operandos “3” e “5”.</p>
+
+<p>Já uma <strong>expressão</strong> pode ser considerada um conjunto de operações efetuadas sobre certos dados a fim de obter um resultado;</p>
+<p>Exemplos “3 + 4” é um exemplo de expressão; “x * 5 / y”, também é um exemplo de expressão; “7 &gt; x”, também!</p>
+
+<h4>Tipos de Operadores</h4>
+<p>Operadores aritméticos; Operadores relacionais; Operadores lógicos; Operadores para strings; Operadores de atribuição; Operadores especiais.</p>
+
+<p><strong>Operadores Aritméticos:</strong> São usados para realizar operações matemáticas sobre variáveis e valores. </p>
+<table>
+    <caption>Operadores Aritméticos</caption>
+    <tr>
+        <th>Operador</th>
+        <th>O que faz</th>
+        <th>Exemplo</th>
+    </tr>
+    <tr >
+        <td >+</td>
+        <td>Soma</td>
+        <td>5 + 2</td>
+    </tr>
+    <tr>
+        <td >++</td>
+        <td>Incrementa uma unidade</td>
+        <td>i++</td>
+    </tr>
+    <tr>
+        <td>-</td>
+        <td>Subtrai ou inverte o sinal</td>
+        <td>5 - 2 <br>-3</td>
+    </tr>
+    <tr>
+        <td>--</td>
+        <td>Decrementa uma unidade</td>
+        <td>i--</td>
+    </tr>
+    <tr>
+        <td>*</td>
+        <td>Multiplica</td>
+        <td>5 * 2</td>
+    </tr>
+    <tr>
+        <td>**</td>
+        <td>Potenciação</td>
+        <td>5 ** 2</td>
+    </tr>
+    <tr>
+        <td>/</td>
+        <td>Divide</td>
+        <td>5 / 2</td>
+    </tr>
+    <tr>
+        <td>%</td>
+        <td>Calcula o módulo (resto)</td>
+        <td>5 % 2</td>
+    </tr>
+</table>
+
+<p><strong>Operadores Relacionais (Comparação):</strong> Usados para comparar dois valores e retornar um valor do tipo booleano.</p>
+<table>
+    <caption>Operadores Relacionais(Comparação)</caption>
+    <tr>
+        <th>Operador</th>
+        <th>O que faz</th>
+        <th>Exemplo</th>
+    </tr>
+    <tr >
+        <td >></td>
+        <td>É maior que…</td>
+        <td>5 > 2</td>
+    </tr>
+    <tr>
+    <td>&gt;=</td>
+    <td>É maior ou igual a…</td>
+    <td>5 &gt;= 2</td>
+</tr>
+<tr>
+    <td>&lt;</td>
+    <td>É menor que… </td>
+    <td>5 &lt; 2</td>
+</tr>
+<tr>
+    <td>&lt;=</td>
+    <td>É menor ou igual a… </td>
+    <td>5 &lt;= 2</td>
+</tr>
+<tr>
+    <td>==</td>
+    <td>É igual a… </td>
+    <td>5 == 5 <br>5 == "5"</td>
+</tr>
+<tr>
+    <td>===</td>
+    <td>É igual e do mesmo tipo…</td>
+    <td>5 === "5"</td>
+</tr>
+<tr>
+    <td>!=</td>
+    <td>É diferente… </td>
+    <td>5 != 2</td>
+</tr>
+</table>
+
+<p><strong>Operadores Lógicos:</strong> Servem para combinar condições booleanas e determinar se uma expressão é verdadeira ou falsa:</p>
+<table>
+    <caption>Operadores Lógicos</caption>
+    <tr>
+        <th>Operador</th>
+        <th>O que faz</th>
+        <th>Exemplo</th>
+    </tr>
+    <tr>
+        <td>&&</td>
+        <td>E</td>
+        <td>x && y</td>
+    </tr>
+    <tr >
+        <td>||</td>
+        <td>Ou</td>
+        <td>x || y</td>
+    </tr>
+    <tr>
+        <td>!</td>
+        <td>Não</td>
+        <td>!x</td>
+    </tr>
+</table>
+
+<p><strong>Operadores de Atribuição:</strong> Usados para atribuir valores às variáveis e podem combinar atribuição com operações.</p>
+<table>
+    <caption>Operadores de Atribuição</caption>
+    <tr>
+        <th>Operador</th>
+        <th>O que faz</th>
+        <th>Exemplo</th>
+    </tr>
+    <tr>
+        <td>=</td>
+        <td>Recebe (armazena um valor)</td>
+        <td>x = 3</td>
+    </tr>
+    <tr>
+        <td>+=</td>
+        <td>Recebe o valor dele adicionado com</td>
+        <td>x += 3</td>
+    </tr>
+    <tr>
+        <td>-=</td>
+        <td>Recebe o valor dele subtraído de </td>
+        <td>x -= 3</td>
+    </tr>
+    <tr>
+        <td>*=</td>
+        <td>Recebe o valor dele multiplicado por</td>
+        <td>x *= 3</td>
+    </tr>
+    <tr>
+        <td>/=</td>
+        <td>Recebe o valor dele dividido por</td>
+        <td>x /= 3</td>
+    </tr>
+    <tr>
+        <td>%=</td>
+        <td>Recebe o resto da divisão dele por </td>
+        <td>x %= 3</td>
+    </tr>
+</table>
+
+<p><strong>Operadores de Strings:</strong> O operador principal para manipulação de strings.</p>
+<table>
+    <caption>Operadores para Strings</caption>
+    <tr>
+        <th>Operador</th>
+        <th>O que faz</th>
+        <th>Exemplo</th>
+    </tr>
+    <tr>
+        <td>+</td>
+        <td>Concatenação</td>
+        <td>x + y</td>
+    </tr>
+</table>
+
+<p><strong>Operadores Especiais:</strong> São operadores usados para tarefas mais específicas.</p>
+<table>
+    <caption>Operadores Especiais</caption>
+    <tr>
+        <th>Operador</th>
+        <th>O que faz</th>
+        <th>Exemplo</th>
+    </tr>
+    <tr >
+        <td>? : </td>
+        <td>Segundo uma condição, retorna um valor ou outro</td>
+        <td>a ? b : c</td>
+    </tr>
+    <tr>
+        <td>in</td>
+        <td>Verifica se a propriedade especificada está no objeto passado</td>
+        <td>title in pIntroducao</td>
+    </tr>
+    <tr>
+        <td>new</td>
+        <td>Cria um objeto a partir de um construtor</td>
+        <td>new String("teste")</td>
+    </tr>
+</table>

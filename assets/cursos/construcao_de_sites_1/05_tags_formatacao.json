@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "descricao": "Quais tags podem ser utilizadas para aplicar negrito?",
+    "alternativas": [
+      "B e STRONG;",
+      "I e EM;",
+      "I e STRONG;",
+      "EM e U;"
+    ]
+  },
+  {
+    "id": 2,
+    "descricao": "Qual das alternativas a seguir descreve corretamente a tag U?",
+    "alternativas": [
+      "Exibe o texto sublinhado;",
+      "Cria um parágrafo com espaçamento;",
+      "Insere um subtitulo;",
+      "Define um cabeçalho de seção;"
+    ]
+  },
+  {
+    "id": 3,
+    "descricao": "Quais tags podem ser utilizadas para aplicar Italico?",
+    "alternativas": [
+      "I e EM;",
+      "UL e STRONG;",
+      "I e B;",
+      "STRONG e EM;"
+    ]
+  }
+]

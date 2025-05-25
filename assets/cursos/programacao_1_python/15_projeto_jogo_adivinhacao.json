@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "descricao": "Qual módulo gera números aleatórios?",
+      "alternativas": [
+        "random.",
+        "math.",
+        "time.",
+        "sys."
+      ]
+    },
+    {
+      "id": 2,
+      "descricao": "Qual função converte uma entrada de string para inteiro?",
+      "alternativas": [
+        "int().",
+        "str().",
+        "input().",
+        "round()."
+      ]
+    },
+    {
+      "id": 3,
+      "descricao": "Qual código gera um número aleatório entre 1 e 100?",
+      "alternativas": [
+        "random.randint(1, 100).",
+        "random.range(1, 100).",
+        "random.choice(1, 100).",
+        "random.number(1, 100)."
+      ]
+    }
+  ]
+  

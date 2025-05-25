@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "descricao": "Qual é a principal diferença entre MARGIIN e PADDING?",
+      "alternativas": [
+        "Margin cria espaço fora de um elemento, enquanto padding cria espaço dentro de um elemento;",
+        "Margin é sempre visível, enquanto padding é invisível;",
+        "Margin define o espaço interno, enquanto padding define o espaço externo;",
+        "Não há diferença, ambos fazem a mesma coisa;"
+      ]
+    },
+    {
+      "id": 2,
+      "descricao": "Quais propriedades são usadas para medir largura e altura?",
+      "alternativas": [
+        "Width e Height;",
+        "Lenght e Height;",
+        "Width e Lenght;",
+        "Width e Max-Widht;"
+      ]
+    },
+    {
+      "id": 3,
+      "descricao": "Qual é a função da propriedade max-height?",
+      "alternativas": [
+        "Limita a altura máxima de um elemento;",
+        "Define a altura exata de um elemento;",
+        "Altera a altura de um elemento conforme o conteúdo;",
+        "Define a altura mínima de um elemento;"
+      ]
+    }
+  ]

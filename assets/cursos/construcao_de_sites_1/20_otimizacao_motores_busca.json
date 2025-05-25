@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "descricao": "Qual é a principal diferença entre on-page e off-page?",
+      "alternativas": [
+        "O on-page se concentra em fatores internos do site, enquanto off-page se concentra em fatores externos;",
+        "On-page é apenas sobre conteúdo, enquanto off-page é sobre links;",
+        "On-page não afeta a classificação, enquanto off-page sempre afeta;",
+        "On-page é mais importante que off-page em todos os casos;"
+      ]
+    },
+    {
+      "id": 2,
+      "descricao": "O que são palavras-chave em relação aos motores de busca?",
+      "alternativas": [
+        "Termos ou frases que usuários pesquisam para encontrar informações específicas;",
+        "Links para redes sociais;",
+        "Imagens utilizadas em sites;",
+        "Códigos de programação usados na web;"
+      ]
+    },
+    {
+      "id": 3,
+      "descricao": "Qual das informações a seguir deve ser evitada?",
+      "alternativas": [
+        "Criar hyperlinks para websites “não muito populares”;",
+        "Monitore o tempo de carregamento de suas páginas;",
+        "Use o planejador de palavras-chave;",
+        "Analise o perfil de backlinks para o seu website;"
+      ]
+    }
+  ]

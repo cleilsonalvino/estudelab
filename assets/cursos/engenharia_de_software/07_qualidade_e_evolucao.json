@@ -1,0 +1,34 @@
+[
+   
+    {
+      "id": 1,
+      "descricao": "Qual é o principal objetivo da evolução de software?",
+      "alternativas": [
+        "Garantir que o software evolua de acordo com as mudanças nas necessidades do usuário e do mercado",
+        "Reduzir o número de funcionalidades do software para simplificar a manutenção",
+        "Eliminar funcionalidades antigas sem considerar o impacto nas necessidades do usuário",
+        "Aumentar a complexidade do software para torná-lo mais robusto, sem priorizar as necessidades do usuário"
+      ]
+    },
+    {
+      "id": 2,
+      "descricao": "O que é a manutenção de software?",
+      "alternativas": [
+        "O processo de corrigir defeitos, atualizar e melhorar o software após sua entrega para garantir sua eficácia e evolução",
+        "A criação de novos módulos e funcionalidades sem considerar o estado atual do software",
+        "A substituição completa do software sempre que novos requisitos surgem",
+        "A descontinuação de um sistema, sem a necessidade de considerar a manutenção contínua"
+      ]
+    },
+    {
+      "id": 3,
+      "descricao": "Quais são os tipos de manutenção de software?",
+      "alternativas": [
+        "Correção, adaptação, melhoria e prevenção",
+        "Desenvolvimento, codificação e testes",
+        "Planejamento, execução e finalização",
+        "Design, prototipação e implementação"
+      ]
+    }
+  ]
+  

@@ -1,0 +1,123 @@
+<link rel="stylesheet" href="css\cursos\programacao1_js.css">
+
+<h3>O que são os Identificadores?</h3>
+<p> Um identificador refere-se ao nome dado a uma variável, tipo, função, constante etc.</p>
+<p>JavaScript é uma linguagem case-sensitive, isto é,que diferencia letras maiúsculas de minúsculas,  então Objeto, objeto e OBJETO são identificadores diferentes e podem se referir a entidades (variáveis, constantes, funções etc.) diferentes dentro do código.</p>
+
+<h4>Regras para criação de identificadores</h4>
+<p>Um identificador deve conter somente letras (maiúsculas ou minúsculas), dígitos ou um grupo restrito de caracteres especiais (_, $);</p>
+<p>Não podem ser utilizados outros caracteres especiais, como letras com acento, “&” ou espaço;</p>
+<p>O primeiro caractere de um identificador não pode ser um número;</p>
+<p>Letras maiúsculas e minúsculas podem ser utilizadas, mas é uma boa prática de programação em nomes de  variáveis e funções utilizar sempre letras minúsculas, excetuando a primeira letra da segunda palavra em diante que compõe o identificador.</p>
+<p><strong>Exemplos:</strong> contador, somaTotal, pagamentoDosEmpregados.</p>
+
+<table>
+    <tr>
+        <th>Identificadores válidos</th>
+        <th>Identificadores inválidos</th>
+    </tr>
+    <tr >
+        <td >a</td>
+        <td>1a</td>
+    </tr>
+    <tr>
+    <td>A</td>
+    <td>casa 1</td>
+</tr>
+<tr>
+    <td>_a</td>
+    <td>calçada</td>
+</tr>
+<tr>
+    <td>$usuario</td>
+    <td>soma total</td>
+</tr>
+<tr>
+    <td>a_1 </td>
+    <td>Salário Base</td>
+</tr>
+<tr>
+    <td>casa1</td>
+    <td>Salário Base</td>
+</tr>
+<tr>
+    <td>somaTotal</td>
+</tr>
+</table>
+
+<h3>Tipos de dados</h3>
+<p>Um tipo especifica as características de uma informação, determinando assim quais valores podem ser armazenados, como podem ser lidos ou escritos e quais as operações possíveis com a mesma. Por exemplo, há operações que podem ser feitas sobre tipos numéricos, outras aplicáveis a textos;</p>
+<p>O tipo determina também o intervalo de valores possíveis. Por exemplo, existem tipos em que “cabem” números maiores do que em outros.</p>
+
+<table>
+    <tr>
+        <th>Tipos</th>
+        <th>Valores aceitos</th>
+        <th>Exemplos de valores</th>
+    </tr>
+    <tr >
+        <td >int</td>
+        <td>números inteiros</td>
+        <td>10  e -8</td>
+    </tr>
+    <tr>
+        <td >float</td>
+        <td>números decimais</td>
+        <td>10.0  e -8.3</td>
+    </tr>
+    <tr>
+        <td>boolean</td>
+        <td>valores lógicos</td>
+        <td>true (verdadeiro) ou false (falso)</td>
+    </tr>
+    <tr>
+        <td>string</td>
+        <td>texto</td>
+        <td>"moeda",  "Santa Ceia" e  ""</td>
+    </tr>
+    <tr>
+        <td>null</td>
+        <td>nulo (indica que há nenhum valor ali)</td>
+        <td>null</td>
+    </tr>
+</table>
+<p>JavaScript apresenta tipagem fraca, não sendo necessário declarar o tipo de uma variável e a mesma poderá
+ receber valores de um tipo diferente, posteriormente.</p>
+
+<h3>Variáveis</h3>
+<p>Trata-se de um local na memória reservado para armazenar valores de um determinado tipo. Esse local na memória poderá ser referenciado (isto é, acessado para leitura ou escrita) a partir do identificador dado àquela variável;</p>
+<p>Vale lembrar que o valor armazenado por uma variável pode ser alterado durante a execução do programa.</p>
+<p>Em JavaScript, nós precisamos declarar uma variável antes de usá-la (isto é, acessar seu conteúdo). Isso pode ser feito de três maneiras:</p>
+
+<table>
+    <tr>
+        <th>Tipo de Declaração</th>
+        <th>ExemploExemplo</th>
+        <th>Observação</th>
+    </tr>
+    <tr >
+        <td >Usando “var”</td>
+        <td>var x = 10;</td>
+        <td>Funciona desde 1995
+            Escopo local
+            Funciona desde 1995 Escopo local
+        </td>
+    </tr>
+    <tr>
+        <td >Usando “let”</td>
+        <td>let x = 10;</td>
+        <td>Funciona desde 2015 Escopo local</td>
+    </tr>
+    <tr>
+        <td>Usando nada</td>
+        <td>x = 10;</td>
+        <td>Funciona desde 1995 Escopo global</td>
+    </tr>
+</table>
+
+<h4>Palavras reservadas</h4>
+<p>São palavras que possuem finalidades específicas dentro de uma linguagem de programação e, portanto, não podem ser usadas para outra finalidade (por exemplo, para declarar uma variável ou constante);</p>
+<p>Alguns exemplos de palavras reservadas em JavaScript:</p>
+<p>Instruções declarativas - var, let, const, function etc. Comandos condicionais ou de repetição – if, else, switch, case, for, while etc. E outras.</p>
+
+<p>Obs: Apesar de nomes de tipos de dados (int, float, char, boolean etc.) não serem palavras reservadas em JavaScript, não recomendamos seu uso na declaração de variáveis, constantes ou funções!</p>

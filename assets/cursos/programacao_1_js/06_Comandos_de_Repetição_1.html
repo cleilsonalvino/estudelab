@@ -1,0 +1,270 @@
+<link rel="stylesheet" href="css\cursos\programacao1_js.css">
+
+<h3>Comandos de Repetição</h3>
+<p> Para resolver alguns problemas, precisamos repetir um conjunto de instruções.</p>
+
+<p>Para cada uma dessas situações, queremos executar uma série de passos (instruções) para cada número daquele intervalo, a fim de encontrarmos a solução;</p>
+<p>Assim, precisamos de comandos de repetição, instruções que permitem repetir um bloco de código sob determinadas circunstâncias;</p>
+
+<p>JavaScript oferece três instruções para repetição: <strong> for, while e do...while.</strong></p>
+
+<h4>Comando for</h4>
+
+<p>Este comando de repetição permite especificar uma variável de controle que será usada para “varrer” os números de um intervalo (de 5 até 10, por exemplo) e como essa variável deve ser incrementada/decrementada ao final de cada passo.</p>
+
+<p>Sintaxe do comando <strong>for:</strong></p>
+<img src="cursos\programacao_1_js\img\Sintaxe_Comando_For.png" alt="Sintaxe_Comando_For" width="80%">
+<p>Exemplos de como funciona o comando for:</p>
+<table>
+   <tr>
+    <th colspan="2">Exemplo 1: Imprimir todos os números de 1 a 100</th>
+   </tr>
+    <tr>
+        <td>Código Javascript<br>
+            for (let i = 1; i &lt;= 100; i++) &#123;
+                <br>  alert(i); <br>
+            &#125;
+        </td>
+        <td>
+            Leia-se<br>
+            PARA i = 1; ENQUANTO i &lt;= 100 FAÇA &#123;
+                <br> MOSTRE i; <br>
+            &#125; (após cada iteração, aumente i em 1)
+        </td>
+    </tr>
+</table>
+<p>Nessa mesma linha de raciocínio conseguimos realizar ações conforme as situações abaixo.</p>
+<br>
+<table>
+    <tr>
+     <th colspan="2">Exemplo 2a: Imprimir todos os números pares de 1 a 100</th>
+    </tr>
+     <tr>
+         <td>Código Javascript<br>
+             for (let i = 1; i &lt;= 100; i++) &#123;
+                <br> if(i % 2 == 0) &#123;<br> alert(i);&#125;<br>
+            &#125;
+         </td>
+         <td>
+            Leia-se<br>
+             PARA i = 1; ENQUANTO i &lt;= 100 FAÇA &#123;
+                <br>SE (resto de i por 2 == 0) ENTÃO &#123; <br> MOSTRE i; <br>
+            &#125; (após cada iteração, aumente i em 1)
+         </td>
+     </tr>
+ </table>
+ <p>A estrutura básica de um loop for inclui três partes: inicialização, condição e incremento.</p>
+ <br>
+ <table>
+    <tr>
+     <th colspan="2">Exemplo 2b: Imprimir todos os números pares de 1 a 100</th>
+    </tr>
+     <tr>
+         <td>Código Javascript<br>
+             for (let i = 1; i &lt;= 100; i+=2) &#123;
+                <br> alert(i);<br>
+            &#125;
+         </td>
+         <td>
+            Leia-se<br>
+             PARA i = 1; ENQUANTO i &lt;= 100 FAÇA &#123;
+                <br>MOSTRE i; <br>
+            &#125; (após cada iteração, aumente i em 1)
+         </td>
+     </tr>
+ </table>
+
+ <br>
+ <table>
+    <tr>
+     <th colspan="2">Exemplo 3: Imprimir soma de todos os números de 1 a 100</th>
+    </tr>
+     <tr>
+         <td>Código Javascript<br>
+            let soma = 0; <br>
+             for (let i = 1; i &lt;= 100; i++) &#123;
+                <br> soma = soma + i;<br>
+            &#125; <br>
+            alert(soma);
+         </td>
+         <td>
+            Leia-se<br>
+            soma = 0; <br>
+             PARA i = 1; ENQUANTO i &lt;= 100 FAÇA &#123;
+                <br>soma = soma + i; <br>
+            &#125; (após cada iteração, aumente i em 1) <br>
+            MOSTRE soma;
+         </td>
+     </tr>
+ </table>
+
+ <br>
+ <p>O comando for em JavaScript é uma estrutura de controle que executa um bloco de código repetidamente enquanto uma determinada condição é verdadeira, permitindo iterar sobre elementos de uma lista ou realizar tarefas repetitivas.</p>
+ <table>
+    <tr>
+     <th colspan="2">Exemplo 4: Receber dois números inteiros e imprimir todos os inteiros do maior até o menor deles</th>
+    </tr>
+     <tr>
+         <td>Código Javascript<br>
+            let a = parseInt(prompt("Informe a")); <br>
+            let b = parseInt(prompt("Informe b")); <br>
+            let maior = (a &gt; b ? a : b); <br>
+            let menor = (a &lt; b ? a : b); <br>
+             for (let x = maior; x &gt;= menor; x--) &#123;
+                <br> alert(x);<br>
+            &#125;   
+         </td>
+         <td>
+            Leia-se<br>
+            LEIA a; <br>
+            LEIA b; <br>
+            maior = maior valor entre a e b; <br>
+            menor = menor valor entre a e b; <br>
+
+             PARA x = maior; ENQUANTO x &lt;= menor FAÇA &#123;
+                <br>MOSTRE x; <br>
+            &#125; (após cada iteração, diminua x em 1)
+         </td>
+     </tr>
+ </table>
+
+ <h4>Comando while</h4>
+<p>Este comando de repetição permite especificar uma condição de controle e, enquanto for verdadeira, repetirá o bloco de código vinculado.</p>
+
+<p>Sintaxe do comando while:</p>
+<img src="cursos\programacao_1_js\img\Sintaxe_Comando_While.png" alt="Sintaxe_Comando_While" width="80%">
+
+<h4>Exemplos de como funciona o comando while:</h4>
+
+<table>
+    <tr>
+     <th colspan="2">Exemplo 1: Imprimir todos os números de 1 a 100</th>
+    </tr>
+     <tr>
+        <td>Código Javascript<br>
+            let i = 1; <br>
+             while (i &lt;= 100 ) &#123;
+                <br> alert(i); <br>
+            &#125; <br>
+            i++;
+        </td>
+         <td>
+            Leia-se<br>
+            i = 1; <br>
+            ENQUANTO i &lt;= 100 FAÇA &#123;<br>
+                MOSTRE i;<br>
+                INCREMENTE i em 1;
+            &#125; 
+         </td>
+     </tr>
+ </table>
+ <p>Esse é um exemplo básico do comando while e vale destacar que quanto ao uso do comando <strong>for</strong> ou do <strong>while</strong> depende muito do contexto e situação problema que deseja solucionar, geralmente, quando se conhece a quantidade de interações que irá fazer se torna mais vantajoso o uso do for no lugar de while. Em seguida, observe mais alguns exemplos do uso do comando while:</p>
+
+ <table>
+    <tr>
+     <th colspan="2">Exemplo 2a: Imprimir todos os números pares de 1 a 100</th>
+    </tr>
+     <tr>
+        <td>Código Javascript<br>
+            let i = 1; <br>
+             while (i &lt;= 100 ) &#123;
+                <br> if(i % 2 == 0) &#123;<br>
+                alert(i); <br>
+            &#125; <br>
+            i++; <br>
+            &#125;
+        </td>
+         <td>
+            Leia-se<br>
+            i = 1; <br>
+            ENQUANTO i &lt;= 100 FAÇA &#123;
+                <br>SE (resto de i por 2 == 0) ENTÃO &#123;<br>
+                MOSTRE i;
+            &#125; <br>
+            INCREMENTE i em 1; <br>
+            &#125;
+         </td>
+     </tr>
+ </table>
+<br>
+ <table>
+    <tr>
+     <th colspan="2">Exemplo 2b: Imprimir todos os números pares de 1 a 100</th>
+    </tr>
+     <tr>
+        <td>Código Javascript<br>
+            let i = 2; <br>
+             while (i &lt;= 100 ) &#123;
+                <br> alert(i); <br>
+                i +=2; <br>
+            &#125;
+        </td>
+         <td>
+            Leia-se<br>
+            i = 2; <br>
+            ENQUANTO i &lt;= 100 FAÇA &#123;
+                <br>MOSTRE i; <br>
+                INCREMENTE i em 2; <br>
+            &#125;
+         </td>
+     </tr>
+ </table>
+<br>
+<table>
+    <tr>
+     <th colspan="2">Exemplo 3: Imprimir soma de todos os números de 1 a 100</th>
+    </tr>
+     <tr>
+        <td>Código Javascript<br>
+            let soma = 0; <br>
+             while (i &lt;= 100 ) &#123;
+                <br> soma = soma + i; <br>
+                i ++; <br>
+            &#125; <br>
+            alert(soma);
+        </td>
+         <td>
+            Leia-se<br>
+            soma = 0; <br>
+            ENQUANTO i &lt;= 100 FAÇA &#123;
+                <br>soma = soma + i; <br>
+                INCREMENTE i em 1; <br>
+            &#125; <br>
+            MOSTRE soma;
+         </td>
+     </tr>
+ </table>
+
+<p>Segue um exemplo onde mostra pegando os valores que o usuário digitar e irá fazer o cálculo trazendo os números do maior até o menor utlizando o while para <strong>"varrer"</strong> esse resultado. </p>
+
+ <table>
+    <tr>
+     <th colspan="2">Exemplo 4: Receber dois números inteiros e imprimir todos os
+        inteiros do maior até o menor deles</th>
+    </tr>
+     <tr>
+        <td>Código Javascript<br>
+            let a = parseInt(prompt("Informe a")); <br>
+            let b = parseInt(prompt("Informe b")); <br>
+            let maior = (a &gt; b ? a : b); <br>
+            let menor = (a &lt; b ? a : b); <br>
+            let x = maior; <br>
+            while (x &gt;= menor ) &#123;
+                <br> alert(x); <br>
+                x--; <br>
+            &#125;
+        </td>
+         <td>
+            Leia-se<br>
+            LEIA a; <br>
+            LEIA b;<br>
+            maior = maior valor entre a e b;<br>
+            menor = menor valor entre a e b;<br>
+            x = maior; <br>        
+            ENQUANTO x &gt;= menor FAÇA &#123;
+                <br>MOSTRE x; <br>
+                DECREMENTE x em 1; <br>
+            &#125;
+         </td>
+     </tr>
+ </table>

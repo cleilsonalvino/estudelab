@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "descricao": "O que é um seletor?",
+      "alternativas": [
+        "Expressão usada para determinar o subconjunto de elementos HTML sobre os quais deve-se aplicar uma regra CSS;",
+        "Um comando que altera a estrutura do documento HTML;",
+        "Um tipo de propriedade CSS que define cores e tamanhos;",
+        "É utilizado para gerar textos em html;"
+      ]
+    },
+    {
+      "id": 2,
+      "descricao": "Qual das alternativas a seguir descreve corretamente a função do seletor :hover?",
+      "alternativas": [
+        "Aplica estilos quando o mouse passa sobre um elemento;",
+        "Define o estilo de um elemento quando ele está ativo;",
+        "Estiliza um elemento que foi clicado;",
+        "Aplica estilos a um elemento enquanto ele está carregando;"
+      ]
+    },
+    {
+      "id": 3,
+      "descricao": "Qual a função da Pseudoclasse a:link?",
+      "alternativas": [
+        "Seleciona todos os links que ainda não foram visitados;",
+        "Seleciona o input que tem o foco;",
+        "Seleciona o link ativo;",
+        "Seleciona todos os links já visitados;"
+      ]
+    }
+  ]

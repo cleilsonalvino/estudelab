@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "descricao": "O que é CSS?",
+      "alternativas": [
+        "Uma linguagem de folhas de estilo usada para definir layout",
+        "Uma ferramenta de design gráfico para edição de imagens",
+        "Uma ferramenta para edição de textos",
+        "Um sistema de Banco de Dados"
+      ]
+    },
+    {
+      "id": 2,
+      "descricao": "Qual das alternatiivas a seguir NÃO é um beneficio do CSS?",
+      "alternativas": [
+        "Impossibilidade de personalizar a aparência de elementos HTML",
+        "Controle de interface em diferentes documentos em um único arquivo",
+        "Menor consumo de banda para usuário e servidor",
+        "Inúmeras técnicas dinâmicas que não poderiam ser utilizadas em tabelas"
+      ]
+    },
+    {
+      "id": 3,
+      "descricao": "Qual das formas a seguir o CSS está sendo aplicado diretamente na tag?",
+      "alternativas": [
+        "table style ='width:300px;   border:dashed';",
+        "table class = 'tabela-estilo';",
+        "table id = 'tabela1'; ",
+        "style table { width: 300px; border: dashed; } style;"
+      ]
+    }
+  ]

@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "descricao": "Qual operador é usado para adição em Python?",
+      "alternativas": [
+        "+.",
+        "-.",
+        "*.",
+        "/."
+      ]
+    },
+    {
+      "id": 2,
+      "descricao": "O que o operador == verifica?",
+      "alternativas": [
+        "Se dois valores são iguais.",
+        "Se dois valores são diferentes.",
+        "Se um valor é maior que o outro.",
+        "Se um valor é menor que o outro."
+      ]
+    },
+    {
+      "id": 3,
+      "descricao": "Qual operador é usado para multiplicação?",
+      "alternativas": [
+        "*.",
+        "/.",
+        "-.",
+        "%."
+      ]
+    }
+  ]
+  

@@ -1,0 +1,107 @@
+[
+    {
+        "nome": "Módulo 1 - Fundamentos do Python",
+        "licoes" : [
+            {
+                "id": "01_introducao_python",
+                "nome": "Introdução ao Python",
+                "video": "https://www.youtube.com/embed/g_R_Asf6Co0?si=djrFbqxj-i9qC2vV",
+                "videoDescricao": "Videoaula disponibilizada no YouTube pelo canal/autor Hashtag Programação"
+            },
+            {
+                "id": "02_variaveis_tipos_dados",
+                "nome": "Variáveis e Tipos de Dados",
+                "video": "https://www.youtube.com/embed/45fcGsvNT7g?si=pCc5s_3jdsFDwtYU",
+                "videoDescricao": "Videoaula disponibilizada no YouTube pelo canal/autor Sharpax"
+            },
+            {
+                "id": "03_operadores",
+                "nome": "Operadores Aritméticos e Lógicos",
+                "video": "https://www.youtube.com/embed/4-V_jsNj8ao?si=qVgo-DjzEkboC_-z",
+                "videoDescricao": "Videoaula disponibilizada no YouTube pelo canal/autor RfZorzi - Rafael Serafim"
+            },
+            {
+                "id": "04_estruturas_condicionais",
+                "nome": "Estruturas Condicionais",
+                "video": "https://www.youtube.com/embed/Yvo1lHk3QmA?si=3Y_BtpkBDWDt_Uh7",
+                "videoDescricao": "Videoaula disponibilizada no YouTube pelo canal/autor Let's Data"
+            },
+            {
+                "id": "05_loops",
+                "nome": "Laços de Repetição (Loops)",
+                "video": "https://www.youtube.com/embed/o-1ciQ_I8-4?si=gL-BsKHM1tC53PLW",
+                "videoDescricao": "Videoaula disponibilizada no YouTube pelo canal/autor Refatorando"
+            },
+            {
+                "id": "06_funcao_input",
+                "nome": "Função Input e Manipulação de Dados",
+                "video": "https://www.youtube.com/embed/NVq4whDOKaY?si=H628Utg5kOyWkSgx",
+                "videoDescricao": "Videoaula disponibilizada no YouTube pelo canal/autor Hashtag Programação"
+            }
+        ]
+    },
+    {
+        "nome": "Módulo 2 - Estruturas de Dados e Funções",
+        "licoes" : [
+            {
+                "id": "07_listas_tuplas_dicionarios",
+                "nome": "Listas, Tuplas e Dicionários",
+                "video": "https://www.youtube.com/embed/pTN5s-DirNE?si=AMlL-suchLhSG6DY",
+                "videoDescricao": "Videoaula disponibilizada no YouTube pelo canal/autor Let's Data"
+            },
+            {
+                "id": "08_funcoes",
+                "nome": "Funções e Escopo de Variáveis",
+                "video": "https://www.youtube.com/embed/TR-3534RqFU?si=ggxftEg1Vn9ep7ga",
+                "videoDescricao": "Videoaula disponibilizada no YouTube pelo canal/autor Túlio Toffolo"
+            },
+            {
+                "id": "09_modulos_bibliotecas",
+                "nome": "Módulos e Bibliotecas",
+                "video": "https://www.youtube.com/embed/Xgc_LTq-V0o?si=jgsvF7ZAnOw3fqyl",
+                "videoDescricao": "Videoaula disponibilizada no YouTube pelo canal/autor Hashtag Programação"
+            },
+            {
+                "id": "10_manipulacao_strings",
+                "nome": "Manipulação de Strings",
+                "video": "https://www.youtube.com/embed/a7DH88vk2Sk?si=1opGA1x9_KvKRzcV",
+                "videoDescricao": "Videoaula disponibilizada no YouTube pelo canal/autor Curso em Vídeo"
+            },
+            {
+                "id": "11_list_comprehension",
+                "nome": "List Comprehension e Técnicas de Filtragem",
+                "video": "https://www.youtube.com/embed/M2zL6LnQwkw?si=7fTzjYy0rGH2Cxqb",
+                "videoDescricao": "Videoaula disponibilizada no YouTube pelo canal/autor Hashtag Programação"
+            }
+        ]
+    },
+    {
+        "nome": "Módulo 3 - Boas Práticas e Projetos",
+        "licoes" : [
+            {
+                "id": "12_boas_praticas_codigo",
+                "nome": "Boas Práticas de Código em Python",
+                "video": "https://www.youtube.com/embed/uzq8oakC24k?si=HP5XYQO1L_srTWOH",
+                "videoDescricao": "Videoaula disponibilizada no YouTube pelo canal/autor Hashtag Programação"
+            },
+            {
+                "id": "13_debugging_erros",
+                "nome": "Debugging e Tratamento de Erros",
+                "video": "https://www.youtube.com/embed/xz2B3bfNjEk?si=0nHFXW6n5bc7ocL9",
+                "videoDescricao": "Videoaula disponibilizada no YouTube pelo canal/autor Curso em Vídeo"
+            },
+            {
+                "id": "14_projeto_calculadora",
+                "nome": "Projeto Prático: Calculadora",
+                "video": "https://www.youtube.com/embed/zTgcLenYZ7Y?si=LqcJOZ-fSDTC_-81",
+                "videoDescricao": "Videoaula disponibilizada no YouTube pelo canal/autor Descomplicando Tech"
+            },
+            {
+                "id": "15_projeto_jogo_adivinhacao",
+                "nome": "Projeto Prático: Jogo de Adivinhação",
+                "video": "https://www.youtube.com/embed/mIL7UJosGdc?si=RxQm3Igf1GBcigT_",
+                "videoDescricao": "Videoaula disponibilizada no YouTube pelo canal/autor Usando Python"
+            }
+        ]
+    }
+]

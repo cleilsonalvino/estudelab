@@ -1,0 +1,227 @@
+<link rel="stylesheet" href="css\cursos\programacao1_js.css">
+
+<h3>Objetos globais</h3>
+
+<p> Em JavaScript, são objetos presentes no escopo global, isto é, podem ser acessados a partir de qualquer lugar no código; </p>
+<p>Mantendo tais objetos no escopo global, podemos acessar tais objetos e suas propriedades e métodos em qualquer lugar;</p>
+<p>Alguns objetos padrões do JavaScript com tal característica são o Date, Math e String.</p>
+
+<h3>Date</h3>
+<p>Permite armazenar objetos do tipo Date (data e hora) em variáveis;</p>
+<h5>Exemplo:</h5>
+<p>//Cria um objeto com a data e hora atual <br> hoje = new Date();</p>
+<p>//Ano, mês, dia, horas, minutos, segundos <br> natal = new Date(2017, 11, 25, 5, 0, 0);</p>
+
+<h4>Métodos de Date</h4>
+<table>
+    <tr>
+        <th>Método</th>
+        <th>Descrição</th>
+        <th>Exemplo</th>
+    </tr>
+    <tr>
+        <td>getDate()</td>
+        <td>Retorna o dia do mês</td>
+        <td>hoje.getDate()</td>
+    </tr>
+    <tr>
+        <td>getMonth()</td>
+        <td>Retorna o dia do mês</td>
+        <td>hoje.getMonth()</td>
+    </tr>
+    <tr>
+        <td>getFullYear()</td>
+        <td>Retorna o ano, com 04 dígitos</td>
+        <td>hoje.getFullYear()</td>
+    </tr>
+    <tr>
+        <td>getHours()</td>
+        <td>Retorna as horas</td>
+        <td>hoje.getHours() </td>
+    </tr>
+    <tr>
+        <td>Retorna os minutos()</td>
+        <td>Retorna os minutos</td>
+        <td>hoje.getMinutes()</td>
+    </tr>
+    <tr>
+        <td>getSeconds()</td>
+        <td>Retorna os segundos</td>
+        <td>hoje.getSeconds()</td>
+    </tr>
+    <tr>
+        <td>getDay()</td>
+        <td>Retorna o dia da semana (0 para domingo)</td>
+        <td>hoje.getDay()</td>
+    </tr>
+    <tr>
+        <td>toString()</td>
+        <td>Retorna a data como string</td>
+        <td>hoje.toString()</td>
+    </tr>
+</table>
+<br>
+<table>
+    <tr>
+        <th>Método</th>
+        <th>Descrição</th>
+        <th>Exemplo</th>
+    </tr>
+    <tr>
+        <td>setDate(x) </td>
+        <td>Altera o dia do mês</td>
+        <td>hoje.setDate(10)</td>
+    </tr>
+    <tr>
+        <td>setMonth(x)</td>
+        <td>Altera o mês</td>
+        <td>hoje.setMonth(1)</td>
+    </tr>
+    <tr>
+        <td>setFullYear(x)</td>
+        <td>Altera o ano </td>
+        <td>hoje.setFullYear(2000)</td>
+    </tr>
+    <tr>
+        <td>setHours(x)</td>
+        <td>Altera as horas</td>
+        <td>hoje.setHours(12)</td>
+    </tr>
+    <tr>
+        <td>setMinutes(x)</td>
+        <td>Altera os minutos</td>
+        <td>hoje.setMinutes(40)</td>
+    </tr>
+    <tr>
+        <td>setSeconds(x)</td>
+        <td>Altera os segundos</td>
+        <td>hoje.setSeconds(55)</td>
+    </tr> 
+</table>
+<br>
+<h3>Propriedades de Math</h3>
+<table>
+    <tr>
+        <th>Propriedade</th>
+        <th>Descrição </th>
+        <th>Exemplo</th>
+    </tr>
+    <tr>
+        <td>E</td>
+        <td>Retorna a constante de Euler (aprox. 2,718)</td>
+        <td>Math.E</td>
+    </tr>
+    <tr>
+        <td>PI</td>
+        <td>Retorna a constante PI (aprox. 3,14) </td>
+        <td>Math.PI</td>
+    </tr>
+</table>
+<br>
+<h4>Métodos de Math</h4>
+<table>
+    <tr>
+        <th>Método</th>
+        <th>Descrição</th>
+        <th>Exemplo</th>
+    </tr>
+    <tr>
+        <td>abs(x)</td>
+        <td>Retorna o valor absoluto de um número</td>
+        <td>Math.abs( -1 ) </td>
+    </tr>
+    <tr>
+        <td>ceil(x)</td>
+        <td>Retorna o número inteiro arredondado para cima </td>
+        <td>Math.abs( 5.5 )</td>
+    </tr>
+    <tr>
+        <td>floor(x) </td>
+        <td>Retorna o número inteiro arredondado para baixo</td>
+        <td>Math.floor( 5.5 ) </td>
+    </tr>
+    <tr>
+        <td>max(numeros) </td>
+        <td>Retorna o maior número de uma série</td>
+        <td>Math.max(5, 8, 9) </td>
+    </tr>
+    <tr>
+        <td>min(numeros)</td>
+        <td>Retorna o menor número de uma série</td>
+        <td>Math.min(5, 8, 9) </td>
+    </tr>
+    <tr>
+        <td>random()</td>
+        <td>Retorna um número aleatório decimal entre 0 e 1</td>
+        <td>Math.random() </td>
+    </tr> 
+    <tr>
+        <td>round(x)</td>
+        <td>Retorna o valor do número arredondado </td>
+        <td>Math.round( 5.5 )</td>
+    </tr> 
+</table>
+<br>
+<h3>String</h3>
+<p>Possui várias propriedades e métodos úteis para manipulação de strings; </p>
+<h5>Exemplo:</h5>
+<p>//Retorna o tamanho da string <br> tamanho = nome.length; </p>
+<p>//Retorna a posição de uma substring dentro da string <br> posicao = nome.indexOf("Silva");</p>
+<p>//Retorna a string em letras maiúsculas <br> caixaAlta = nome.toUpperCase();</p>
+<h4>Métodos de Math</h4>
+<table>
+    <tr>
+        <th>Propriedade</th>
+        <th>Descrição </th>
+        <th>Exemplo</th>
+    </tr>
+    <tr>
+        <td>length</td>
+        <td>Retorna o tamanho da string</td>
+        <td>nome.length</td>
+    </tr>
+</table>
+<br>
+<h4>Métodos de Math</h4>
+<table>
+    <tr>
+        <th>Método</th>
+        <th>Descrição</th>
+        <th>Exemplo</th>
+    </tr>
+    <tr>
+        <td>charAt(indice) </td>
+        <td>Retorna o caracter na posição especificada</td>
+        <td>nome.charAt(0) </td>
+    </tr>
+    <tr>
+        <td>indexOf(substring) </td>
+        <td>Retorna a posição de substring dentro da string </td>
+        <td>nome.indexOf("Silva") </td>
+    </tr>
+    <tr>
+        <td>replace(antiga, nova)  </td>
+        <td>Retorna uma nova string substituindo a substring antiga pela nova na string passada</td>
+        <td>nome.replace("Silva", "Souza") </td>
+    </tr>
+    <tr>
+        <td>slice(inicio, fim) </td>
+        <td>Retorna uma substring, começando na posição inicio  e terminando na posição fim (mas não incluindo esta) </td>
+        <td>nome.slice(5, 8) </td>
+    </tr>
+    <tr>
+        <td>split(separador) </td>
+        <td>“Quebra” a String baseada no caracter separador,  retornando-a como um array de substrings</td>
+        <td>nome.split(" ")  </td>
+    </tr>
+    <tr>
+        <td>toLowerCase() </td>
+        <td>Retorna a string em letras minúsculas </td>
+        <td>nome.toLowerCase()</td>
+    </tr> 
+    <tr>
+        <td>toUpperCase() </td>
+        <td>Retorna a string em letras maiúsculas  </td>
+        <td>nome.toUpperCase()</td>
+    </tr> 
+</table>

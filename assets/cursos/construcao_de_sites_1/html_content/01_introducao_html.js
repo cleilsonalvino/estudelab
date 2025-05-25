@@ -1,0 +1,49 @@
+
+const htmlContent = `
+
+<h3>O que é HTML?</h3>
+<p>HyperText Markup Language - Linguagem de Marcação de Hipertexto.</p>
+<p>Um documento HTML é um arquivo texto que emprega marcações (tags) para descrever o conteúdo de páginas web, que será interpretado e renderizado pelos navegadores.</p>
+
+<h3>Evolução da Web</h3>
+
+<h4>Pré-web</h4>
+<p>Dados isolados (sem uma grande rede de comunicação e acesso aos dados).</p>
+<p>A Internet nasceu, mas faltava uma ferramenta para facilitar o compartilhamento de informações por meio dela.</p>
+<p>Surge a World Wide Web!</p>
+
+<h4>Web 1.0</h4>
+<p>Conceito surgiu em 1990, por Tim Bernes Lee;</p>
+<p>Junção de três tecnologias simples: HTML, HTTP e Hyperlinks;</p>
+<p>Web meramente informativa (estática).</p>
+
+<h4>Web 2.0</h4>
+<p>Termo surgiu em meados de 2004, por Dale Dougherty.</p>
+<p>Desenvolvimento de tecnologias (linguagens de programação) server-side.</p>
+<p>Todos passam a ser produtores e consumidores de informação.</p>
+<p>Redes sociais, blogs e sites de compartilhamento de multimídia.</p>
+<p>Crescimento exponencial do volume de dados.</p>
+<p>Web colaborativa (dinâmica).</p>
+
+<h4>Web 3.0</h4>
+<p>Processar volumes enormes de dados exige que computadores compreendam suas informações para filtragem e processamento.</p>
+<p>Nesse cenário, encontramos a HTML 5, que permite uso de marcações para melhor definir o significado de conteúdos em páginas Web.</p>
+<p>Web semântica ou inteligente.</p>
+<p>Obs: com o avanço de tecnologias como blockchain e machine learning, características como descentralização dos dados e uso intensivo de Inteligência Artificial foram incorporados.</p>
+
+<h4>Web 4.0</h4>
+<p>Segundo Seth Godin, será como um gigantesco SO inteligente e dinâmico, que irá suportar as interações dos indivíduos, utilizando os dados disponíveis, instantâneos ou históricos, para propor ou suportar a tomada de decisão (NETO, s.d.).</p>
+<p>Web simbiótica</p>
+<p>Internet das Coisas e uso intensivo da Inteligência Artificial também estão presentes aqui.</p>
+<p>E para você, o que será a web do futuro?</p>
+
+<h3>Editores HTML</h3>
+<p>Pode-se escrever páginas HTML em qualquer editor de texto: Bloco de Notas, Notepad++ etc.</p>
+<p>Lembre-se apenas de salvar com a extensão ".html"!</p>
+<p>... e ver o resultado produzido em qualquer navegador: Google Chrome, Mozilla Firefox, Internet Explorer, Safari, Opera etc.</p>
+<p>Entretanto, há ambientes de desenvolvimento integrado (IDE) que oferecem facilidades e recursos para o trabalho do desenvolvedor Web.</p>
+<p>Em nosso curso, utilizaremos o Visual Studio Code: <a href="https://code.visualstudio.com" target="_blank">https://code.visualstudio.com</a></p>
+<p>Caso não tenha PC/notebook e pretenda estudar por meio de um celular ou tablet Android, você pode utilizar o aplicativo <a href="https://play.google.com/store/apps/details?id=com.foxdebug.acodefree" target="_blank">aCode</a> disponível na Play Store.</p>
+`;
+
+export default htmlContent;

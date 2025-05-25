@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "descricao": "Qual das alternativas a seguir especifica como um elemento deveria ser mostrado?",
+      "alternativas": [
+        "Display;",
+        "Float;",
+        "Clear;",
+        "Opacity;"
+      ]
+    },
+    {
+      "id": 2,
+      "descricao": "Qual alternativa responde corretamente o uso da propriedade visibility?",
+      "alternativas": [
+        "Especifica se um elemento deveria ser visível ou não;",
+        "Especifica o tipo de posicionamento para o elemento;",
+        "Especifica a ordem de exibição/desenho em tela;",
+        "Especifica quão opaco deve ser um elemento;"
+      ]
+    },
+    {
+      "id": 3,
+      "descricao": "Qual valor da propriedade opacity torna um elemento completamente invisível?",
+      "alternativas": [
+        "0;",
+        "0.5;",
+        "50;",
+        "100;"
+      ]
+    }
+  ]

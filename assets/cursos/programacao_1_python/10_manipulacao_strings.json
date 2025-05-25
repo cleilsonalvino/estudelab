@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "descricao": "Qual função retorna o tamanho de uma string?",
+      "alternativas": [
+        "len().",
+        "size().",
+        "length().",
+        "count()."
+      ]
+    },
+    {
+      "id": 2,
+      "descricao": "Qual método converte uma string para minúsculas?",
+      "alternativas": [
+        "lower().",
+        "down().",
+        "min().",
+        "small()."
+      ]
+    },
+    {
+      "id": 3,
+      "descricao": "Qual método substitui partes de uma string?",
+      "alternativas": [
+        "replace().",
+        "sub().",
+        "switch().",
+        "edit()."
+      ]
+    }
+  ]
+  

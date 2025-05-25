@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "descricao": "Qual é o principal objetivo da Melhoria de Processo?",
+    "alternativas": [
+      "Otimizar o desempenho dos processos, eliminando ineficiências e aumentando a qualidade dos produtos ou serviços",
+      "Implementar novas tecnologias sem analisar os processos atuais",
+      "Aumentar a carga de trabalho dos colaboradores",
+      "Reduzir a complexidade organizacional, eliminando processos essenciais"
+    ]
+  },
+  {
+    "id": 2,
+    "descricao": "Qual é a função do BPMN na Melhoria de Processo?",
+    "alternativas": [
+      "Representar visualmente os processos para facilitar a análise e comunicação entre as equipes",
+      "Realizar cálculos estatísticos sobre os dados da produção",
+      "Desenvolver interfaces gráficas de software",
+      "Controlar automaticamente os processos sem necessidade de modelagem"
+    ]
+  },
+  {
+    "id": 3,
+    "descricao": "O que caracteriza a etapa de modelagem AS-IS na Melhoria de Processo?",
+    "alternativas": [
+      "Representar o processo atual como ele realmente ocorre, utilizando BPMN",
+      "Planejar como o processo será no futuro após a melhoria",
+      "Avaliar o desempenho do processo após as mudanças",
+      "Implementar alterações diretamente sem mapeamento prévio"
+    ]
+  }
+]

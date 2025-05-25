@@ -1,0 +1,50 @@
+[
+    {
+        "id": "construcao_de_sites_1",
+        "nome": "Construção de Sites 1 (HTML, CSS e boas práticas)",
+        "descricao": "Descrever objetivos da disciplina aqui.",
+        "tipo": "Informática"
+    },
+    {
+        "id": "engenharia_de_software",
+        "nome": "Engenharia de Software",
+        "descricao": "Descrever objetivos da disciplina aqui.",
+        "tipo": "Informática"
+    },
+    {
+        "id": "programacao_1_js",
+        "nome": "Programação 1 (JavaScript)",
+        "descricao": "Descrever objetivos da disciplina aqui.",
+        "tipo": "Informática"
+    },
+    {
+        "id": "programacao_1_python",
+        "nome": "Programação 1 (Python)",
+        "descricao": "Descrever objetivos da disciplina aqui.",
+        "tipo": "Informática"
+    },
+    {
+        "id": "portugues_para_concursos",
+        "nome": "Português para Concursos",
+        "descricao": "Descrever objetivos da disciplina aqui.",
+        "tipo": "Preparatório para Concursos"
+    },
+    {
+        "id": "raciocinio_e_matematica",
+        "nome": "Raciocínio Lógico e Matemática",
+        "descricao": "Descrever objetivos da disciplina aqui.",
+        "tipo": "Preparatório para Concursos"
+    },
+    {
+        "id": "informatica_para_concursos",
+        "nome": "Informática para Concursos",
+        "descricao": "Descrever objetivos da disciplina aqui.",
+        "tipo": "Preparatório para Concursos"
+    },
+    {
+        "id": "producao_textual",
+        "nome": "Produção Textual",
+        "descricao": "Descrever objetivos da disciplina aqui.",
+        "tipo": "Preparatório para ENEM"
+    }
+]

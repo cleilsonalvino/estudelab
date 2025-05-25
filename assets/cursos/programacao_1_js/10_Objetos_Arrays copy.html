@@ -1,0 +1,126 @@
+<link rel="stylesheet" href="css\cursos\programacao1_js.css">
+
+<h3>Objetos</h3>
+
+<p> Trata-se de um variável composta (isto é, que pode guardar vários valores) cujos valores podem ser armazenados ou recuperados a partir de nomes (propriedades); </p>
+<p>Em JavaScript, a quantidade de propriedades em um objeto é variável, isto é, podemos alterar ou acrescentar novas propriedades a qualquer momento.</p>
+
+
+<h4>Exemplos de declarações:</h4>
+<h5>Sintaxe 1</h5>
+<p> variavel = new Object( valor ); //Valor é opcional</p>
+<h5>Exemplo:</h5>
+<p>aluno = new Object( "Joaquim" );</p>
+<p>carro = new Object(); diario = new Object;  //Não recomendado!</p>
+
+<h5>Sintaxe 2</h5>
+<p>variavel = &#123; propriedade: valor, ... &#125;; //Recomendado!</p>
+<p>Exemplo aluno =  &#123; matricula: 1, nome: "Joaquim", anoNascimento: 1987 &#125;; </br> carro = &#123;&#125;;</p>
+
+<h4>Atribuindo valores às propriedades</h4>
+<h5>Sintaxe 1</h5>
+<p>variavel.propriedade = valor; //Recomendado</p>
+<h5>Exemplo:</h5>
+<p>aluno.nome = "Zacarias";</p> 
+
+<h5>Sintaxe 2</h5>
+<p>variavel["propriedade"] = valor;</p>
+<h5>Exemplo:</h5>
+<p>aluno["nome"] = "Zacarias";</p>
+
+<h4>Definindo métodos</h4>
+<h5>Sintaxe 1</h5>
+<p>variavel.metodo = function () &#123;...&#125;; //Recomendado</p>
+<h5>Exemplo:</h5>
+<p>aluno.pegarIdade = function () &#123; return 2022 - this.anoNascimento; &#125;;</p> 
+
+<h5>Sintaxe 2</h5>
+<p>variavel["metodo"] = function () &#123;...&#125;;</p>
+<h5>Exemplo:</h5>
+<p>aluno["pegarIdade"] = function () &#123; return 2022 – this.anoNascimento; &#125;;</p>
+
+<h3>Vetores ou arrays</h3>
+<p>Trata-se de um variável composta cujos valores podem ser armazenados ou recuperados a partir de um índice;</p>
+<p>Em JavaScript, a quantidade de elementos em um array é variável, isto é, podemos acrescentar novos elementos a qualquer momento;</p>
+<p>O índice de um array geralmente é numérico mas também pode ser textual (array associativo).</p>
+
+<h4>Declarando arrays</h4>
+<h5>Sintaxe 1</h5>
+<p>variavel = new Array(tamanho); //Tamanho é opcional</p>
+<h5>Exemplo:</h5>
+<p>diasDaSemana = new Array(7); <br> meses = new Array(); <br> anos = new Array;  //Não recomendado!</p> 
+
+<h5>Sintaxe 2</h5>
+<p>variavel = [elemento1, elemento2... ];</p>
+<h5>Exemplo:</h5>
+<p>diasUteis = ["Segunda", "Terça", "Quarta", "Quinta", "Sexta"]; <br> meses = [];</p>
+
+<h4>Atribuindo valores ao array</h4>
+<h5>Sintaxe 1</h5>
+<p>variavel[indice] = valor;</p>
+<h5>Exemplo:</h5>
+<p>meses[0] = "Janeiro"; <br> notas["Joaquim"] = 8.0; <br> notas["Cláudia"] = [8.0, 9.0];</p>
+
+<h4>Propriedades de um array</h4>
+<table>
+    <tr>
+        <th>Propriedade</th>
+        <th>Descrição</th>
+        <th>Exemplo</th>
+    </tr>
+    <tr>
+        <td>length</td>
+        <td>Retorna o tamanho do array</td>
+        <td>meses.length</td>
+    </tr>
+</table>
+<br>
+
+<table>
+    <tr>
+        <th>Método</th>
+        <th>Descrição</th>
+        <th>Exemplo</th>
+    </tr>
+    <tr>
+        <td>indexOf(elemento)</td>
+        <td>Retorna a posição do elemento dentro do array</td>
+        <td>meses.indexOf("Janeiro")</td>
+    </tr>
+    <tr>
+        <td>push(elementos)</td>
+        <td>Adiciona novos elementos ao final do array, retornando o novo tamanho</td>
+        <td>meses.push("Fevereiro", "Março")</td>
+    </tr>
+    <tr>
+        <td>pop()</td>
+        <td>Remove e retorna o último elemento do array</td>
+        <td>meses.pop()</td>
+    </tr>
+    <tr>
+        <td>unshift(elementos)</td>
+        <td>Adiciona novos elementos ao início do array, retornando o novo tamanho</td>
+        <td>meses.unshift("Janeiro")</td>
+    </tr>
+    <tr>
+        <td>shift()</td>
+        <td>Remove e retorna o primeiro elemento do array</td>
+        <td>meses.shift()</td>
+    </tr>
+    <tr>
+        <td>toString()</td>
+        <td>Retorna o array como string</td>
+        <td>meses.toString()</td>
+    </tr>
+</table>
+<br>
+<h4>Comando for…in</h4>
+<h5>Exemplo 1</h5>
+<p>let aluno = &#123;    matricula: 123,    nome: "Christiano",    idade: 37 &#125;;</p>
+<p>for (let prop in aluno) &#123; alert(`$&#123;prop&#125; -> $&#123;aluno[prop]&#125;`); &#125;</p>
+<h5>Exemplo 2</h5>
+<p>let meses = [    "Janeiro",    "Fevereiro",    "Março" ];</p>
+<p>for (let prop in meses) &#123; alert(`$&#123;prop&#125; -> $&#123;meses[prop]&#125;`); &#125;</p>
+<h5>Exemplo 3</h5>
+<p>let dicionario = []; dicionario["casa"] = "house"; dicionario["amarelo"] = "yellow"; dicionario[10] = 1;</p>
+<p>for (let prop in dicionario) &#123; alert(`$&#123;prop&#125; -> $&#123;dicionario[prop]&#125;`); &#125;</p>
