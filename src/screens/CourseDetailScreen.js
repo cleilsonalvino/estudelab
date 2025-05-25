@@ -25,6 +25,20 @@ const CourseDetailScreen = ({ navigation }) => {
     setLoading(true);
     const courseModules = await loadModulesForCourse(courseId);
     const userProgress = await loadProgress(); // Carrega o progresso de todos os cursos
+    console.log("Progresso do usuário:", userProgress); // Log do progresso completo
+    if (!userProgress[courseId]) {
+      userProgress[courseId] = {
+        licoesConcluidas: 0,
+        licoesTotal: courseModules.reduce(
+          (total, module) => total + module.licoes.length,
+          0
+        ),
+        notaTotal: 0,
+        dataInicio: null,
+        dataFim: null,
+        lessons: {}, // Inicializa o objeto de lições
+      };
+    }
 
     setModules(courseModules);
     setProgress(userProgress); // Define o objeto de progresso completo

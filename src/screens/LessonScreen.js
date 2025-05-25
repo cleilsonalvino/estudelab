@@ -197,9 +197,9 @@ const LessonScreen = ({ navigation }) => {
     // Ou podemos sempre salvar, dependendo da regra de negócio. Aqui, salvamos sempre.
     const updatedProgress = await saveProgress(
       courseId,
-      lesson.id,
-      modules,
-      score
+      lesson.id, // O ID da lição
+      modules, // O array completo de módulos
+      score // A nota do usuário
     );
     const newTotalXp = await updateXP(xpEarned); // Atualiza XP (pode ser 0)
     // setXp(newTotalXp);

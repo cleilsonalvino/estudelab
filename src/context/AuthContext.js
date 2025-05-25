@@ -1,3 +1,4 @@
+// src/context/AuthContext.js
 import React, { createContext, useState, useEffect, useContext } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Alert } from 'react-native';
@@ -26,71 +27,85 @@ const MOCK_USERS = {
 };
 
 export const AuthProvider = ({ children }) => {
-  const [user, setUser] = useState(null);
-  const [loading, setLoading] = useState(true);
+  // Unificamos o estado de autenticação em um único objeto 'authState'
+  const [authState, setAuthState] = useState({
+    user: null,
+    isAuthenticated: false, // Adicionamos este campo crucial
+    initializing: true,     // Renomeamos 'loading' para 'initializing'
+  });
 
   useEffect(() => {
-
     const loadUser = async () => {
       try {
         const storedUser = await AsyncStorage.getItem('user');
         if (storedUser) {
-          setUser(JSON.parse(storedUser));
+          const parsedUser = JSON.parse(storedUser);
+          setAuthState({
+            user: parsedUser,
+            isAuthenticated: true, // Se há usuário salvo, está autenticado
+            initializing: false,
+          });
+        } else {
+          setAuthState(prev => ({ ...prev, initializing: false })); // Não há usuário, terminou de inicializar
         }
       } catch (error) {
         console.error("Erro ao carregar usuário do AsyncStorage:", error);
-      } finally {
-        setLoading(false);
+        setAuthState(prev => ({ ...prev, initializing: false }));
       }
     };
     loadUser();
   }, []);
 
   const login = async (email, password) => {
-    setLoading(true);
+    setAuthState(prev => ({ ...prev, initializing: true })); // Define initializing como true durante o login
     try {
       const foundUser = MOCK_USERS[email];
       if (foundUser && foundUser.password === password) {
-    
         const userToStore = { ...foundUser };
         delete userToStore.password;
 
-        setUser(userToStore);
         await AsyncStorage.setItem('user', JSON.stringify(userToStore));
+        setAuthState({
+          user: userToStore,
+          isAuthenticated: true, // Login bem-sucedido, define como true
+          initializing: false,
+        });
         return true;
       } else {
         Alert.alert("Erro de Login", "Email ou senha inválidos.");
-        return false; 
+        setAuthState(prev => ({ ...prev, isAuthenticated: false, initializing: false })); // Define como false em caso de falha
+        return false;
       }
     } catch (error) {
       console.error("Erro durante o login:", error);
       Alert.alert("Erro", "Ocorreu um erro durante o login. Tente novamente.");
+      setAuthState(prev => ({ ...prev, isAuthenticated: false, initializing: false }));
       return false;
-    } finally {
-      setLoading(false);
     }
   };
 
   const logout = async () => {
-    setLoading(true);
+    setAuthState(prev => ({ ...prev, initializing: true }));
     try {
       await AsyncStorage.removeItem('user');
-      setUser(null);
+      setAuthState({
+        user: null,
+        isAuthenticated: false, // Logout, define como false
+        initializing: false,
+      });
     } catch (error) {
       console.error("Erro ao fazer logout:", error);
       Alert.alert("Erro", "Ocorreu um erro ao fazer logout. Tente novamente.");
-    } finally {
-      setLoading(false);
+      setAuthState(prev => ({ ...prev, initializing: false }));
     }
   };
 
   return (
-    <AuthContext.Provider value={{ user, loading, login, logout }}>
+    <AuthContext.Provider value={{ authState, login, logout }}>
       {children}
     </AuthContext.Provider>
   );
 };
-
 
 export const useAuth = () => {
   return useContext(AuthContext);

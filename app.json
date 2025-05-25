@@ -4,12 +4,12 @@
     "slug": "estudelab",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/estude-lab2.0.png",
-    "userInterfaceStyle": "#151E3F",
+    "icon": "./assets/logo-quadrada.png",
+    "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/estude-lab2.0.png",
-      "resizeMode": "cover",
+      "image": "./assets/logo-quadrada.png",
+      "resizeMode": "contain",
       "backgroundColor": "#151E3F"
     },
     "ios": {
@@ -17,13 +17,14 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/estude-lab2.0.png",
+        "foregroundImage": "./assets/logo-quadrada.png",
         "backgroundColor": "#151E3F"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.cleilsonalvino.estudelab"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/logo-quadrada.png"
     },
     "extra": {
       "eas": {

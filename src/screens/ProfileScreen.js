@@ -1,49 +1,66 @@
+// src/screens/ProfileScreen.js
 import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, Image, TouchableOpacity, ScrollView, ActivityIndicator, Alert } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import { useNavigation } from '@react-navigation/native';
-import { useAuth } from '../context/AuthContext'; // Importa o hook de autenticação
+import AsyncStorage from '@react-native-async-storage/async-storage'; // Mantenha se for usar para "Redefinir Progresso"
 
 const ProfileScreen = () => {
   const navigation = useNavigation();
-  const { user, logout, loading } = useAuth(); // Pega o usuário logado e a função de logout do contexto
 
-  const handleLogout = () => {
+  // ATRIBUIÇÃO DIRETA DO OBJETO USER MOCKADO
+  const user = {
+    email: "teste@gmail.com",
+    // password: "123", // Não precisa da senha aqui
+    name: "Usuário Teste",
+    profilePicture: "https://via.placeholder.com/150/0000FF/FFFFFF?text=UT",
+    xp: 500,
+    level: 5,
+    bio: "Este é um usuário de teste para demonstração de login local."
+  };
+
+  // Remova a lógica de carregamento se não tiver mais AuthContext/AsyncStorage para usuário
+  // if (loading || !user) {
+  //   return (
+  //     <View style={styles.loadingContainer}>
+  //       <ActivityIndicator size="large" color="#FCFFFC" />
+  //       <Text style={styles.loadingText}>Carregando perfil...</Text>
+  //     </View>
+  //   );
+  // }
+
+  // Exemplo de como você adaptaria o handleLogout (se optar por mantê-lo para outra finalidade)
+  const handleResetProgress = async () => { // Renomeado para clareza
     Alert.alert(
-      "Sair",
-      "Tem certeza que deseja sair?",
+      "Redefinir Progresso",
+      "Tem certeza que deseja redefinir todo o seu progresso nos cursos? Esta ação é irreversível.",
       [
         {
           text: "Cancelar",
           style: "cancel"
         },
         {
-          text: "Sair",
-          onPress: () => {
-            logout(); // Chama a função de logout do contexto
-            // A navegação para a tela de login/home é tratada pelo App.js
+          text: "Redefinir",
+          onPress: async () => {
+            try {
+              await AsyncStorage.removeItem('userProgress'); // Assumindo 'userProgress' como a chave
+              Alert.alert("Sucesso", "Seu progresso foi redefinido!");
+              navigation.navigate('Home'); // Voltar para a Home para ver o efeito
+            } catch (error) {
+              console.error("Erro ao redefinir progresso:", error);
+              Alert.alert("Erro", "Não foi possível redefinir o progresso.");
+            }
           }
         }
       ]
     );
   };
 
-  // Se o contexto ainda estiver carregando ou não houver usuário logado
-  if (loading || !user) {
-    return (
-      <View style={styles.loadingContainer}>
-        <ActivityIndicator size="large" color="#FCFFFC" />
-        <Text style={styles.loadingText}>Carregando perfil...</Text>
-      </View>
-    );
-  }
-
-  // Se o usuário estiver carregado, exibe o perfil
   return (
     <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
       <View style={styles.profileHeader}>
         <Image
-          source={{ uri: user.profilePicture || 'https://via.placeholder.com/150/CCCCCC/000000?text=NP' }} // Fallback para "No Picture"
+          source={{ uri: user.profilePicture || 'https://www.cleilsonalvino.com/img/eu.png' }}
           style={styles.profilePicture}
         />
         <Text style={styles.userName}>{user.name}</Text>
@@ -72,17 +89,21 @@ const ProfileScreen = () => {
           <Icon name="chevron-right" size={20} color="#FCFFFC" />
         </TouchableOpacity>
 
-        <TouchableOpacity style={[styles.optionButton, styles.logoutButton]} onPress={handleLogout}>
-          <Icon name="logout" size={20} color="#FF6347" style={styles.optionIcon} />
-          <Text style={[styles.optionButtonText, styles.logoutButtonText]}>Sair</Text>
+        {/* Use handleResetProgress se for manter um botão de "limpeza/redefinição" */}
+        <TouchableOpacity style={[styles.optionButton, styles.logoutButton]} onPress={handleResetProgress}>
+          <Icon name="restore" size={20} color="#FF6347" style={styles.optionIcon} />
+          <Text style={[styles.optionButtonText, styles.logoutButtonText]}>Redefinir Progresso</Text>
           <Icon name="chevron-right" size={20} color="#FF6347" />
         </TouchableOpacity>
+
+        {/* Se optar por remover o botão completamente, remova o TouchableOpacity acima */}
       </View>
     </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
+  // ... seus estilos permanecem os mesmos
   container: {
     flex: 1,
     backgroundColor: '#151E3F',
@@ -91,13 +112,13 @@ const styles = StyleSheet.create({
     paddingVertical: 20,
     alignItems: 'center',
   },
-  loadingContainer: {
+  loadingContainer: { // Se não for mais usado, pode ser removido
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#151E3F',
   },
-  loadingText: {
+  loadingText: { // Se não for mais usado, pode ser removido
     color: '#FCFFFC',
     marginTop: 10,
     fontSize: 16,

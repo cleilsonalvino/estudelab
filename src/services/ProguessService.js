@@ -33,14 +33,13 @@ export const loadProgress = async () => {
 
 /**
  * Saves/updates progress for a specific lesson and updates user XP/Level.
- * @param {string} userId - The ID of the current user.
  * @param {string} courseId - The ID of the course.
  * @param {string} lessonId - The ID of the lesson.
  * @param {Array<Object>} modules - The full array of modules for the current course.
  * @param {number} lessonScore - The score achieved for the lesson.
  * @returns {Object|null} The updated user data (XP, Level) or null on error.
  */
-export const saveProgress = async (userId, courseId, lessonId, modules, lessonScore) => {
+export const saveProgress = async ( courseId, lessonId, modules, lessonScore) => {
     try {
         // 1. Load current progress data
         let progress = await loadProgress();
@@ -56,20 +55,24 @@ export const saveProgress = async (userId, courseId, lessonId, modules, lessonSc
                 }
             } else {
                 console.warn("Warning: 'modules' array is missing or invalid. Cannot calculate totalLessonsInCourse.");
-                // Decide how to handle this:
-                // For now, we'll set a default or just return null if modules are critical.
-                // Setting to 1 for a single lesson to ensure progress can start.
-                totalLessonsInCourse = 1;
+                totalLessonsInCourse = 1; // Default to 1 to allow progress to start
             }
 
             progress[courseId] = {
                 dataInicio: Date.now(),
                 licoesConcluidas: 0,
                 licoesTotal: totalLessonsInCourse,
-                notaTotal: 0,
+                notaTotal: 0, // Garante que notaTotal é um número no início
                 lessons: {}, // Store individual lesson scores within the course
             };
         }
+
+        // --- INÍCIO DA CORREÇÃO PARA lessonScore ---
+        // Garante que lessonScore é um número antes de usá-lo em cálculos.
+        // Se lessonScore vier como null, undefined, ou um objeto, ele será 0.
+        // Se vier como string "50", será 50.
+        const numericLessonScore = typeof lessonScore === 'number' ? lessonScore : parseFloat(lessonScore) || 0;
+        // --- FIM DA CORREÇÃO ---
 
         // 3. Update lesson progress
         const xpToEarnForLesson = 10; // XP gained per unique lesson completion
@@ -78,15 +81,15 @@ export const saveProgress = async (userId, courseId, lessonId, modules, lessonSc
         // If this is a new completion for this lesson, increment count and add XP
         if (!lessonAlreadyCompleted) {
             progress[courseId].licoesConcluidas++;
-            // Only add XP if it's the first time this lesson is completed
-            // XP will be handled separately below to update user_profile_data
         } else {
             // If re-completing, adjust total score by removing old score before adding new one
-            progress[courseId].notaTotal -= progress[courseId].lessons[lessonId];
+            // Use o valor numérico já garantido para lessonScore
+            progress[courseId].notaTotal -= (typeof progress[courseId].lessons[lessonId] === 'number' ? progress[courseId].lessons[lessonId] : parseFloat(progress[courseId].lessons[lessonId]) || 0);
         }
 
-        progress[courseId].lessons[lessonId] = lessonScore; // Save/update the new score
-        progress[courseId].notaTotal += lessonScore;
+        // Use o valor numérico já garantido para lessonScore
+        progress[courseId].lessons[lessonId] = numericLessonScore; // Save/update the new score
+        progress[courseId].notaTotal += numericLessonScore;
 
         // Check if all lessons in the course are completed
         if (progress[courseId].licoesConcluidas >= progress[courseId].licoesTotal) {

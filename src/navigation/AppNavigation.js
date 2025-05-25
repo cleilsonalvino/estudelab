@@ -6,6 +6,9 @@ import CourseDetailScreen from "../screens/CourseDetailScreen";
 import LessonScreen from "../screens/LessonScreen";
 import AboutScreen from "../screens/About";
 import ProfileScreen from "../screens/ProfileScreen";
+import TestScreen from "../screens/DepuracaoScreen";
+
+// **NÃO IMPORTE LoginScreen ou RegisterScreen AQUI, se não forem usadas.**
 
 const Stack = createNativeStackNavigator();
 
@@ -46,7 +49,7 @@ const AppNavigator = () => {
         }}
       />
       <Stack.Screen
-        name="Profile" 
+        name="Profile"
         component={ProfileScreen}
         options={{
           title: 'Meu Perfil',
@@ -54,6 +57,16 @@ const AppNavigator = () => {
           headerTintColor: '#fff',
         }}
       />
+      <Stack.Screen
+        name="Test"
+        component={TestScreen}
+        options={{
+          title: "Depuração",
+          headerStyle: { backgroundColor: "#1F2D61" },
+          headerTintColor: "#fff",
+        }}
+      />
+
     </Stack.Navigator>
   );
 };

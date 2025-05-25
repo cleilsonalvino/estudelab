@@ -11,7 +11,15 @@ import { useAuth } from '../context/AuthContext'; // Importe o useAuth
 const initialLayout = { width: Dimensions.get('window').width };
 
 const HomeScreen = ({ navigation }) => {
-  const { user } = useAuth(); // Acesse o objeto user do AuthContext
+  const { user } = {
+    email: "teste@gmail.com",
+    password: "123",
+    name: "Usuário Teste",
+    profilePicture: "https://via.placeholder.com/150/0000FF/FFFFFF?text=UT",
+    xp: 500,
+    level: 5,
+    bio: "Este é um usuário de teste para demonstração de login local."
+  }; // Acesse o objeto user do AuthContext
   const [courses, setCourses] = useState([]);
   const [progress, setProgress] = useState({});
   const [loading, setLoading] = useState(true);

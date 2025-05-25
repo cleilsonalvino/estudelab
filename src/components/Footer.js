@@ -31,6 +31,13 @@ const Footer = () => {
         <Icon name="info" size={24} color="#FCFFFC" />
         <Text style={styles.footerButtonText}>Sobre</Text>
       </TouchableOpacity>
+      <TouchableOpacity
+        style={styles.footerButton}
+        onPress={() => navigation.navigate('Test')} // Navega para a tela de Teste
+      >
+        <Icon name="bug-report" size={24} color="#FCFFFC" />
+        <Text style={styles.footerButtonText}>Depuração</Text>
+      </TouchableOpacity>
     </View>
   );
 };

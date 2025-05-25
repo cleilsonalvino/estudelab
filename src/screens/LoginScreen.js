@@ -1,17 +1,17 @@
 // src/screens/LoginScreen.js
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image, ActivityIndicator, Alert } from 'react-native';
-import { useAuth } from '../context/AuthContext'; 
+import { useAuth } from '../context/AuthContext';
 
 
 import logoImage from '../../assets/estude-lab2.0.png';
 
 
-const LoginScreen = ({ navigation }) => { 
+const LoginScreen = ({ navigation }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
-  const { login } = useAuth();
+  const { login } = useAuth(); // O 'login' aqui é a função do seu AuthContext
 
   const handleLogin = async () => {
     if (!email || !password) {
@@ -20,12 +20,18 @@ const LoginScreen = ({ navigation }) => {
     }
 
     setLoading(true);
+    // Chama a função de login do contexto de autenticação
     const success = await login(email, password);
     setLoading(false);
 
     if (success) {
+      // **NÃO NAVEGUE PARA 'Home' AQUI!**
+      // A navegação será tratada automaticamente pelo seu App.js (RootNavigator)
+      // quando o estado de autenticação for atualizado pelo 'login' do AuthContext.
+      Alert.alert("Sucesso", "Login realizado com sucesso!");
       console.log("Login bem-sucedido!");
-    
+    } else {
+      Alert.alert("Erro no Login", "Email ou senha inválidos. Por favor, tente novamente.");
     }
   };
 
@@ -64,6 +70,7 @@ const LoginScreen = ({ navigation }) => {
         )}
       </TouchableOpacity>
 
+      {/* A navegação para 'Register' ainda funciona, pois está no mesmo AuthNavigator */}
       <TouchableOpacity onPress={() => navigation.navigate('Register')}>
         <Text style={styles.registerLink}>Não tem uma conta? **Registrar-se**</Text>
       </TouchableOpacity>
@@ -121,11 +128,11 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
   },
-  registerLink: { // Novo estilo para o link de registro
+  registerLink: {
     color: '#FCFFFC',
     fontSize: 16,
     textDecorationLine: 'underline',
-    marginBottom: 15, // Adicionado para espaçamento
+    marginBottom: 15,
   },
   forgotPassword: {
     color: '#435DD8',
