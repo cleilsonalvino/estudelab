@@ -8,7 +8,7 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/logo-quadrada.png",
+      "image": "./assets/tela-inicio.png",
       "resizeMode": "contain",
       "backgroundColor": "#151E3F"
     },
@@ -17,14 +17,14 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/logo-quadrada.png",
+        "foregroundImage": "./assets/logo-quadrada-adapt.png",
         "backgroundColor": "#151E3F"
       },
       "edgeToEdgeEnabled": true,
       "package": "com.cleilsonalvino.estudelab"
     },
     "web": {
-      "favicon": "./assets/logo-quadrada.png"
+      "favicon": "./assets/logo-icon.png"
     },
     "extra": {
       "eas": {
