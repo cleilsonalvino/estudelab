@@ -14,14 +14,11 @@ const Stack = createNativeStackNavigator();
 
 const AppNavigator = () => {
   return (
-    <Stack.Navigator
-      initialRouteName="Home"
-      screenOptions={{
-        animation: "slide_from_right",
-        headerStyle: { backgroundColor: "#1F2D61" },
-        headerTintColor: "#fff",
-      }}
-    >
+    <Stack.Navigator initialRouteName="Home"  screenOptions={{
+    animation: 'slide_from_right',
+    headerStyle: { backgroundColor: "#1F2D61" },
+    headerTintColor: "#fff",
+  }}>
       <Stack.Screen
         name="Home"
         component={HomeScreen}
@@ -59,9 +56,9 @@ const AppNavigator = () => {
         name="Profile"
         component={ProfileScreen}
         options={{
-          title: "Meu Perfil",
-          headerStyle: { backgroundColor: "#1F2D61" },
-          headerTintColor: "#fff",
+          title: 'Meu Perfil',
+          headerStyle: { backgroundColor: '#1F2D61' },
+          headerTintColor: '#fff',
         }}
       />
       <Stack.Screen
@@ -73,6 +70,7 @@ const AppNavigator = () => {
           headerTintColor: "#fff",
         }}
       />
+
     </Stack.Navigator>
   );
 };
