@@ -1,6 +1,6 @@
 // src/navigation/AppNavigator.js
 import React from "react";
-import { createStackNavigator } from "@react-navigation/stack";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import HomeScreen from "../screens/HomeScreen";
 import CourseDetailScreen from "../screens/CourseDetailScreen";
 import LessonScreen from "../screens/LessonScreen";
@@ -10,7 +10,7 @@ import TestScreen from "../screens/DepuracaoScreen";
 
 // **NÃO IMPORTE LoginScreen ou RegisterScreen AQUI, se não forem usadas.**
 
-const Stack = createStackNavigator();
+const Stack = createNativeStackNavigator();
 
 const AppNavigator = () => {
   return (
