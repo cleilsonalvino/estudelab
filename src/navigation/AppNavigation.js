@@ -1,6 +1,6 @@
 // src/navigation/AppNavigator.js
 import React from "react";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { createStackNavigator } from "@react-navigation/stack";
 import HomeScreen from "../screens/HomeScreen";
 import CourseDetailScreen from "../screens/CourseDetailScreen";
 import LessonScreen from "../screens/LessonScreen";
@@ -10,11 +10,18 @@ import TestScreen from "../screens/DepuracaoScreen";
 
 // **NÃO IMPORTE LoginScreen ou RegisterScreen AQUI, se não forem usadas.**
 
-const Stack = createNativeStackNavigator();
+const Stack = createStackNavigator();
 
 const AppNavigator = () => {
   return (
-    <Stack.Navigator initialRouteName="Home">
+    <Stack.Navigator
+      initialRouteName="Home"
+      screenOptions={{
+        animation: "slide_from_right",
+        headerStyle: { backgroundColor: "#1F2D61" },
+        headerTintColor: "#fff",
+      }}
+    >
       <Stack.Screen
         name="Home"
         component={HomeScreen}
@@ -52,9 +59,9 @@ const AppNavigator = () => {
         name="Profile"
         component={ProfileScreen}
         options={{
-          title: 'Meu Perfil',
-          headerStyle: { backgroundColor: '#1F2D61' },
-          headerTintColor: '#fff',
+          title: "Meu Perfil",
+          headerStyle: { backgroundColor: "#1F2D61" },
+          headerTintColor: "#fff",
         }}
       />
       <Stack.Screen
@@ -66,7 +73,6 @@ const AppNavigator = () => {
           headerTintColor: "#fff",
         }}
       />
-
     </Stack.Navigator>
   );
 };

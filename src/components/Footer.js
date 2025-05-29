@@ -1,10 +1,9 @@
-import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
-import { useNavigation } from '@react-navigation/native'; // Importa o hook de navegação
-import Icon from 'react-native-vector-icons/MaterialIcons'; // Para ícones, se desejar
+import { useNavigation } from '@react-navigation/native';
+import { MaterialIcons } from '@expo/vector-icons'; // ✅ Correto
 
 const Footer = () => {
-  const navigation = useNavigation(); // Hook para acessar o objeto de navegação
+  const navigation = useNavigation();
 
   return (
     <View style={styles.footerContainer}>
@@ -12,35 +11,37 @@ const Footer = () => {
         style={styles.footerButton}
         onPress={() => navigation.navigate('Home')}
       >
-        <Icon name="home" size={24} color="#FCFFFC" />
+        <MaterialIcons name="home" size={24} color="#FCFFFC" />
         <Text style={styles.footerButtonText}>Home</Text>
       </TouchableOpacity>
 
       <TouchableOpacity
         style={styles.footerButton}
-        onPress={() => navigation.navigate('Profile')} // Exemplo para futuras funcionalidades
+        onPress={() => navigation.navigate('Profile')}
       >
-        <Icon name="person" size={24} color="#FCFFFC" />
+        <MaterialIcons name="person" size={24} color="#FCFFFC" />
         <Text style={styles.footerButtonText}>Perfil</Text>
       </TouchableOpacity>
 
       <TouchableOpacity
         style={styles.footerButton}
-        onPress={() => navigation.navigate('About')} // Navega para a tela About
+        onPress={() => navigation.navigate('About')}
       >
-        <Icon name="info" size={24} color="#FCFFFC" />
+        <MaterialIcons name="info" size={24} color="#FCFFFC" />
         <Text style={styles.footerButtonText}>Sobre</Text>
       </TouchableOpacity>
+
       <TouchableOpacity
         style={styles.footerButton}
-        onPress={() => navigation.navigate('Test')} // Navega para a tela de Teste
+        onPress={() => navigation.navigate('Test')}
       >
-        <Icon name="bug-report" size={24} color="#FCFFFC" />
+        <MaterialIcons name="bug-report" size={24} color="#FCFFFC" />
         <Text style={styles.footerButtonText}>Depuração</Text>
       </TouchableOpacity>
     </View>
   );
 };
+
 
 const styles = StyleSheet.create({
   footerContainer: {

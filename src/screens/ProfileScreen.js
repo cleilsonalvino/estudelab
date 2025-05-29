@@ -1,7 +1,6 @@
 // src/screens/ProfileScreen.js
 import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, Image, TouchableOpacity, ScrollView, ActivityIndicator, Alert } from 'react-native';
-import Icon from 'react-native-vector-icons/MaterialIcons';
 import { useNavigation } from '@react-navigation/native';
 import AsyncStorage from '@react-native-async-storage/async-storage'; // Mantenha se for usar para "Redefinir Progresso"
 
@@ -67,7 +66,6 @@ const ProfileScreen = () => {
         <Text style={styles.userEmail}>{user.email}</Text>
 
         <View style={styles.xpContainer}>
-          <Icon name="military-tech" size={24} color="#FFD700" />
           <Text style={styles.xpText}>XP: {user.xp}</Text>
           <Text style={styles.levelText}>Nível: {user.level}</Text>
         </View>
@@ -78,25 +76,18 @@ const ProfileScreen = () => {
         <Text style={styles.bioText}>{user.bio}</Text>
 
         <TouchableOpacity style={styles.optionButton} onPress={() => Alert.alert('Funcionalidade', 'Editar Perfil em breve!')}>
-          <Icon name="edit" size={20} color="#FCFFFC" style={styles.optionIcon} />
           <Text style={styles.optionButtonText}>Editar Perfil</Text>
-          <Icon name="chevron-right" size={20} color="#FCFFFC" />
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.optionButton} onPress={() => Alert.alert('Funcionalidade', 'Configurações em breve!')}>
-          <Icon name="settings" size={20} color="#FCFFFC" style={styles.optionIcon} />
           <Text style={styles.optionButtonText}>Configurações</Text>
-          <Icon name="chevron-right" size={20} color="#FCFFFC" />
         </TouchableOpacity>
 
-        {/* Use handleResetProgress se for manter um botão de "limpeza/redefinição" */}
+        
         <TouchableOpacity style={[styles.optionButton, styles.logoutButton]} onPress={handleResetProgress}>
-          <Icon name="restore" size={20} color="#FF6347" style={styles.optionIcon} />
           <Text style={[styles.optionButtonText, styles.logoutButtonText]}>Redefinir Progresso</Text>
-          <Icon name="chevron-right" size={20} color="#FF6347" />
         </TouchableOpacity>
 
-        {/* Se optar por remover o botão completamente, remova o TouchableOpacity acima */}
       </View>
     </ScrollView>
   );

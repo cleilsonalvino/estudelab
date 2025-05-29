@@ -6,7 +6,6 @@ import { loadProgress } from '../services/ProguessService';
 import { loadAllCourses } from '../services/DataService';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
-import { useAuth } from '../context/AuthContext'; // Importe o useAuth
 
 const initialLayout = { width: Dimensions.get('window').width };
 
@@ -83,7 +82,7 @@ const HomeScreen = ({ navigation }) => {
           style={styles.courseCard}
           onPress={() => navigation.navigate('CourseDetail', { courseId: course.id, courseName: course.nome })}
         >
-          <Image source={courseThumbnails[course.id]} style={styles.thumbnail} />
+          <Image source={courseThumbnails[course.id] || require('../../assets/placeholder.png')} style={styles.thumbnail} />
           <Text style={styles.courseName}>{course.nome}</Text>
         </TouchableOpacity>
       ))}
