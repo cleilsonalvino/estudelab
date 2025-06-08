@@ -80,12 +80,7 @@ export const loadLessonContent = async (courseId, lessonId, type) => {
         return `<h1>Conteúdo não encontrado para "${lessonId}"</h1><p>Verifique o mapeamento em DataService.js ou se o arquivo .js da lição existe.</p>`;
       }
     } else if (type === 'json') {
-      // O sufixo '_exercicio' é usado no LessonScreen.js ao chamar loadLessonContent
-      // Mas observe que o seu JSON para '03_tags_html_basicas' não tem '_exercicio' no nome do arquivo nem na chave
-      // Se a sua lógica de lição for 'lessonId_exercicio', então '03_tags_html_basicas_exercicio' seria a chave esperada.
-      // Vou manter como está no seu código, assumindo que lessonId para JSON é o mesmo nome do arquivo JSON.
-      const exerciseKey = lessonId; // Mudei para usar lessonId diretamente como a chave do exercício,
-                                    // pois '03_tags_html_basicas' não tem '_exercicio'
+      const exerciseKey = lessonId;
       if (allExerciseContent[courseId] && allExerciseContent[courseId][exerciseKey]) {
         return allExerciseContent[courseId][exerciseKey];
       } else {
